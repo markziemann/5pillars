@@ -18,12 +18,21 @@ A live version of the manuscript is available at the Ziemann lab website [here](
 
 ## Recipe
 
-In order to reproduce the manuscript, run the following in a terminal on Ubuntu 22.
+This is an executable manuscript, follow the recipe to reproduce it on your system.
 
-The process takes just 3-4 minutes and has minimal computational requirements (1 CPU thread, 4GB RAM).
+**REQUIREMENTS:** Ubuntu 22 (or similar Unix system) with 1 CPU thread and 4GB RAM.
+Docker must be installed.
+To install it on Ubuntu, run the following in a terminal:
 
 ```
+
 sudo apt update && sudo apt install docker.io #skip this if you have docker already installed
+
+```
+
+To generate the manuscript run the following in a terminal on Ubuntu 22.
+
+```
 
 sudo docker pull rocker/rstudio:4.3
 
