@@ -655,7 +655,7 @@ Dr Aziz Khan (Stanford University),
 Dr Sriganesh Srihari (QIMR Berghofer Medical Research Institute),
 Dr Barbara Zdrazil (EMBL-EBI)
 
-* Pierre Poulain @pierrepo
+* Pierre Poulain @pierrepo (elevate to author)
 
 * Irene López Santiago @IreneLopSci
 
