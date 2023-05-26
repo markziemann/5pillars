@@ -45,7 +45,7 @@ with firefox or your favourite web browser.
 
 ```
 
-docker cp $(docker ps -aql):/5pillars/manuscript/5pillars.html .
+sudo docker cp $(docker ps -aql):/5pillars/manuscript/5pillars.html .
 
 firefox 5pillars.html
 
