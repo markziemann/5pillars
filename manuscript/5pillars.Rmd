@@ -373,7 +373,7 @@ Although regular software updates are overall a good thing, it poses a problem f
 reproducibility.
 A researcher trying to reproduce a ten-year-old study in R v3.0 could have a headache, as they would need
 to roll back their R version, and possibly their operating system as well, as R and other languages
-require certain system libraries for low-level routines.
+require certain system dependencies for low-level routines @Vallet2022-no.
 
 To avoid this, a virtual machine (VM) could be used to run a system-in-a-system.
 This means that the "host" machine can run another "guest" operating system with the right R version,
@@ -638,9 +638,9 @@ The key technological advances enabling the five pillars approach have been arou
 yet progress on integrating these into computational research publications has been minimal.
 Part of the problem is the incentive structures in academia, with funding bodies and journals are
 focused on novel research directions rather than confirming previous findings
-[@Kaelin2017-id; @Munafo2017-ty].
+[@Kaelin2017-id; @Munafo2017-ty; @Diong2021-is].
 Indeed the number of systematic replication studies in bioinformatics remains small
-(e.g.: [@Ioannidis2009-hv; ; @Samuel2022-ha]), so we don't have much of a grasp as to how severe the
+(e.g.: [@Ioannidis2009-hv; @Zaringhalam2020-ms; @Samuel2022-ha]), so we don't have much of a grasp as to how severe the
 problem actually is.
 
 A lack of technical computer skills in many research groups is another culprit.
