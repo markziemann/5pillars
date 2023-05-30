@@ -76,10 +76,10 @@ in practice this is rarely achieved.
 
 A number of guides recommending enhanced computational reproducibility practices have emerged
 [ @Tan2010-is; @Peng2011-ia; @Sandve2013-lk; @Piccolo2016-ji; @Lewis2016-qh;
-@Wilson2017-uq ; @Akalin2018-eg ; @Gruning2018-sg; @Brito2020-ld; @Peikert2021-eq ; @Rodrigues2023-fw].
-This article, inspired by the tutorial by Peikert and BrandMaier @Peikert2021-eq, attempts to unify
-these concepts into five key principles called the five pillars of reproducible computational
-research (**Figure 1**).
+@Wilson2017-uq ; @Akalin2018-eg ; @Gruning2018-sg; @Brito2020-ld; @Peikert2021-eq ; @Rodrigues2023-fw;
+@DuPre2022-bk].
+Inspired by these, this article attempts to unify the main principles into the
+*five pillars of reproducible computational research* (**Figure 1**).
 The intended audience is bioinformatics data analysts (not tool developers), however the
 principles described here could equally apply to other domains of study.
 
@@ -466,7 +466,7 @@ Data reuse increases efficiency, as it prevents redundant research expenditure a
 research ideas that were previously impossible [@Wilkinson2016-qq].
 In terms of research rigour, inspecting raw data can uncover research integrity problems [@Miyakawa2020-yj],
 In light of this, a research article without supporting data and code is much like a press release or
-advertisement where the claims made cannot be verified as true or not.
+advertisement where the claims made cannot be verified as true or not [@Donoho2010-yz, @DuPre2022-bk].
 
 Although it is common to see journal articles with "Data available upon reasonable request", this is less
 than ideal.
@@ -661,9 +661,7 @@ More such protocols are needed to make extreme reproducibility mainstream.
 I am grateful to the individuals who provided feedback on an earlier draft of the concept including
 Dr Aziz Khan (Stanford University),
 Dr Sriganesh Srihari (QIMR Berghofer Medical Research Institute),
-Dr Barbara Zdrazil (EMBL-EBI)
-
-* Irene López Santiago @IreneLopSci
+Dr Barbara Zdrazil (EMBL-EBI) and Dr Irene López Santiago (EMBL-EBI).
 
 ## Bibliography
 
