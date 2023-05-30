@@ -1,6 +1,6 @@
 ---
 title: "The five pillars of computational reproducibility: Bioinformatics and beyond"
-author: "Mark Ziemann"
+author: "Mark Ziemann, Samuel S. Minot, Pierre Poulain, Anusuiya Bora"
 date: "`r Sys.Date()`"
 output:
   rmdformats::robobook:
@@ -14,11 +14,13 @@ bibliography: 5pillars.bib
 csl: briefings-in-bioinformatics.csl
 ---
 
-Mark Ziemann
+Mark Ziemann<sup>1*</sup>, Samuel S. Minot<sup>2</sup>, Pierre Poulain<sup>3</sup>, Anusuiya Bora<sup>1</sup>
 
-Deakin University, Geelong, Australia, School of Life and Environmental Sciences.
+1. Deakin University, School of Life and Environmental Sciences, Geelong, Australia.
 
-ORCID: 0000-0002-7688-6974
+2. Fred Hutchinson Cancer Center, Seattle, USA.
+
+3. Université Paris Cité, CNRS, Institut Jacques Monod, Paris, France.
 
 Correspondance: m.ziemann@deakin.edu.au
 
@@ -345,13 +347,14 @@ repository means the code can be easily recovered if any one of those computers 
 Although DVCSs assist with code sharing, they are not considered a long-term archiving solution and
 might not survive the "ten-year challenge" of code reproducibility @Perkel2020-io.
 To achieve that, the code needs to be deposited to a long-term repository.
-Zenodo and Figshare repositories are both good options for long-term archiving of software, and the
+
+[Zenodo](https://zenodo.org/) and [Software Heritage](https://www.softwareheritage.org/) repositories
+are both good options for long-term archiving of software, and the
 link to these should be provided in the respective journal article/pre-print.
 
 `git` is typically used at the command line, however it is also integrated into Rstudio, JupyterLab and
 VS Code, and there are also several `git` clients with graphical interfaces which better allow inspection
 of code changes.
-
 
 ## Compute environment control
 
@@ -654,8 +657,6 @@ I am grateful to the individuals who provided feedback on an earlier draft of th
 Dr Aziz Khan (Stanford University),
 Dr Sriganesh Srihari (QIMR Berghofer Medical Research Institute),
 Dr Barbara Zdrazil (EMBL-EBI)
-
-* Pierre Poulain @pierrepo (elevate to author)
 
 * Irene López Santiago @IreneLopSci
 
