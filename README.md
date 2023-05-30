@@ -30,7 +30,8 @@ sudo apt update && sudo apt install docker.io #skip this if you have docker alre
 
 ```
 
-To generate the manuscript run the following in a terminal on Ubuntu 22.
+To generate the manuscript run the following in a terminal.
+It will take ~5 minutes.
 
 ```
 
@@ -50,4 +51,12 @@ sudo docker cp $(docker ps -aql):/5pillars/manuscript/5pillars.html .
 firefox 5pillars.html
 
 ```
+
+## How to contribute
+
+Raise an issue on GitHub to report problems with the article or give your suggestions.
+
+## Funding
+
+No external funding was required.
 

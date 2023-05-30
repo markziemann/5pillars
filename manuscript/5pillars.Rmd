@@ -170,10 +170,6 @@ The MyST{NB} (short for Markedly Structured Text notebook) is built on top of Ju
 notable advantages around flexibility of content that make it an attractive choice for an executable
 paper authoring [@DuPre2022-bk].
 
-Similarly, the [Streamlit](https://streamlit.io/) tool, which was originally invented for creating
-Python-based web dashboards but is equally capable of generating data science reports
-[e.g.: @Nantasenamat2023-wr].
-
 In 2022, the company behind RStudio (Posit) released Quarto, the conceptual successor of R Markdown,
 but with enhanced support for other computer languages like Python, Julia, and Observable JavaScript
 @Bauer2023-eh.
@@ -645,7 +641,7 @@ Part of the problem is the incentive structures in academia, with funding bodies
 focused on novel research directions rather than confirming previous findings
 [@Kaelin2017-id; @Munafo2017-ty; @Diong2021-is].
 Indeed the number of systematic replication studies in bioinformatics remains small
-(e.g.: [@Ioannidis2009-hv; @Zaringhalam2020-ms; @Samuel2022-ha]), so we don't have much of a grasp as to how severe the
+[@Zaringhalam2020-ms ; @Ioannidis2009-hv; @Samuel2022-ha] so we don't have much of a grasp as to how severe the
 problem actually is.
 
 A lack of technical computer skills in many research groups is another culprit.
@@ -658,10 +654,17 @@ More such protocols are needed to make extreme reproducibility mainstream.
 
 ## Acknowledgements
 
-I am grateful to the individuals who provided feedback on an earlier draft of the concept including
+We are grateful to the individuals who provided feedback on an earlier draft of the concept including
 Dr Aziz Khan (Stanford University),
 Dr Sriganesh Srihari (QIMR Berghofer Medical Research Institute),
-Dr Barbara Zdrazil (EMBL-EBI) and Dr Irene López Santiago (EMBL-EBI).
+Dr Barbara Zdrazil (EMBL-EBI) and
+Dr Irene López Santiago (EMBL-EBI).
+
+This research was supported by use of the Nectar Research Cloud, a collaborative Australian research
+platform supported by the NCRIS-funded Australian Research Data Commons (ARDC).
+
+## Availability of materials
+
+Code repository: https://github.com/markziemann/5pillars
 
 ## Bibliography
-
