@@ -166,6 +166,10 @@ An example R Markdown script and output report is given in **Figure 2**.
 
 Around the same time, Project Jupyter was developed to provide a "notebook" type interface, incorporating
 R, Python, Julia and other computer language chunks into documents @Perkel2018-rz.
+The MyST{NB} (short for Markedly Structured Text notebook) is built on top of Jupyter and has some
+notable advantages around flexibility of content that make it an attractive choice for an executable
+paper authoring [@DuPre2022-bk].
+
 Similarly, the [Streamlit](https://streamlit.io/) tool, which was originally invented for creating
 Python-based web dashboards but is equally capable of generating data science reports
 [e.g.: @Nantasenamat2023-wr].
@@ -430,8 +434,9 @@ compute environment control.
 The ability to reproduce operating systems, programming languages and workflows in the browser
 opens up intriguing possibilities for more widespread reproduction and auditing without the need to
 install any software at all.
-For example, it is now possible to embed a Wasm-enabled R terminal inside a Quarto HTML document, which
-enables in-browser reproducibility of R workflows @Balamuta2023-ma.
+Two notable examples of this include JupyterLite, a version of JupyterLab in early development that
+runs entirely in the browser @Tuloup2021-le, and WebR-enabled interactive code blocks in Quarto HTML
+documents @Balamuta2023-ma.
 
 It is not sufficient to simply use these tools, they need to be shared as part of the publication
 process.
