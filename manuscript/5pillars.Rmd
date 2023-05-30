@@ -453,7 +453,6 @@ Lack of data sharing is one of the key reasons why research is irreproducible
 [@Ioannidis2009-hv, @Archmiller2020-er ].
 Data sharing is also one of the key features of "open science", which is characterised as science
 that is collaborative, transparent, accessible and inclusive [@noauthor_2023-uq].
-Indeed, inspecting raw data can uncover research integrity problems [@Miyakawa2020-yj],
 In addition to facilitating reproduction and auditing, sharing enables reuse in other contexts.
 Data reuse increases efficiency, as it prevents redundant research expenditure and facilitates new
 research ideas that were previously impossible [@Wilkinson2016-qq].
@@ -512,17 +511,18 @@ Key recommendations include:
 
 1. Depositing data to a specialised repository if possible, otherwise, a general-purpose repository.
 
-2. Avoid commodity cloud storage as these are impermanent.
+2. Avoid commodity cloud storage as these are impermanent and susceptible to link decay @Hennessey2013-tj.
 
 3. Avoid large supplementary data files accompanying journal articles as these are less findable and
 accessible.
 
-4. Provide detailed metadata.
+4. Preferably archive and share raw data and use existing standards for the discipline.
 
-5. Preferably archive and share raw data and use existing standards for the discipline.
-
-6. Use file formats that are compatible with many different types of software; e.g.: comma-separated
+5. Use file formats that are compatible with many different types of software; e.g.: comma-separated
 values (CSV) files are preferred over Excel files.
+
+6. Provide detailed metadata; e.g.: sample descriptions that match the manuscript; describe the columns
+in tabular data.
 
 Once the quality of the data set has been established researchers may consider depositing it
 to a data repository early, before publicisation, as it has some advantages.
