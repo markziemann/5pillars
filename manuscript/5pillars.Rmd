@@ -386,23 +386,9 @@ software stack and project data.
 Moreover, the performance of computation in the guest system is typically slower than when run directly
 on the host.
 
-Another potential solution to this is to use a package/environment management system
-(e.g.: [Conda](https://conda.org/) or [Guix](https://guix.gnu.org/)).
-These allow users to create, manage, and deploy software packages,
-dependencies, and environments across different computing platforms @Perkel2023-cv.
-Conda was initially developed to solve the problem of package dependency management in Python,
-but it now supports many other programming languages, including R, C/C++, Java, and others.
-Conda allows researchers to create isolated environments with specific versions of
-packages, so users can have different versions of R or Python in different environments
-on the same host system.
-Conda environments have limitations around portability and consistency, as such environments
-are tied to specific operating systems and hardware architecture.
-Guix on the other hand, gives system-level reproducibility, but has a smaller community and ecosystem
-of supported packages.
-
 Containers are an attempt to resolve some of the downsides of VMs and package managers.
 Container images can be thought of as similar to VMs, but are more lightweight as they
-share parts of the host operating system.
+share parts of the host operating system [@Nust2020-cr].
 In the example shown in **Figure 4**, the six containerised applications share the same operating
 system, while the three VM applications each involve their own operating system which incurs a
 significant performance overhead @noauthor_2021-lt.
@@ -425,6 +411,30 @@ reproducibility [@Mangul2019-ei;@Mangul2019-xp].
 
 ![Figure 4. Architecture of containers (left) compared to VMs (right) @noauthor_2021-lt.](../img/docker-containerized-and-vm-transparent-bg.webp)
 
+Another potential solution to this problem is to use a package/environment management system such as
+[Conda](https://conda.org/) or [Guix](https://guix.gnu.org/).
+These allow users to create, manage, and deploy software packages,
+dependencies, and environments across different computing platforms @Perkel2023-cv.
+Conda was initially developed to solve the problem of package dependency management in Python,
+but it now supports many other programming languages, including R, C/C++, Java, and others.
+Conda allows researchers to create isolated environments with specific versions of
+packages, so users can have different versions of R or Python in different environments
+on the same host system.
+Conda environments have limitations around portability and consistency, as such environments
+are tied to specific operating systems and hardware architecture.
+
+Guix is described as a "functional package manager" and has the unique benefit of giving
+system-level build reproducibility [@Vallet2022-no].
+This is a notable advantage, as Docker images are not guaranteed to build reproducibly in the future
+due to link decay.
+Moreover, Guix can build and output environments as Docker-compatible images which solves the
+provenance problem of such environments [@GNU_Project_Volunteers2022-bt].
+These features are being used in the bioinformatics sphere to create highly reproducible pipelines
+that work equally well on personal as well as shared computer systems @Wurmus2018-lv.
+Although Guix has some exciting functionality, there remains a relative lack of step-by-step guides and
+tutorials, illustrated by the complete absence of published Guix protocols in protocols.io, as compared
+to 13 and 12 related to "Conda" and "Docker" respectively (as at 30th May 2023).
+
 We are also watching with interest the early development of WebAssembly (Wasm) based approaches for
 compute environment control.
 The ability to reproduce operating systems, programming languages and workflows in the browser
@@ -438,11 +448,15 @@ It is not sufficient to simply use these tools, they need to be shared as part o
 process.
 Conda environments are described by a file called `environment.yml` which acts like a recipe for how to
 make the environment.
-As they are a recipe, these are small files which are easily shared in the project code repository.
-Docker images are larger and cannot be shared in the code repository.
-They are commonly deposited to the DockerHub repository, but availability of images is dependent on the
+Similarly, Guix environments rely on two files: `channels.scm` and `manifest.scm`.
+Docker images are built using a `Dockerfile` instruction set.
+These are small files which are easily shared in the project code repository.
+To enable rapid reproduction, making Docker images available is recommended.
+As these are often very large they cannot be shared in the code repository; rather
+they are commonly deposited to a Docker image registry such as DockerHub.
+One must keep in mind that availability of images is dependent on the
 commercial viability of Docker Inc, so it isn't guaranteed to survive the 10-year challenge.
-A better option for bioinformatics workflows would be to use the BioContainers registry
+To ensure long-term availability, it would be advised to deposit images to the BioContainers registry
 @Da_Veiga_Leprevost2017-yw, as it is community driven and supported by consortia such as *Elixir* and
 *Global Alliance for Genomics and Health* that will underpin its longevity.
 Still, these are not considered permanent archival services, so it is advised to deposit the image
@@ -652,9 +666,29 @@ of implementing functional enrichment analysis of gene expression data with the 
 @Ziemann2023-nm.
 More such protocols are needed to make extreme reproducibility mainstream.
 
+## Conclusion
+
+Reproducibility is an essential feature of reliable computational research yet current practices
+are falling short of this goal.
+Our recommendations for workflow-based research articles are summarised as:
+
+0. Encapsulate the entire workflow with end-to-end code, executable with a master script.
+
+1. Share the code repository and deposit a snapshot to an archive.
+
+2. Share a controlled environment; options include a Docker or virtual machine image or
+configuration for Conda or Guix.
+
+3. Use literate scripting tools like R Markdown or Jupyter notebooks to generate all outputs,
+such as charts and tables.
+
+4. Document the workflow sufficiently for reproduction, especially the repository `README`.
+
+5. Share research data and metadata according to FAIR principles.
+
 ## Acknowledgements
 
-We are grateful to the individuals who provided feedback on an earlier draft of the concept including
+We are grateful to individuals who provided feedback on an earlier draft of the concept including
 Dr Aziz Khan (Stanford University),
 Dr Sriganesh Srihari (QIMR Berghofer Medical Research Institute),
 Dr Barbara Zdrazil (EMBL-EBI) and
