@@ -80,7 +80,8 @@ A number of guides recommending enhanced computational reproducibility practices
 [ @Tan2010-is; @Peng2011-ia; @Sandve2013-lk; @Piccolo2016-ji; @Lewis2016-qh;
 @Wilson2017-uq ; @Akalin2018-eg ; @Gruning2018-sg; @Brito2020-ld; @Peikert2021-eq ; @Rodrigues2023-fw;
 @DuPre2022-bk].
-Inspired by these, this article attempts to unify the main principles into the
+Inspired by these principles and the three pillars of open science framework, (open data, code
+and papers) [@Gorgolewski2016-hv], this article presents the
 *five pillars of reproducible computational research* (**Figure 1**).
 The intended audience is bioinformatics data analysts (not tool developers), however the
 principles described here could equally apply to other domains of study.
@@ -426,13 +427,14 @@ Conda environments have limitations around portability and consistency, as such 
 are tied to specific operating systems and hardware architecture.
 
 Guix is described as a "functional package manager" and has the unique benefit of giving
-system-level build reproducibility [@Vallet2022-no].
-This is a notable advantage, as Docker images are not guaranteed to build reproducibly in the future
-due to link decay.
+bit-for-bit build reproducibility and verifiability [@Vallet2022-no; @Courtes2022-rx].
+This is a notable advantage, as Docker images are not verifiable nor guaranteed to build reproducibly
+in the future due to link decay.
 Moreover, Guix can build and output environments as Docker-compatible images which solves the
 provenance problem of such environments [@GNU_Project_Volunteers2022-bt].
 These features are being used in the bioinformatics sphere to create highly reproducible pipelines
-that work equally well on personal as well as shared computer systems @Wurmus2018-lv.
+that work equally well on personal as well as shared high performance computers
+[@Wurmus2018-lv; @Courtes2022-rx].
 Although Guix has some exciting functionality, there remains a relative lack of step-by-step guides and
 tutorials, illustrated by the complete absence of published Guix protocols in protocols.io, as compared
 to 13 and 12 related to "Conda" and "Docker" respectively (as at 30th May 2023).
@@ -470,7 +472,7 @@ Without data sharing, computational research is not reproducible nor auditable.
 Lack of data sharing is one of the key reasons why research is irreproducible
 [@Ioannidis2009-hv, @Archmiller2020-er ].
 Data sharing is also one of the key features of "open science", which is characterised as science
-that is collaborative, transparent, accessible and inclusive [@noauthor_2023-uq].
+that is collaborative, transparent, accessible and inclusive [@McKiernan2016-vu; @noauthor_2023-uq].
 In addition to facilitating reproduction and auditing, sharing enables reuse in other contexts.
 Data reuse increases efficiency, as it prevents redundant research expenditure and facilitates new
 research ideas that were previously impossible [@Wilkinson2016-qq].
@@ -657,8 +659,8 @@ Part of the problem is the incentive structures in academia, with funding bodies
 focused on novel research directions rather than confirming previous findings
 [@Kaelin2017-id; @Munafo2017-ty; @Diong2021-is].
 Indeed the number of systematic replication studies in bioinformatics remains small
-[@Zaringhalam2020-ms ; @Ioannidis2009-hv; @Samuel2022-ha], so we don't have much of a grasp as to how
-severe the problem actually is.
+[@Zaringhalam2020-ms ; @Ioannidis2009-hv; @Samuel2022-ha], so the severity of the problem isn't
+well understood.
 
 A lack of technical computer skills in many research groups is another culprit.
 Specific workshop-based training in these areas could help, but the most scalable solution would be to
