@@ -66,9 +66,11 @@ those studies.
 Workshops conducted by NIH intramural researchers in 2018/2019 sought to reproduce five bioinformatics
 studies and could not reproduce *any*, citing missing data, software and documentation
 @Zaringhalam2020-ms.
-A recent systamatic analysis of Jupyter notebooks in biomedical articles had similar observations, with
+A recent systematic analysis of Jupyter notebooks in biomedical articles had similar observations, with
 only 245/4169 notebooks (5.9%) giving similar results compared to the original, with irreproducibility
 blamed on missing data, broken dependencies and buggy code @Samuel2022-ha.
+A similar survey of R scripts in the Harvard Dataverse repository found slightly better results,
+with 26% of scripts completing without errors [@Trisovic2022-dq].
 Irreproducible bioinformatics has the potential to place patient safety at risk, as demonstrated by an
 earlier case study @Baggerly2010-nr.
 Researchers are theoretically able to achieve 100% computational reproducibility, yet as we see,
@@ -490,7 +492,7 @@ The field of genomics has a long history of data sharing @Brazma2001-yk, which i
 policy leadership by funding bodies
 [@National_Health_and_Medical_Research_Council2019-yx;
 @Office_of_The_Director_National_Institutes_of_Health2023-ss] and data sharing policies of journals
-(eg [@Packer2018-ru; @Hanson2011-ub]), although there are some challenges.
+(eg [@Packer2018-ru; @Hanson2011-ub ; @Cheifet2020-wu]), although there are some challenges.
 
 Some researchers would rather keep data for their private use.
 Some may keep data private due to concerns over participant privacy.
