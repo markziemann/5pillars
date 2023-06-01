@@ -31,7 +31,7 @@ sudo apt update && sudo apt install docker.io #skip this if you have docker alre
 ```
 
 To generate the manuscript run the following in a terminal.
-It will take ~5 minutes.
+It will take 2-3 minutes.
 
 ```
 
