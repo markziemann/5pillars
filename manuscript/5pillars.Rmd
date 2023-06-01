@@ -49,7 +49,7 @@ Reproducibility is only the first step towards overall reliability, for example 
 reproducible, but suffer from analytical problems that invalidate the results.
 If a study is reproducible, then at least these analytical issues can be more easily identified and
 rectified.
-Therefore, reproducibility is a necessary stepping-stone that in theory should enhance the overall
+Therefore, reproducibility is a necessary stepping-stone that should enhance the overall
 reliability of computational research including replicability and robustness.
 Replicability being defined as the ability to repeat the entire study and come up with similar overall
 results.
@@ -76,7 +76,7 @@ earlier case study @Baggerly2010-nr.
 Researchers are theoretically able to achieve 100% computational reproducibility, yet as we see,
 in practice this is rarely achieved.
 
-A number of guides recommending enhanced computational reproducibility practices have emerged
+A number of guides recommending enhanced computational reproducibility practices have been developed
 [ @Tan2010-is; @Peng2011-ia; @Sandve2013-lk; @Piccolo2016-ji; @Lewis2016-qh;
 @Wilson2017-uq ; @Akalin2018-eg ; @Gruning2018-sg; @Brito2020-ld; @Peikert2021-eq ; @Rodrigues2023-fw;
 @DuPre2022-bk].
@@ -146,9 +146,9 @@ This can be coded in standard languages like R/R Markdown, Python/Jupyter notebo
 Projects entailing big data analysis might benefit from a build/workflow automation solution like `make`,
 `snakemake` [@Koster2012-sq; @Molder2021-mp], `drake` [@Michael_Landau2018-kk] or
 `nextflow` [@Di_Tommaso2017-yo].
-The advantage of such tools is that if the analysis were to fail mid-way,
+The advantage of such tools is that if the analysis were to terminate due to a hardware issue mid-way,
 for example at step 8 of a 15-step workflow, the analysis of steps 1-7 wouldn't need to be repeated.
-After fixing the issue with code at step 8, re-running the analysis would pick up at step 8 again,
+After fixing the hardware issue, re-running the analysis would pick up at step 8 again,
 which saves labour and compute time.
 
 ## Literate programming
@@ -176,7 +176,7 @@ In 2022, the company behind RStudio (Posit) released Quarto, the conceptual succ
 but with enhanced support for other computer languages like Python, Julia, and Observable JavaScript
 @Bauer2023-eh.
 
-Whether R Markdown, Jupyter or Quarto, literate programming offers some substantial benefits over
+Whether R Markdown, Jupyter or other system, literate programming offers some substantial benefits over
 alternative approaches:
 
 * The provenance of any result can be demonstrated.
@@ -194,7 +194,7 @@ This allows the analyst to include rich descriptions of scientific works.
 For example, a report may contain background, methods, results, discussion and references.
 Not only text, but various objects can be included like links to other resources,
 tables, images, videos, etc.
-This means it is possible to author an entire journal articles using literate programming.
+This means it is possible to author an entire journal article using literate programming.
 
 * Outputs are arranged.
 When using a regular script, an analyst might make dozens of charts which are written to the
@@ -405,7 +405,7 @@ promise of reproducibility.
 While there are several alternatives such as Podman and Rkt, Docker remains the most widely used
 containerisation system for web development and research.
 Due to its early adoption, Docker now has a large community of users, extensive documentation and
-a vast collection of pre-built container images called DockerHub.
+a vast collection of pre-built container images in the DockerHub registry.
 Docker can fetch images from DockerHub and run them on the host system with just a couple of commands,
 and typically within a few minutes.
 This accelerates the installation procedure dramatically which is a known bottleneck for bioinformatic
@@ -463,8 +463,6 @@ To ensure long-term availability, it would be advised to deposit images to the B
 *Global Alliance for Genomics and Health* that will underpin its longevity.
 Still, these are not considered permanent archival services, so it is advised to deposit the image
 used in an article to a suitable persistent long-term archive (discussed below).
-The recipe used to build the Docker image, called the `Dockerfile`, is sufficiently small and can be
-added to the project source code repository.
 
 ## FAIR and persistent data sharing
 
@@ -476,7 +474,8 @@ that is collaborative, transparent, accessible and inclusive [@noauthor_2023-uq]
 In addition to facilitating reproduction and auditing, sharing enables reuse in other contexts.
 Data reuse increases efficiency, as it prevents redundant research expenditure and facilitates new
 research ideas that were previously impossible [@Wilkinson2016-qq].
-In terms of research rigour, inspecting raw data can uncover research integrity problems [@Miyakawa2020-yj],
+In terms of research rigour, inspecting raw data can uncover inadvertent errors and research
+integrity problems [@Miyakawa2020-yj].
 In light of this, a research article without supporting data and code is much like a press release or
 advertisement where the claims made cannot be verified as true or not [@Donoho2010-yz, @DuPre2022-bk].
 
@@ -590,7 +589,8 @@ project, so these need to be explained.
 
 The `README` should outline exactly what is required in order to reproduce the
 analysis, including the requirements and the instructions to reproduce.
-Typically it is written in the markdown format, which should be familiar
+Typically it is written in the Markdown format, which should be familiar to those using R Markdown or
+Jupyter notebooks.
 Hardware requirements such as RAM, CPU architecture, GPU needs, etc need to be outlined.
 Software requirements, such as operating system, container engine, workflow manager,
 etc, also need to be described.
@@ -604,9 +604,9 @@ These instructions should be tested whenever changes are made to the codebase.
 
 As outlined above, one of the goals is to reduce the complexity of reproduction, and using a master
 script is a simple way to do this.
-It also makes the README documentation much simpler.
+It also makes the `README` documentation much simpler.
 For example, the pathway analysis workflow we previously developed could be reproduced and inspected
-with just six commands, starting from a new Ubuntu linux install [@Ziemann2023-nm].
+with just six commands, starting from a new Ubuntu Linux install [@Ziemann2023-nm].
 By minimising the complexity of reproduction and writing the instructions clearly in the `README`,
 reproducibility is made possible to a larger segment of the computational research community,
 especially those who are not experts in the languages used.
@@ -627,7 +627,7 @@ relative to the overall research project.
 
 ## Limitations and challenges
 
-Due to the constantly developing software landscape, this review is not designed to give strong
+Due to the constantly developing software landscape, this review is not intended to give strong
 recommendations on the exact combination of tools or resources to use in computational research,
 but to set out key principles and highlight some useful solutions that users can incorporate
 into their toolkit to improve the overall reproducibility of their work.
@@ -653,12 +653,12 @@ Continuous analysis might therefore be a future pediment (crowning feature) to t
 
 The key technological advances enabling the five pillars approach have been around for about a decade,
 yet progress on integrating these into computational research publications has been minimal.
-Part of the problem is the incentive structures in academia, with funding bodies and journals are
+Part of the problem is the incentive structures in academia, with funding bodies and journals more
 focused on novel research directions rather than confirming previous findings
 [@Kaelin2017-id; @Munafo2017-ty; @Diong2021-is].
 Indeed the number of systematic replication studies in bioinformatics remains small
-[@Zaringhalam2020-ms ; @Ioannidis2009-hv; @Samuel2022-ha] so we don't have much of a grasp as to how severe the
-problem actually is.
+[@Zaringhalam2020-ms ; @Ioannidis2009-hv; @Samuel2022-ha], so we don't have much of a grasp as to how
+severe the problem actually is.
 
 A lack of technical computer skills in many research groups is another culprit.
 Specific workshop-based training in these areas could help, but the most scalable solution would be to

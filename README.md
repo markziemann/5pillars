@@ -16,6 +16,24 @@ It highlights the importance of these five concepts to reproducibility:
 
 A live version of the manuscript is available at the Ziemann lab website [here](https://ziemann-lab.net/public/5pillars/5pillars2.html).
 
+## Contents
+
+There are three folders:
+
+* `manuscript`: the source document and bibliography.
+
+* `coverletter`: to the editor.
+
+* `img`: images.
+
+* `LICENCE`: MIT Licence.
+
+* `README.md`: This helpful document.
+
+* `main.sh`: Master script.
+
+* `test_build.sh`: Build test script.
+
 ## Recipe
 
 This is an executable manuscript, follow the recipe to reproduce it on your system.
