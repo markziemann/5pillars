@@ -383,8 +383,8 @@ without needing to change the host R version.
 While this provides good reproducibility, setting up an environment with a ten-year-old operating system,
 R and packages would take a few hours to accomplish.
 Researchers could take a snapshot of their VM system and share it to help reproducibility and
-auditability, however the size of these images is relatively large due to the fact it contains the OS,
-software stack and project data.
+auditability @Pasquier2018-nj, however the size of these images is relatively large due to the fact
+it contains the OS, software stack and project data.
 Moreover, the performance of computation in the guest system is typically slower than when run directly
 on the host.
 
