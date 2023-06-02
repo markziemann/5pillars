@@ -14,7 +14,10 @@ bibliography: 5pillars.bib
 csl: briefings-in-bioinformatics.csl
 ---
 
-Mark Ziemann<sup>1*</sup>, Samuel S. Minot<sup>2</sup>, Pierre Poulain<sup>3</sup>, Anusuiya Bora<sup>1</sup>
+Mark Ziemann<sup>1*</sup>, Samuel S. Minot<sup>2</sup>, Pierre Poulain<sup>3</sup>,
+Anusuiya Bora<sup>1</sup>
+
+<details><summary>Author information (*click to expand*)</summary><p>
 
 1. Deakin University, School of Life and Environmental Sciences, Geelong, Australia.
 
@@ -24,6 +27,15 @@ Mark Ziemann<sup>1*</sup>, Samuel S. Minot<sup>2</sup>, Pierre Poulain<sup>3</su
 
 Correspondance: m.ziemann@deakin.edu.au
 
+| Author | ORCID |
+| --- | --- |
+| Mark Ziemann | 0000-0002-7688-6974 |
+| Samuel S. Minot | 0000-0003-1639-3905 |
+| Pierre Poulain | 0000-0003-4177-3619 |
+| Anusuiya Bora | 0009-0006-2908-1352 |
+
+</details>
+</p>
 Source: https://github.com/markziemann/5pillars/blob/main/manuscript/5pillars.Rmd
 
 ## Summary
