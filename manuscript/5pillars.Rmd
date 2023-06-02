@@ -80,9 +80,12 @@ A number of guides recommending enhanced computational reproducibility practices
 [ @Tan2010-is; @Peng2011-ia; @Sandve2013-lk; @Piccolo2016-ji; @Lewis2016-qh;
 @Wilson2017-uq ; @Akalin2018-eg ; @Gruning2018-sg; @Brito2020-ld; @Peikert2021-eq ; @Rodrigues2023-fw;
 @DuPre2022-bk].
-Inspired by these principles and the three pillars of open science framework, (open data, code
-and papers) [@Gorgolewski2016-hv], this article presents the
+Inspired by these principles, this article presents the
 *five pillars of reproducible computational research* (**Figure 1**).
+There are clear parallels with the established the three pillars of open science framework,
+(open data, code and papers) [@Gorgolewski2016-hv].
+Here, the emphasis is on practical reproducibility with an increased focus on programming practices,
+transparent reporting and the role of computational environments.
 The intended audience is bioinformatics data analysts (not tool developers), however the
 principles described here could equally apply to other domains of study.
 
