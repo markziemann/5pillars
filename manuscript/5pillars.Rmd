@@ -712,6 +712,8 @@ Dr Aziz Khan (Stanford University),
 Dr Sriganesh Srihari (QIMR Berghofer Medical Research Institute),
 Dr Barbara Zdrazil (EMBL-EBI) and
 Dr Irene López Santiago (EMBL-EBI).
+Special thanks to Dr Altuna Akalin (Max Delbrück Center, Germany) and
+Dr Simon Tournier (Paris Cité University, France) for advice on Guix.
 
 This research was supported by use of the Nectar Research Cloud, a collaborative Australian research
 platform supported by the NCRIS-funded Australian Research Data Commons (ARDC).
