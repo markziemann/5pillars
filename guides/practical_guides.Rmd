@@ -1,0 +1,130 @@
+---
+title: "Practical guides for implementing 'Five Pillar' principles"
+author: "Mark Ziemann, Samuel S. Minot, Pierre Poulain, Anusuiya Bora"
+date: "`r Sys.Date()`"
+output:
+  rmdformats::robobook:
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: hide
+    fig_width: 5
+    fig_height: 5
+bibliography: practical_guides.bib
+csl: plos-computational-biology.csl
+---
+
+Mark Ziemann<sup>1*</sup>, Samuel S. Minot<sup>2</sup>, Pierre Poulain<sup>3</sup>,
+Anusuiya Bora<sup>1</sup>
+
+<details><summary>Author information (*click to expand*)</summary><p>
+
+1. Deakin University, School of Life and Environmental Sciences, Geelong, Australia.
+
+2. Fred Hutchinson Cancer Center, Seattle, USA.
+
+3. Université Paris Cité, CNRS, Institut Jacques Monod, Paris, France.
+
+Correspondance: m.ziemann@deakin.edu.au
+
+| Author | ORCID |
+| --- | --- |
+| Mark Ziemann | 0000-0002-7688-6974 |
+| Samuel S. Minot | 0000-0003-1639-3905 |
+| Pierre Poulain | 0000-0003-4177-3619 |
+| Anusuiya Bora | 0009-0006-2908-1352 |
+
+</details>
+</p>
+Source: https://github.com/markziemann/5pillars/blob/main/manuscript/5pillars.Rmd
+
+## Practical guides
+
+The five pillar approach is a synthesis of over a decade of learnings around computational
+reproducibility, and contains six key recommendaions and many best practices.
+These may be overwhelming for any data scientists, especially beginners and novices,
+so here we have tried to put together some recommended resources to enable practitioners to put these
+principles into practice.
+One of the questions practitioners may have is *"Where do I start?"* and
+*"In what order should I learn/master these principles?"*.
+The following sections have been arranged in order, and have been submitted to the
+[Internet Archive](https://archive.org/) for posterity.
+
+### Getting started with data analysis in R and Python
+
+Learn the basics of your scripting language (R/Python/shell) so that you can do useful analyses
+with it. Learn by solving problems.
+
+* Intro to R and Rstudio
+
+* Intro to Python and iPython IDE
+
+* Intro to vscode
+
+### Literate programming with R Markdown, Jupyter and Quarto
+
+Convert those scripts into literate scripts and document them with introduction, methods,
+code comments, results observations and interpretations.
+Use JupyterLab (Jupyter notebook) or Rstudio (Rmarkdown) development environments to provide
+graphical interfaces to the programming languages.
+
+* https://medium.com/@itsjzt/beginner-guide-to-markdown-229adce30074
+
+* https://www.dataquest.io/blog/r-markdown-guide-cheatsheet/
+
+* https://tysonbarrett.com/Rstats/chapter-9-reproducible-workflow-with-rmarkdown.html
+
+* https://andrewbtran.github.io/NICAR/2017/reproducibility-rmarkdown/rmarkdown.html
+
+* https://quarto.org/docs/computations/r.html
+
+* https://quarto.org/docs/computations/python.html
+
+* https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/
+
+* https://www.dataquest.io/blog/jupyter-notebook-tutorial/
+
+* https://medium.com/velotio-perspectives/the-ultimate-beginners-guide-to-jupyter-notebooks-6b00846ed2af
+
+### Practical guides for `git` and GitHub
+
+Learn how integrate version control into your development environment.
+
+* https://www.datacamp.com/tutorial/github-and-git-tutorial-for-beginners/
+
+* https://www.freecodecamp.org/news/introduction-to-git-and-github/
+
+* https://www.geo.uzh.ch/microsite/reproducible_research/post/rr-rstudio-git/
+
+* https://anderfernandez.com/en/blog/how-to-link-and-use-git-with-rstudio/
+
+* https://andgarc.github.io/basic-git-jupyter-lesson/index.html
+
+* https://blog.reviewnb.com/github-jupyter-notebook/
+
+* https://andgarc.github.io/basic-git-jupyter-lesson/index.html
+
+### Practical guides to data sharing
+
+Learn about the FAIR principles and make the research data available in a public repository.
+
+### Extend the scripts to make them end-to-end processes
+
+Try to extend the scripts to make them end-to-end processes, by linking to raw data and outputting
+whole figures or research articles.
+
+### Practical guides for Conda, Guix and Docker
+
+Control the environment.
+Record the version of programming languages and packages.
+Become familiar and experiment with Conda, Guix and Docker.
+Select the option that works best for your project.
+
+### Practical guides for documenting computational research
+
+Document the process of reproduction as if you were an external researcher.
+Test the instructions.
+
+### Moving from "dev" to "prod": testing and continuous analysis
+
+Test the reproduction process as if you were an external researcher.
