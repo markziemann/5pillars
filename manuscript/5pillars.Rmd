@@ -267,7 +267,7 @@ Distributed version control systems (DVCS) involve a central web-accessible serv
 repository, and each team member possesses a mirror copy on their local system (**Figure 3**).
 Having a central, publicly available node assists in disseminating changes within teams and releasing
 code to consumers.
-There are many such DVCSs, but `git` has emerged as the most popular
+There are many such DVCSs (subversion, git, bazaar, mercurial...), but `git` has emerged as the most popular
 solution due to its many powerful features, speed/efficiency and large community and ecosystem.
 
 ```{r,dvcs,fig.cap="Figure 3. Distributed version control. Adapted from @Chacon2014-ys.",echo=FALSE,fig.height=6}
@@ -367,13 +367,17 @@ code.
 Preserving a copy of the repository on each team members' computer in addition to the central
 repository means the code can be easily recovered if any one of those computers fails.
 
-Although DVCSs assist with code sharing, they are not considered a long-term archiving solution and
-might not survive the "ten-year challenge" of code reproducibility @Perkel2020-io.
-To achieve that, the code needs to be deposited to a long-term repository.
-
-[Zenodo](https://zenodo.org/) and [Software Heritage](https://www.softwareheritage.org/) repositories
-are both good options for long-term archiving of software, and the
-link to these should be provided in the respective journal article/pre-print.
+Although DVCSs assist with code sharing, they are not considered a long-term archiving solution, 
+as recalled by the complete shutdown of the Google Code platform in 2015 
+and the end of Mercurial support by the Bitbucket platform in 2020. 
+The code needs to be deposited to a long-term repository.
+[Zenodo](https://zenodo.org/) and [Figshare](https://figshare.com/) are often used 
+to store the content of a repository but do not retain the history of the development of the source code.
+[Software Heritage](https://www.softwareheritage.org/) @dicosmo2017 is the universal software archive 
+which mission is to collect, preserve and share source code. Software Heritage provides 
+an intrinsic persistent identifier called SWHID that allows to cite the archived source code 
+in the respective journal article/preprint. The archival of the source code in Software Heritage
+can be performed manually or automated by a webhook within a continuous integration.
 
 `git` is typically used at the command line, however it is also integrated into Rstudio, JupyterLab and
 VS Code, and there are also several `git` clients with graphical interfaces which better allow inspection
@@ -388,7 +392,7 @@ This is why it is best practice to report the exact version of all programs used
 (and packages therein) and even make archival copies for future reference @Sandve2013-lk.
 
 In R, such reporting is possible using the `sessionInfo()` command,
-while for Python this is possible using the `session_info` package.
+while for Python this is possible using the `session_info` or `watermark` packages.
 Using literate programming and sharing output documents ensures that a record of this important
 information is made available.
 
@@ -454,10 +458,14 @@ Moreover, Guix can build and output environments as Docker-compatible images whi
 provenance problem of such environments [@GNU_Project_Volunteers2022-bt].
 These features are being used in the bioinformatics sphere to create highly reproducible pipelines
 that work equally well on personal as well as shared high performance computers
-[@Wurmus2018-lv; @Courtes2022-rx].
+[@Wurmus2018-lv; @Courtes2022-rx]. 
+Guix is probably one of the best solution so far for the "ten-year challenge" of code reproducibility @Perkel2020-io.
 Although Guix has some exciting functionality, there remains a relative lack of step-by-step guides and
 tutorials, illustrated by the complete absence of published Guix protocols in protocols.io, as compared
 to 13 and 12 related to "Conda" and "Docker" respectively (as at 30th May 2023).
+Eventually, it's also worth mentionning that the Guix project uses Software Heritage
+as a fallback system to provide a package source code
+if the download of the source code from its original location failed. 
 
 We are also watching with interest the early development of WebAssembly (Wasm) based approaches for
 compute environment control.
