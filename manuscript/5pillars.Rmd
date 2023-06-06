@@ -143,7 +143,9 @@ possible.
 Scripted workflows, although not always free of errors, enable better auditing and easier reproduction
 which would be difficult for graphical tools like spreadsheets or webtools.
 Indeed, spreadsheets are prone to data entry, manipulation and formula errors @Panko1996-ko, and are
-somewhat overused in the life sciences.
+somewhat overused and misused in the life sciences, leading to problems like inadvertant conversion
+of gene names to dates in databases and supplementary Excel files [@Zeeberg2004-js;
+@Ziemann2016-pv; @Abeysooriya2021-uz].
 While webtools are valuable for data exploration, there are worries that they undermine
 reproducibility for the sake of convenience [@Wijesooriya2022-ly].
 Transferring data between compute platforms is also discouraged.
