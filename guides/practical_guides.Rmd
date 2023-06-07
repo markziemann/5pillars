@@ -187,3 +187,5 @@ Test the reproduction process as if you were an external researcher.
 * [Ebook: The Turing Way - Guide for Reproducible Research](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html#)
 
 * [Tutorial: Continuous Analysis](https://greenelab.github.io/continuous_analysis/)
+
+* [Documentation: GitHub Actions](https://docs.github.com/en/actions)
