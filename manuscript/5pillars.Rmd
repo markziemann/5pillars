@@ -165,7 +165,12 @@ A guiding principle of the five pillars approach is that the publishing research
 to make the reproduction process easier and faster for those who wish to.
 A "master script" that coordinates the execution of individual parts of an analysis is an excellent
 way to reduce the number of commands required for reproduction.
-This can be coded in standard languages like R/R Markdown, Python/Jupyter notebook or the Unix Shell.
+This can be coded in standard open source languages like R/R Markdown, Python/Jupyter notebook or the
+Unix Shell.
+Using free and open source software ensures that the research is accessible to the greatest audience,
+as opposed to proprietary software like SPSS, STATA and MatLab which are cost inhibitory.
+Free and open source software also enjoy relatively larger libraries of add-on packages contributed by
+the scientific community.
 Projects entailing big data analysis might benefit from a build/workflow automation solution like `make`,
 `snakemake` [@Koster2012-sq; @Molder2021-mp], `drake` [@Michael_Landau2018-kk] or
 `nextflow` [@Di_Tommaso2017-yo].
@@ -410,7 +415,7 @@ without needing to change the host R version.
 While this provides good reproducibility, setting up an environment with a ten-year-old operating system,
 R and packages would take a few hours to accomplish.
 Researchers could take a snapshot of their VM system and share it to help reproducibility and
-auditability @Pasquier2018-nj, however the size of these images is relatively large due to the fact
+auditability [ @Hurley2015-hk ;@Pasquier2018-nj], however the size of these images is relatively large due to the fact
 it contains the OS, software stack and project data.
 Moreover, the performance of computation in the guest system is typically slower than when run directly
 on the host.
@@ -602,8 +607,12 @@ links to the supporting materials.
 From a reproducibility standpoint, the methods section is the most critical part.
 It should be detailed enough so that other researchers can understand and replicate the
 experiments/analysis and yield similar results.
+Unfortunately, key details in bioinformatics data processing procedures are often omitted which limits
+their reproducibility [@Simoneau2021-kp].
 The "Materials Design Analysis Reporting" (MDAR) checklist for authors has been developed to assist in
-comprehensive methodological reporting in the life sciences [@Mellor2022-up].
+comprehensive methodological reporting in the life sciences [@Mellor2022-up], and "Minimum Information
+About a Bioinformatics Investigation" guidelines describe good reporting practices for computational
+biology research [@Tan2010-is].
 
 Researchers should consider depositing their thorough laboratory/*in silico* protocols as separate
 outputs to relevant repositories such as [protocols.io](https://www.protocols.io/),
@@ -685,9 +694,9 @@ Continuous analysis might therefore be a future pediment (crowning feature) to t
 
 The key technological advances enabling the five pillars approach have been around for about a decade,
 yet progress on integrating these into computational research publications has been minimal.
-Part of the problem is the incentive structures in academia, with funding bodies and journals more
-focused on novel research directions rather than confirming previous findings
-[@Kaelin2017-id; @Munafo2017-ty; @Diong2021-is].
+Part of the problem is the incentive structures in academia, with funding bodies and journals
+largely focused on novel research directions rather than confirming previous findings
+[@Huang2013-xr; @Kaelin2017-id; @Munafo2017-ty; @Diong2021-is].
 Indeed the number of systematic replication studies in bioinformatics remains small
 [@Zaringhalam2020-ms ; @Ioannidis2009-hv; @Samuel2022-ha], so the severity of the problem isn't
 well understood.
@@ -699,6 +708,7 @@ For example, our group has just released such a protocol that walks novice users
 of implementing functional enrichment analysis of gene expression data with the five pillars principles
 @Ziemann2023-nm.
 More such protocols are needed to make extreme reproducibility mainstream.
+A curated set of tutorials is provided in the Supplement.
 
 ## Conclusion
 
