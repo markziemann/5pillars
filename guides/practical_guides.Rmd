@@ -36,9 +36,8 @@ Correspondance: m.ziemann@deakin.edu.au
 
 </details>
 </p>
-Source: https://github.com/markziemann/5pillars/blob/main/manuscript/5pillars.Rmd
 
-## Practical guides
+Source: https://github.com/markziemann/5pillars/blob/main/manuscript/practical_guides.Rmd
 
 The five pillar approach is a synthesis of over a decade of learnings around computational
 reproducibility, and contains six key recommendaions and many best practices.
@@ -50,81 +49,141 @@ One of the questions practitioners may have is *"Where do I start?"* and
 The following sections have been arranged in order, and have been submitted to the
 [Internet Archive](https://archive.org/) for posterity.
 
-### Getting started with data analysis in R and Python
+## Getting started with data analysis in R and Python
 
 Learn the basics of your scripting language (R/Python/shell) so that you can do useful analyses
 with it. Learn by solving problems.
 
-* Intro to R and Rstudio
+### Intro to R and Rstudio
 
-* Intro to Python and iPython IDE
+* [Ebook: R for data science](https://r4ds.had.co.nz/)
 
-* Intro to vscode
+* [Video: Rstudio for the Total Beginner](https://www.youtube.com/watch?v=FIrsOBy5k58)
 
-### Literate programming with R Markdown, Jupyter and Quarto
+* [Ebook: YaRrr! The Pirate’s Guide to R](https://bookdown.org/ndphillips/YaRrr/)
+
+### Shell and linux systems
+
+* [Ebook: Bioinformatics Data Skills](https://vincebuffalo.com/book/)
+
+* [Book: Unix Shell Programming (ISBN:0672324903)](https://www.amazon.com/Unix-Shell-Programming-Stephen-Kochan/dp/0672324903)
+
+### Intro to Python
+
+* [Tutorial: Beginner's Guide to Python](https://wiki.python.org/moin/BeginnersGuide)
+
+* [Ebook: The Absolute Beginner's Guide to Python Programming](https://doi.org/10.1007/978-1-4842-8716-3)
+
+* [Video: Python Tutorial for Absolute Beginners](https://www.youtube.com/watch?v=Z1Yd7upQsXY&t=19s)
+
+### Intro to VS Code
+
+* [Tutorial and video: Getting Started with Visual Studio Code](https://code.visualstudio.com/docs/introvideos/basics)
+
+## Literate programming with R Markdown, Jupyter and Quarto
 
 Convert those scripts into literate scripts and document them with introduction, methods,
 code comments, results observations and interpretations.
 Use JupyterLab (Jupyter notebook) or Rstudio (Rmarkdown) development environments to provide
 graphical interfaces to the programming languages.
 
-* https://medium.com/@itsjzt/beginner-guide-to-markdown-229adce30074
+* [Tutorial: Beginner Guide to Markdown](https://medium.com/@itsjzt/beginner-guide-to-markdown-229adce30074)
 
-* https://www.dataquest.io/blog/r-markdown-guide-cheatsheet/
+* [Tutorial: Getting Started with R Markdown — Guide and Cheatsheet](https://www.dataquest.io/blog/r-markdown-guide-cheatsheet/)
 
-* https://tysonbarrett.com/Rstats/chapter-9-reproducible-workflow-with-rmarkdown.html
+* [Ebook Chapter: Reproducible Workflow with R Markdown](https://tysonbarrett.com/Rstats/chapter-9-reproducible-workflow-with-rmarkdown.html)
 
-* https://andrewbtran.github.io/NICAR/2017/reproducibility-rmarkdown/rmarkdown.html
+* [Tutorial: Reproducibility and R Markdown](https://andrewbtran.github.io/NICAR/2017/reproducibility-rmarkdown/rmarkdown.html)
 
-* https://quarto.org/docs/computations/r.html
+* [Quick guide: R based literate scripts with Quarto](https://quarto.org/docs/computations/r.html)
 
-* https://quarto.org/docs/computations/python.html
+* [Quick guide: Python based literate scripts with Quarto](https://quarto.org/docs/computations/python.html)
 
-* https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/
+* [Tutorial: Jupyter/IPython Notebook Quick Start Guide](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/)
 
-* https://www.dataquest.io/blog/jupyter-notebook-tutorial/
+* [Tutorial: How to Use Jupyter Notebook](https://www.dataquest.io/blog/jupyter-notebook-tutorial/)
 
-* https://medium.com/velotio-perspectives/the-ultimate-beginners-guide-to-jupyter-notebooks-6b00846ed2af
+* [Tutorial: The Ultimate Beginner’s Guide to Jupyter Notebooks](https://medium.com/velotio-perspectives/the-ultimate-beginners-guide-to-jupyter-notebooks-6b00846ed2af)
 
-### Practical guides for `git` and GitHub
+## Practical guides for `git` and GitHub
 
 Learn how integrate version control into your development environment.
 
-* https://www.datacamp.com/tutorial/github-and-git-tutorial-for-beginners/
+* [Tutorial: GitHub and Git for Beginners](https://www.datacamp.com/tutorial/github-and-git-tutorial-for-beginners/)
 
-* https://www.freecodecamp.org/news/introduction-to-git-and-github/
+* [Tutorial: How to Use Git and GitHub – Introduction for Beginners](https://www.freecodecamp.org/news/introduction-to-git-and-github/)
 
-* https://www.geo.uzh.ch/microsite/reproducible_research/post/rr-rstudio-git/
+* [Tutorial: How to use Git with R and RStudio](https://www.geo.uzh.ch/microsite/reproducible_research/post/rr-rstudio-git/)
 
-* https://anderfernandez.com/en/blog/how-to-link-and-use-git-with-rstudio/
+* [Tutorial: How to link and use Git with RStudio](https://anderfernandez.com/en/blog/how-to-link-and-use-git-with-rstudio/)
 
-* https://andgarc.github.io/basic-git-jupyter-lesson/index.html
+* [Tutorial: Introduction to Using Git in Jupyter](https://andgarc.github.io/basic-git-jupyter-lesson/index.html)
 
-* https://blog.reviewnb.com/github-jupyter-notebook/
+* [Tutorial: How to use Git / GitHub with Jupyter Notebook](https://blog.reviewnb.com/github-jupyter-notebook/)
 
-* https://andgarc.github.io/basic-git-jupyter-lesson/index.html
+* [Tutorial: Introduction to Using Git in Jupyter](https://andgarc.github.io/basic-git-jupyter-lesson/index.html)
 
-### Practical guides to data sharing
+## Practical guides to data sharing
 
 Learn about the FAIR principles and make the research data available in a public repository.
 
-### Extend the scripts to make them end-to-end processes
+* [Guide: Dryad good data practices](https://datadryad.org/stash/best_practices)
+
+* [Guide: Best practice for managing your outputs on Figshare](https://help.figshare.com/article/best-practice-for-managing-your-outputs-on-figshare)
+
+* [Guide: Introduction to data sharing](https://zenodo.org/badge/DOI/10.5281/zenodo.3518692.svg)
+
+* [Guide: FAIR Data (according to Australian Research Data Commons)](https://ardc.edu.au/resource/fair-data/)
+
+## Extend the scripts to make them end-to-end processes
 
 Try to extend the scripts to make them end-to-end processes, by linking to raw data and outputting
 whole figures or research articles.
 
-### Practical guides for Conda, Guix and Docker
+* [Ebook: The Practice of Reproducible Research - Case Studies and Lessons from the Data-Intensive Sciences](http://www.practicereproducibleresearch.org/)
+
+* [Ebook: The Turing Way - Guide for Reproducible Research](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html#)
+
+* [Ebook: Building reproducible analytical pipelines with R](https://raps-with-r.dev/)
+
+* [Tutorial: A short introduction to drake (An R based workflow manager)](https://data.nozav.org/posts/2019-a-short-introduction-to-drake/)
+
+* [Tutorial: An example Snakemake workflow](https://snakemake.readthedocs.io/en/stable/tutorial/basics.html)
+
+* [Tutorial compendium: Learn Nextflow in 2023](https://snakemake.readthedocs.io/en/stable/tutorial/basics.html)
+
+## Practical guides for Conda, Guix and Docker
 
 Control the environment.
 Record the version of programming languages and packages.
 Become familiar and experiment with Conda, Guix and Docker.
 Select the option that works best for your project.
 
-### Practical guides for documenting computational research
+* [Tutorial: Getting started with conda](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html)
+
+* [Video tutorial: Anaconda Beginners Guide for Linux and Windows](https://www.youtube.com/watch?v=MUZtVEDKXsk)
+
+* [Tutorial: Running RStudio Server with Docker](https://davetang.org/muse/2021/04/24/running-rstudio-server-with-docker/)
+
+* [Tutorial: Creating a Docker Image for your Application](https://www.stereolabs.com/docs/docker/creating-your-image/)
+
+* [Documentation: Getting started with GNU Guix](https://guix.gnu.org/manual/en/html_node/Getting-Started.html)
+
+## Practical guides for documenting computational research
 
 Document the process of reproduction as if you were an external researcher.
 Test the instructions.
 
-### Moving from "dev" to "prod": testing and continuous analysis
+* [Guide: How to write an Awesome README](https://towardsdatascience.com/how-to-write-an-awesome-readme-68bf4be91f8b)
+
+* [Example: README for "A Reproducible Data Analysis Workflow with R Markdown, Git, Make, and Docker"](https://github.com/aaronpeikert/reproducible-research/blob/master/README.md)
+
+## Moving from "dev" to "prod": testing and continuous analysis
 
 Test the reproduction process as if you were an external researcher.
+
+* [Ebook: Building reproducible analytical pipelines with R](https://raps-with-r.dev/)
+
+* [Ebook: The Turing Way - Guide for Reproducible Research](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html#)
+
+* [Tutorial: Continuous Analysis](https://greenelab.github.io/continuous_analysis/)
