@@ -26,12 +26,17 @@
   language = "en"
 }
 
-@ARTICLE{Baker2015-bs,
-  title    = "First results from psychology's largest reproducibility test",
-  author   = "Baker, Monya",
-  journal  = "Nature",
-  year     =  2015,
-  language = "en"
+
+﻿@Article{Baker2015,
+  author={Baker, Monya},
+  title={First results from psychology's largest reproducibility test},
+  journal={Nature},
+  year={2015},
+  month={Apr},
+  day={30},
+  abstract={Crowd-sourced effort raises nuanced questions about what counts as replication.},
+  issn={1476-4687},
+  doi={10.1038/nature.2015.17433},
 }
 
 @ARTICLE{Begley2012-di,
@@ -87,8 +92,9 @@
   title  = "Computational reproducibility of Jupyter notebooks from biomedical
             publications",
   author = "Samuel, Sheeba and Mietchen, Daniel",
+  journal  = "arXiv",
   year   =  2022,
-  eprint = "2209.04308"
+  pages = "2209.04308",
 }
 
 @ARTICLE{Perkel2020-io,
@@ -134,7 +140,8 @@
   volume   =  5,
   number   =  1,
   year     =  2016,
-  language = "en"
+  language = "en",
+  doi    = "https://doi.org/10.1186/s13742-016-0135-4"
 }
 
 @ARTICLE{Gruning2018-sg,
@@ -160,7 +167,8 @@
   volume   =  10,
   number   =  1,
   year     =  2016,
-  language = "en"
+  language = "en",
+  doi    = "https://doi.org/10.1186/s12918-016-0288-x"
 }
 
 @ARTICLE{Brito2020-ld,
@@ -173,7 +181,8 @@
   volume   =  9,
   number   =  6,
   year     =  2020,
-  language = "en"
+  language = "en",
+  doi    = "https://doi.org/10.1093/gigascience/giaa056"
 }
 
 @MISC{Akalin2018-eg,
@@ -182,7 +191,7 @@
   author       = "Akalin, Altuna",
   month        =  oct,
   year         =  2018,
-  howpublished = "\url{https://towardsdatascience.com/scientific-data-analysis-pipelines-and-reproducibility-75ff9df5b4c5}",
+  url = "https://towardsdatascience.com/scientific-data-analysis-pipelines-and-reproducibility-75ff9df5b4c5",
   note         = "Accessed: 2023-4-27",
   language     = "en"
 }
@@ -192,15 +201,19 @@
   author   = "Rodrigues, Bruno",
   month    =  apr,
   year     =  2023,
-  language = "en"
+  language = "en",
+  publisher = "Leanpub",
+  volume    =  1,
+  url     =  "https://raps-with-r.dev"
 }
 
-@BOOK{Knuth1984-di,
-  title     = "Literate Programming`` ({PDF)}. The Computer Journal",
+@ARTICLE{Knuth1984-di,
+  title     = "Literate Programming",
+  journal = "The Computer Journal",
   author    = "Knuth, Donald E",
-  publisher = "British Computer Society",
   volume    =  27,
-  year      =  1984
+  year      =  1984,
+  pages     =  97--111
 }
 
 @ARTICLE{Leisch2002-yc,
@@ -248,7 +261,9 @@
 @UNPUBLISHED{Bauer2023-eh,
   title  = "Writing a reproducible paper with {RStudio} and Quarto",
   author = "Bauer, Paul C and Landesvatter, Camille",
-  year   =  2023
+  year   =  2023,
+  journal = "OSF Preprints",
+  doi = "https://doi.org/10.31219/osf.io/ur4xn" 
 }
 
 @ARTICLE{Strijkers2011-py,
@@ -269,36 +284,40 @@
   volume   =  3,
   number   =  1,
   year     =  2020,
-  language = "en"
+  language = "en",
+  doi = "https://doi.org/10.1038/s42005-020-00403-4"
 }
 
 @BOOK{Chacon2014-ys,
-  title     = "Pro git",
+  title = "Pro git",
   author    = "Chacon, Scott and Straub, Ben",
+  month     = may,
+  year      = 2023,
   publisher = "Apress",
   edition   =  2,
-  year      =  2014,
   address   = "Elk Grove, CA",
-  language  = "en"
+  language  = "en",
+  pages = 19
 }
 
 @MISC{Editorial2018-kt,
-  title        = "{JOSS} Documentation",
-  author       = "{Editorial}",
+  title        = "Editorial Guide",
+  author       = "{JOSS Editorial Board}",
   year         =  2018,
   howpublished = "\url{https://joss.readthedocs.io/en/latest/editing.html}",
   note         = "Accessed: 2023-5-16"
 }
 
-@MISC{Editorial2017-yt,
+@ARTICLE{Editorial2017-yt,
   title        = "Innovation: Collaborating to devise the future executable
                   article",
-  booktitle    = "eLife",
-  author       = "{Editorial}",
+  journal    = "eLife",
+  author       = "{eLife Editorial Board}",
   month        =  jul,
   year         =  2017,
   howpublished = "\url{https://elifesciences.org/inside-elife/c8ca56de/innovation-collaborating-to-devise-the-future-executable-article}",
-  note         = "Accessed: 2023-5-15"
+  note         = "Accessed: 2023-5-15",
+  url        = "https://elifesciences.org/inside-elife/c8ca56de/innovation-collaborating-to-devise-the-future-executable-article"
 }
 
 @INPROCEEDINGS{Panko1996-ko,
@@ -394,10 +413,10 @@
 
 @MISC{noauthor_2021-lt,
   title        = "What is a container?",
-  booktitle    = "Docker",
+  author       = "{Docker Inc.}",
   month        =  nov,
   year         =  2021,
-  howpublished = "\url{https://www.docker.com/resources/what-container/}",
+  url = "https://www.docker.com/resources/what-container",
   note         = "Accessed: 2023-5-16",
   language     = "en"
 }
@@ -407,7 +426,8 @@
   author   = "Balamuta, James J",
   month    =  mar,
   year     =  2023,
-  language = "en"
+  language = "en",
+  url      = "https://github.com/coatless/quarto-webr"
 }
 
 @ARTICLE{Da_Veiga_Leprevost2017-yw,
@@ -441,7 +461,17 @@
   author       = "{RStudio}",
   year         =  2016,
   howpublished = "\url{https://rmarkdown.rstudio.com/authoring_quick_tour.html}",
-  note         = "Accessed: 2023-5-15"
+  note         = "Accessed: 2023-5-15",
+  pages        = "https://rmarkdown.rstudio.com/authoring_quick_tour.html"
+}
+
+@BOOK{Grolemund2017-le,
+  title     = "{R} for Data Science",
+  author    = "Grolemund, Garrett and Wickham, Hadley",
+  publisher = "O'Reilly Media",
+  year      =  2017,
+  address   = "Sebastopol, CA",
+  pages     = "425"
 }
 
 @ARTICLE{Beaulieu-Jones2017-vj,
@@ -468,7 +498,7 @@
   booktitle    = "Unesco.org",
   month        =  feb,
   year         =  2023,
-  howpublished = "\url{https://www.unesco.org/en/open-science/about}",
+  url = "https://www.unesco.org/en/open-science/about",
   note         = "Accessed: 2023-5-18",
   language     = "en"
 }
@@ -580,7 +610,8 @@
               supporting the Australian Code for the Responsible Conduct of
               Research",
   author   = "{National Health and Medical Research Council}",
-  year     =  2019
+  year     =  2019,
+  url      = "https://www.nhmrc.gov.au/sites/default/files/documents/attachments/Management-of-Data-and-Information-in-Research.pdf"
 }
 
 
@@ -590,7 +621,7 @@
   author       = "{Office of The Director, National Institutes of Health}",
   month        =  jan,
   year         =  2023,
-  howpublished = "\url{https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-013.html}",
+  uel = "https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-013.html",
   note         = "Accessed: 2023-5-19"
 }
 
@@ -729,11 +760,12 @@
 }
 
 @ARTICLE{Peikert2021-eq,
-  title   = "A Reproducible Data Analysis Workflow",
+  title   = "A Reproducible Data Analysis Workflow With R Markdown, Git, Make, and Docker",
   author  = "Peikert, Aaron and Brandmaier, Andreas M",
   journal = "Quant. Comput. Methods Behav. Sci.",
   volume  =  1,
-  year    =  2021
+  year    =  2021,
+  pages   = "e3763"
 }
 
 @ARTICLE{Kalendralis2021-jb,
@@ -906,7 +938,8 @@
                Krystalli, Anna and Morley, Alexander and O'Reilly, Martin and
                Whitaker, Kirstie",
   publisher = "Zenodo",
-  year      =  2019
+  year      =  2019,
+  doi       = "https://doi.org/10.5281/zenodo.3233986"
 }
 
 @MISC{Zaringhalam2020-ms,
@@ -914,7 +947,8 @@
                the {NLM} reproducibility workshop",
   author    = "Zaringhalam, Maryam and Federer, Lisa",
   publisher = "Zenodo",
-  year      =  2020
+  year      =  2020,
+  doi    =  "https://doi.org/10.5281/zenodo.3818329"
 }
 
 @ARTICLE{Hennessey2013-tj,
@@ -974,7 +1008,7 @@
   author       = "Tuloup, Jeremy",
   month        =  jul,
   year         =  2021,
-  howpublished = "\url{https://blog.jupyter.org/jupyterlite-jupyter-%EF%B8%8F-webassembly-%EF%B8%8F-python-f6e2e41ab3fa}",
+  url = "https://blog.jupyter.org/jupyterlite-jupyter-%EF%B8%8F-webassembly-%EF%B8%8F-python-f6e2e41ab3fa",
   note         = "Accessed: 2023-5-30"
 }
 
@@ -1005,7 +1039,7 @@
 @MISC{GNU_Project_Volunteers2022-bt,
   title        = "{GNU} Guix Reference Manual",
   booktitle    = "Gnu.org",
-  author       = "GNU Project Volunteers",
+  author       = "{GNU Project Volunteers}",
   month        =  dec,
   year         =  2022,
   howpublished = "\url{https://guix.gnu.org/manual/en/html_node/Invoking-guix-pack.html}",
@@ -1021,7 +1055,8 @@
   volume   =  7,
   number   =  12,
   year     =  2018,
-  language = "en"
+  language = "en",
+  pages    = "giy123"
 }
 
 @ARTICLE{Cheifet2020-wu,
@@ -1085,11 +1120,14 @@
   language = "en"
 }
 
-@ARTICLE{Courtes2022-rx,
-  title  = "Reproducibility and Performance: Why Choose?",
-  author = "Court{\`e}s, Ludovic",
-  year   =  2022,
-  eprint = "2203.07953"
+@ARTICLE{Courtes2022-zz,
+  title   = "Reproducibility and Performance: Why Choose?",
+  author  = "Courtes, Ludovic",
+  journal = "Comput. Sci. Eng.",
+  volume  =  24,
+  number  =  3,
+  pages   = "77--80",
+  year    =  2022
 }
 
 @INPROCEEDINGS{dicosmo2017,
@@ -1169,5 +1207,19 @@
   number   =  1,
   pages    = "140--145",
   year     =  2021,
+  language = "en"
+}
+
+
+@ARTICLE{Garijo2013-zl,
+  title    = "Quantifying reproducibility in computational biology: the case of
+              the tuberculosis drugome",
+  author   = "Garijo, Daniel and Kinnings, Sarah and Xie, Li and Xie, Lei and
+              Zhang, Yinliang and Bourne, Philip E and Gil, Yolanda",
+  journal  = "PLoS One",
+  volume   =  8,
+  number   =  11,
+  pages    = "e80278",
+  year     =  2013,
   language = "en"
 }

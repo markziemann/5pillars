@@ -11,7 +11,7 @@ output:
     fig_width: 5
     fig_height: 5
 bibliography: 5pillars.bib
-csl: briefings-in-bioinformatics.csl
+csl: plos-computational-biology.csl
 ---
 
 Mark Ziemann<sup>1*</sup>, Samuel S. Minot<sup>2</sup>, Pierre Poulain<sup>3</sup>,
@@ -71,7 +71,7 @@ Robustness refers to the ability for the findings to be generalisable to other s
 Unreliable research is a waste of resources and time and can mislead readers to pursue doomed
 research directions.
 Much has been written on how irreproducibility has reached crisis levels in psychology and life
-sciences [@Baker2015-bs; @Begley2012-di].
+sciences [@Baker2015; @Begley2012-di].
 Indeed, in bioinformatics, the situation is grim with a 2009 systematic evaluation showing only
 2 of 18 articles could be reproduced (11%) @Ioannidis2009-hv, bringing into question the reliability of
 those studies.
@@ -136,8 +136,8 @@ text( 5 , 0.2 , lab="End-to-end automated process")
 For a bioinformatics project to be reproducible, it needs to be enshrined by code and include all
 instructions, from inspecting the raw data to generating the outputs that form the conclusions of the
 study.
-This automated process removes the need for any manual steps, which are not only time-consuming but
-also prone to errors.
+This automated process removes the need for any manual steps, which are time-consuming and
+prone to errors.
 Without an end-to-end automated process, most of the other best practices described here are not
 possible.
 Scripted workflows, although not always free of errors, enable better auditing and easier reproduction
@@ -167,15 +167,16 @@ A "master script" that coordinates the execution of individual parts of an analy
 way to reduce the number of commands required for reproduction.
 This can be coded in standard open source languages like R/R Markdown, Python/Jupyter notebook or the
 Unix Shell.
-Using free and open source software ensures that the research is accessible to the greatest audience,
-as opposed to proprietary software like SPSS, STATA and MatLab which are cost inhibitory.
+Using free and open source software ensures that the research is accessible to the greatest audience
+@Garijo2013-zl, as opposed to proprietary software like SPSS, STATA and MatLab which are cost inhibitory.
 Free and open source software also enjoy relatively larger libraries of add-on packages contributed by
 the scientific community.
 Projects entailing big data analysis might benefit from a build/workflow automation solution like `make`,
 `snakemake` [@Koster2012-sq; @Molder2021-mp], `drake` [@Michael_Landau2018-kk] or
 `nextflow` [@Di_Tommaso2017-yo].
-The advantage of such tools is that if the analysis were to terminate due to a hardware issue mid-way,
-for example at step 8 of a 15-step workflow, the analysis of steps 1-7 wouldn't need to be repeated.
+The advantage of such tools is that if the analysis were to terminate due to an issue mid-way,
+for example, a hardware problem at step 8 of a 15-step workflow, the analysis of steps 1-7 wouldn't
+need to be repeated.
 After fixing the hardware issue, re-running the analysis would pick up at step 8 again,
 which saves labor and compute time.
 
@@ -192,13 +193,13 @@ Around 2015, R Markdown emerged as a more popular alternative, as formatting con
 Markdown as compared to LaTeX, saving time.
 An example R Markdown script and output report is given in **Figure 2**.
 
-![Figure 2. An example R Markdown script (left) and output document (right) @RStudio2016-fw.](../img/markdownchunk.png)
+![Figure 2. An example R Markdown script (left) and output document (right) @Grolemund2017-le.](../img/markdownchunk.png)
 
 Around the same time, Project Jupyter was developed to provide a "notebook" type interface, incorporating
 R, Python, Julia and other computer language chunks into documents @Perkel2018-rz.
 The MyST{NB} (short for Markedly Structured Text notebook) is built on top of Jupyter and has some
-notable advantages around flexibility of content that make it an attractive choice for an executable
-paper authoring [@DuPre2022-bk].
+notable advantages around flexibility of content that make it an attractive choice for executable
+article authoring [@DuPre2022-bk].
 
 In 2022, the company behind RStudio (Posit) released Quarto, the conceptual successor of R Markdown,
 but with enhanced support for other computer languages like Python, Julia, and Observable JavaScript
@@ -274,7 +275,7 @@ Distributed version control systems (DVCS) involve a central web-accessible serv
 repository, and each team member possesses a mirror copy on their local system (**Figure 3**).
 Having a central, publicly available node assists in disseminating changes within teams and releasing
 code to consumers.
-There are many such DVCSs (subversion, git, bazaar, mercurial...), but `git` has emerged as the most popular
+There are many such DVCSs (Subversion, Git, mercurial, etc), but `git` has emerged as the most popular
 solution due to its many powerful features, speed/efficiency and large community and ecosystem.
 
 ```{r,dvcs,fig.cap="Figure 3. Distributed version control. Adapted from @Chacon2014-ys.",echo=FALSE,fig.height=6}
@@ -363,7 +364,7 @@ Books, educational resources and other data types are well served using DVCS (se
 * Makes works easily shareable.
 Work is easier to reproduce because the source folder contains a complete workflow with code linked
 to data and metadata, so it doesn't need any modifications before reproduction.
-It is relatively easy to add a software license with a DVCS like `GitHub`, so consumers can understand
+It is relatively easy to add a software license with a DVCS like GitHub, so consumers can understand
 the conditions of using it.
 
 * Protect against code loss.
@@ -374,15 +375,15 @@ code.
 Preserving a copy of the repository on each team members' computer in addition to the central
 repository means the code can be easily recovered if any one of those computers fails.
 
-Although DVCSs assist with code sharing, they are not considered a long-term archiving solution, 
-as recalled by the complete shutdown of the Google Code platform in 2015 
-and the end of Mercurial support by the Bitbucket platform in 2020. 
+Although DVCSs assist with code sharing, they are not considered a long-term archiving solution,
+as recalled by the complete shutdown of the Google Code platform in 2015
+and the end of Mercurial support by the Bitbucket platform in 2020.
 The code needs to be deposited to a long-term repository.
-[Zenodo](https://zenodo.org/) and [Figshare](https://figshare.com/) are often used 
+[Zenodo](https://zenodo.org/) and [Figshare](https://figshare.com/) are often used
 to store the content of a repository but do not retain the history of the development of the source code.
-[Software Heritage](https://www.softwareheritage.org/) @dicosmo2017 is the universal software archive 
-whose mission is to collect, preserve and share source code. Software Heritage provides 
-an intrinsic persistent identifier called SWHID that allows to cite the archived source code 
+[Software Heritage](https://www.softwareheritage.org/) @dicosmo2017 is the universal software archive
+whose mission is to collect, preserve and share source code. Software Heritage provides
+an intrinsic persistent identifier called SWHID that allows to cite the archived source code
 in the respective journal article/preprint. The archival of the source code in Software Heritage
 can be performed manually or automated by a webhook within a continuous integration.
 
@@ -420,7 +421,7 @@ it contains the OS, software stack and project data.
 Moreover, the performance of computation in the guest system is typically slower than when run directly
 on the host.
 
-Containers are an attempt to resolve some of the downsides of VMs and package managers.
+Containers are an attempt to resolve some of the downsides of VMs.
 Container images can be thought of as similar to VMs, but are more lightweight as they
 share parts of the host operating system [@Nust2020-cr].
 In the example shown in **Figure 4**, the six containerised applications share the same operating
@@ -458,14 +459,14 @@ Conda environments have limitations around portability and consistency, as such 
 are tied to specific operating systems and hardware architecture.
 
 Guix is described as a "functional package manager" and has the unique benefit of giving
-bit-for-bit build reproducibility and verifiability [@Vallet2022-no; @Courtes2022-rx].
+bit-for-bit build reproducibility and verifiability [@Vallet2022-no; @Courtes2022-zz].
 This is a notable advantage, as Docker images are not verifiable nor guaranteed to build reproducibly
 in the future due to link decay.
 Moreover, Guix can build and output environments as Docker-compatible images which solves the
 provenance problem of such environments [@GNU_Project_Volunteers2022-bt].
 These features are being used in the bioinformatics sphere to create highly reproducible pipelines
 that work equally well on personal as well as shared high performance computers
-[@Wurmus2018-lv; @Courtes2022-rx].
+[@Wurmus2018-lv; @Courtes2022-zz].
 Guix is among the best solutions for the "ten-year challenge" of code reproducibility @Perkel2020-io.
 Although Guix has some exciting functionality, there remains a relative lack of step-by-step guides and
 tutorials, illustrated by the complete absence of published Guix protocols in protocols.io, as compared
@@ -529,7 +530,6 @@ policy leadership by funding bodies
 [@National_Health_and_Medical_Research_Council2019-yx;
 @Office_of_The_Director_National_Institutes_of_Health2023-ss] and data sharing policies of journals
 (eg [@Packer2018-ru; @Hanson2011-ub ; @Cheifet2020-wu]), although there are some challenges.
-
 Some researchers would rather keep data for their private use.
 Some may keep data private due to concerns over participant privacy.
 This is a well-founded concern for identifiable data, however once identifying features are removed,
@@ -543,7 +543,7 @@ For example, the consent form may only allow sharing of data to researchers inve
 diseases, which means a vetting process must be undertaken before sharing data with external
 investigators.
 In the interests of reuse and reproducibility, future studies could consider a consent form that allows
-more broad sharing of deidentified data.
+more broad sharing of de-identified data.
 
 In order to maximize the value of shared data for reuse and reproducibility, it needs to be Findable,
 Accessible, Interoperable and Reusable (FAIR) for people and for computers @Wilkinson2016-qq.
@@ -577,7 +577,7 @@ accessible.
 5. Use file formats that are compatible with many different types of software; e.g.: comma-separated
 values (CSV) files are preferred over Excel files.
 
-6. Provide detailed metadata; e.g.: sample descriptions that match the manuscript; describe the columns
+6. Provide detailed metadata; e.g.: sample descriptions that match the article; describe the columns
 in tabular data.
 
 Once the quality of the data set has been established researchers may consider depositing it
@@ -602,13 +602,15 @@ and shared if the license permits it.
 ## Documentation
 
 Documentation is the glue that binds a data science project together.
-The manuscript/published article is the central artifact that outlines the research project and
+The published article is the central artifact that outlines the research project and
 links to the supporting materials.
 From a reproducibility standpoint, the methods section is the most critical part.
 It should be detailed enough so that other researchers can understand and replicate the
 experiments/analysis and yield similar results.
 Unfortunately, key details in bioinformatics data processing procedures are often omitted which limits
-their reproducibility [@Simoneau2021-kp].
+their reproducibility [@Garijo2013-zl; @Simoneau2021-kp].
+Commonly missing information includes versions of software and packages as well as any parameter setting
+and configuration files.
 The "Materials Design Analysis Reporting" (MDAR) checklist for authors has been developed to assist in
 comprehensive methodological reporting in the life sciences [@Mellor2022-up], and "Minimum Information
 About a Bioinformatics Investigation" guidelines describe good reporting practices for computational
@@ -617,14 +619,14 @@ biology research [@Tan2010-is].
 Researchers should consider depositing their thorough laboratory/*in silico* protocols as separate
 outputs to relevant repositories such as [protocols.io](https://www.protocols.io/),
 [RIO Journal](https://riojournal.com/) or [Zenodo](https://zenodo.org/), minting a Digital Object
-Identifier (DOI) that can be cited in the manuscript.
+Identifier (DOI) that can be cited in the article.
 This is particularly helpful when there are strict word limits on articles.
 
-The manuscript should have clear links to supporting materials including datasets, software code and
+The article should have clear links to supporting materials including datasets, software code and
 other resources like computational environments.
 The code repository should have a detailed `README` file which plays a critical role in reproducibility.
 It should outline the purpose of the code/software/overall project and how it relates to the
-manuscript/article.
+article.
 For example, some articles may rely on more than one repository for various parts of the research
 project, so these need to be explained.
 
@@ -633,7 +635,7 @@ analysis, including the requirements and the instructions to reproduce.
 Typically it is written in the Markdown format, which should be familiar to those using R Markdown or
 Jupyter notebooks.
 Hardware requirements such as RAM, CPU architecture, GPU needs, etc need to be outlined.
-Software requirements, such as operating system, container engine, workflow manager,
+Software requirements, such as operating system, dependencies, container engine, workflow manager,
 etc, also need to be described.
 The exact instructions for reproduction should be clearly outlined.
 This should include what the output objects of the analysis are, and instructions on how to access the
@@ -647,7 +649,7 @@ As outlined above, one of the goals is to reduce the complexity of reproduction,
 script is a simple way to do this.
 It also makes the `README` documentation much simpler.
 For example, the pathway analysis workflow we previously developed could be reproduced and inspected
-with just six commands, starting from a new Ubuntu Linux install [@Ziemann2023-nm].
+with just six commands, starting from a new Ubuntu Linux installation [@Ziemann2023-nm].
 By minimizing the complexity of reproduction and writing the instructions clearly in the `README`,
 reproducibility is made possible to a larger segment of the computational research community,
 especially those who are not experts in the languages used.
@@ -662,7 +664,7 @@ The need for documentation extends to the other supporting information.
 The deposited data set needs thorough descriptive metadata to provide context.
 The container image and code snapshot should be deposited to a persistent repository with
 a thorough description of their purpose.
-Both the data and container image descriptions need to contain links to the DOI of the manuscript,
+Both the data and container image descriptions need to contain links to the DOI of the article,
 so that machines or individuals browsing these resources can understand the context of these objects
 relative to the overall research project.
 
@@ -694,12 +696,12 @@ Continuous analysis might therefore be a future pediment (crowning feature) to t
 
 The key technological advances enabling the five pillars approach have been around for about a decade,
 yet progress on integrating these into computational research publications has been minimal.
-Part of the problem is the incentive structures in academia, with funding bodies and journals
-largely focused on novel research directions rather than confirming previous findings
-[@Huang2013-xr; @Kaelin2017-id; @Munafo2017-ty; @Diong2021-is].
 Indeed the number of systematic replication studies in bioinformatics remains small
 [@Zaringhalam2020-ms ; @Ioannidis2009-hv; @Samuel2022-ha], so the severity of the problem isn't
 well understood.
+Part of the problem is the incentive structures in academia, with funding bodies and journals
+largely focused on novel research directions rather than confirming previous findings
+[@Garijo2013-zl ; @Huang2013-xr; @Kaelin2017-id; @Munafo2017-ty; @Diong2021-is].
 
 A lack of technical computer skills in many research groups is another culprit.
 Specific workshop-based training in these areas could help, but the most scalable solution would be to
@@ -715,7 +717,7 @@ provided in the supplementary information.
 
 Reproducibility is an essential feature of reliable computational research yet current practices
 are falling short of this goal.
-Our recommendations for workflow-based research articles are summarized as:
+Our recommendations for computational researchers are summarized as:
 
 0. Encapsulate the entire workflow in an end-to-end automated process, executable with a master script.
 
@@ -767,7 +769,7 @@ to five pillar concepts.](https://ziemann-lab.net/public/5pillars/practical_guid
 
 **Mark Ziemann** is a Senior Lecturer in Biotechnology and Bioinformatics at Deakin University.
 His research spans bioinformatics as applied to omics data analysis in biomedicine, as well as aspects
-of research rigour.
+of research rigor.
 
 **Samuel S. Minot** works as a Staff Scientist at Fred Hutchinson Cancer Center within the Vaccine and
 Infectious Disease Division.
@@ -777,6 +779,6 @@ His research is focused on human microbiota associations with human health and d
 Research directions include proteomics, bioinformatics and education/pedagogy.
 
 **Anusuiya Bora** is a PhD student at Deakin University School of Life and Environmental Sciences.
-Her research project involves improving the rigor of commonly used bioinformatics tools.
+Her research project involves improving the reproducibility of commonly used bioinformatics tools.
 
 ## Bibliography
