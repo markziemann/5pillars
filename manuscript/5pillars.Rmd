@@ -38,7 +38,7 @@ Correspondance: m.ziemann@deakin.edu.au
 </p>
 Source: https://github.com/markziemann/5pillars/blob/main/manuscript/5pillars.Rmd
 
-## Summary
+## Abstract
 
 Computational reproducibility is a simple premise in theory, but in practice it is difficult to
 achieve.
@@ -51,6 +51,8 @@ These best practices will ensure that computational research work can be
 reproduced quickly and easily, long into the future.
 This guide is designed for bioinformatic data analysts, but should be relevant for other
 domains.
+
+**Keywords:** Reproducibility; computational research; bioinformatics; research best practices.
 
 ## Introduction
 
