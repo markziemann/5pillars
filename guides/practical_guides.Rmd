@@ -54,7 +54,7 @@ The following sections have been arranged in order, and have been submitted to t
 Learn the basics of your scripting language (R/Python/shell) so that you can do useful analyses
 with it. Learn by solving problems.
 
-### Intro to R and Rstudio
+### Introduction to R and Rstudio
 
 * [Ebook: R for data science](https://r4ds.had.co.nz/)
 
@@ -62,13 +62,13 @@ with it. Learn by solving problems.
 
 * [Ebook: YaRrr! The Pirate’s Guide to R](https://bookdown.org/ndphillips/YaRrr/)
 
-### Shell and linux systems
+### Introduction to Unix and Shell programming
 
 * [Ebook: Bioinformatics Data Skills](https://vincebuffalo.com/book/)
 
 * [Book: Unix Shell Programming (ISBN:0672324903)](https://www.amazon.com/Unix-Shell-Programming-Stephen-Kochan/dp/0672324903)
 
-### Intro to Python
+### Introduction to Python
 
 * [Tutorial: Beginner's Guide to Python](https://wiki.python.org/moin/BeginnersGuide)
 
@@ -76,7 +76,7 @@ with it. Learn by solving problems.
 
 * [Video: Python Tutorial for Absolute Beginners](https://www.youtube.com/watch?v=Z1Yd7upQsXY&t=19s)
 
-### Intro to VS Code
+### Introduction to VS Code
 
 * [Tutorial and video: Getting Started with Visual Studio Code](https://code.visualstudio.com/docs/introvideos/basics)
 
@@ -180,7 +180,11 @@ Test the instructions.
 
 ## Moving from "dev" to "prod": testing and continuous analysis
 
-Test the reproduction process as if you were an external researcher.
+Continuous analysis involves automatic execution and testing of code, which is important when changes
+are made to code or data.
+Results generated in HTML are automatically updated.
+Badges on the repository indicate the status of the codebase in terms of completing with or without
+errors.
 
 * [Ebook: Building reproducible analytical pipelines with R](https://raps-with-r.dev/)
 
