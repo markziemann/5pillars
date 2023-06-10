@@ -198,7 +198,7 @@ An example R Markdown script and output report is given in **Figure 2**.
 ![Figure 2. An example R Markdown script (left) and output document (right) @Grolemund2017-le.](../img/markdownchunk.png)
 
 Around the same time, Project Jupyter was developed to provide a "notebook" type interface, incorporating
-R, Python, Julia and other computer language chunks into documents @Perkel2018-rz.
+R, Python, Julia and other computer language chunks into documents [@kluyver2016; @granger2021; @Perkel2018-rz].
 The MyST{NB} (short for Markedly Structured Text notebook) is built on top of Jupyter and has some
 notable advantages around flexibility of content that make it an attractive choice for executable
 article authoring [@DuPre2022-bk].
