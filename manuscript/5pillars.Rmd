@@ -59,8 +59,9 @@ Reproducibility is only the first step towards overall reliability, for example 
 reproducible, but suffer from analytical problems that invalidate the results.
 If a study is reproducible, then at least these analytical issues can be more easily identified and
 rectified.
-Therefore, reproducibility is a necessary stepping-stone that should enhance the overall
-reliability of computational research including replicability and robustness.
+Therefore, reproducibility is a necessary stepping-stone in the framework of cumulative science.
+Reproducibility should enhance the overall reliability of computational research 
+including replicability and robustness.
 Replicability being defined as the ability to repeat the entire study and come up with similar overall
 results.
 Robustness refers to the ability for the findings to be generalisable to other situations
