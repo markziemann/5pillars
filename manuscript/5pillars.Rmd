@@ -765,7 +765,7 @@ such as charts and tables.
 
 ## Key points
 
-* Irreproducibility of bioinformatics studies remains a significant problem.
+* Irreproducibility of bioinformatics studies remains a significant and still relevant problem.
 
 * We present the *five pillars* framework, a set of best practices that enable extremely reproducible
 workflows.
@@ -810,7 +810,7 @@ His research spans bioinformatics as applied to omics data analysis in biomedici
 of research rigor.
 
 **Pierre Poulain** is an Associate Professor at Université Paris Cité, Institut Jacques Monod, France.
-Research directions include proteomics, bioinformatics and education/pedagogy.
+Research directions include bioinformatics, large scale data analysis and education/pedagogy.
 
 **Anusuiya Bora** is a PhD student at Deakin University School of Life and Environmental Sciences.
 Her research project involves improving the reproducibility of commonly used bioinformatics tools.
