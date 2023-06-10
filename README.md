@@ -14,7 +14,7 @@ It highlights the importance of these five concepts to reproducibility:
 
 * FAIR & persistent data sharing.
 
-A live version of the manuscript is available at the Ziemann lab website [here](https://ziemann-lab.net/public/5pillars/5pillars2.html).
+A live version of the manuscript is available at the Ziemann lab website [here](https://ziemann-lab.net/public/5pillars/5pillars.html).
 
 ## Contents
 
