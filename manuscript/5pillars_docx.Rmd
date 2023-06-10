@@ -2,14 +2,10 @@
 title: "The five pillars of computational reproducibility: Bioinformatics and beyond"
 author: "Mark Ziemann, Pierre Poulain, Anusuiya Bora"
 date: "`r Sys.Date()`"
-output:
-  rmdformats::robobook:
-  html_document:
-    toc: true
-    toc_float: true
-    code_folding: hide
-    fig_width: 5
-    fig_height: 5
+output: word_document
+code_folding: hide
+fig_width: 7
+fig_height: 6
 bibliography: 5pillars.bib
 csl: plos-computational-biology.csl
 ---
@@ -770,7 +766,7 @@ Dr Barbara Zdrazil (EMBL-EBI) and
 Dr Irene López Santiago (EMBL-EBI).
 Special thanks to Dr Altuna Akalin (Max Delbrück Center, Germany) and
 Dr Simon Tournier (Paris Cité University, France) for advice on Guix.
-We appreciate advice on Python notebooks from Samuel S. Minot (Fred Hutchinson Cancer Center).
+We appreciate advice on Python notebooks from Dr Samuel S. Minot (Fred Hutchinson Cancer Center).
 This research was supported by use of the Nectar Research Cloud, a collaborative Australian research
 platform supported by the NCRIS-funded Australian Research Data Commons (ARDC).
 
