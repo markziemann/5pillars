@@ -632,7 +632,7 @@ From a reproducibility standpoint, the methods section is the most critical part
 It should be detailed enough so that other researchers can understand and replicate the
 experiments/analysis and yield similar results.
 Unfortunately, key details in bioinformatics data processing procedures are often omitted which limits
-their reproducibility [@Garijo2013-zl; @Simoneau2021-kp].
+their reproducibility [@Nekrutenko2012; @Garijo2013-zl; @Simoneau2021-kp].
 Commonly missing information includes versions of software and packages as well as any parameter setting
 and configuration files.
 The "Materials Design Analysis Reporting" (MDAR) checklist for authors has been developed to assist in
