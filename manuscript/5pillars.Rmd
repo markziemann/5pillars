@@ -403,6 +403,11 @@ within continuous integration.
 VS Code, and there are also several `git` clients with graphical interfaces which better allow inspection
 of code changes.
 
+Finally, although DVCSs come from the world of software engineering, 
+their use has become a standard in computational biology, as witnessed by the numerous guides 
+and best practices on the subject [@ram2013; @blischak2016; @perez-riverol2016].
+
+
 <br>
 
 ## Compute environment control
@@ -449,7 +454,7 @@ across different systems.
 For example, the most popular containerisation system, Docker [@Merkel2014-ek], makes it
 possible to run Windows and Linux/Unix containers on any computer with Docker installed, with the
 promise of reproducibility.
-While there are several alternatives such as Podman and Rkt, Docker remains the most widely used
+While there are several alternatives such as Podman, Rkt or Apptainer/Singularity, Docker remains the most widely used
 containerisation system for web development and research.
 Due to its early adoption, Docker now has a large community of users, extensive documentation and
 a vast collection of pre-built container images in the DockerHub registry.
@@ -568,7 +573,7 @@ These principles are summarized in **Figure 5**.
 ![Figure 5. Overview of the FAIR data principles @Kalendralis2021-jb.](../img/gr2.jpg)
 
 High throughput biology has already built a number of data repositories for specific data types
-conforming to FAIR principles (e.g.: GEO, SRA, PRIDE [@Edgar2002-hs; @Kodama2012-bn; @Deutsch2017-hc]).
+conforming to FAIR principles (e.g.: GEO, SRA, ENA, PRIDE [@Edgar2002-hs; @Kodama2012-bn; @Deutsch2017-hc]).
 However other domains lack well known specialized organized data repositories, such as evolutionary
 biology, ecology, cell biology, social sciences and computing.
 The [re3data.org](https://www.re3data.org/) registry of data repositories may be useful to find a
