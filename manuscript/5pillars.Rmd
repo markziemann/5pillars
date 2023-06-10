@@ -575,13 +575,14 @@ These principles are summarized in **Figure 5**.
 High throughput biology has already built a number of data repositories for specific data types
 conforming to FAIR principles (e.g.: GEO, SRA, ENA, PRIDE [@Edgar2002-hs; @Kodama2012-bn; @Deutsch2017-hc]).
 However other domains lack well known specialized organized data repositories, such as evolutionary
-biology, ecology, cell biology, social sciences and computing.
+biology, ecology, cell biology, molecular simulation, social sciences and computing.
 The [re3data.org](https://www.re3data.org/) registry of data repositories may be useful to find a
 repository that accepts data from these fields [@Pampel2013-ep].
 If no specialized repository exists, then a general-purpose repository such as
 [Dryad](https://datadryad.org/), [FigShare](https://figshare.com/), or [Zenodo](https://zenodo.org/)
-should be considered.
-Moreover, general recommendations have been proposed to enhance data FAIRness in ecology, but which
+should be considered. Researchers should be aware, however, that these repositories are often not moderated, 
+and that it is their responsibility to make their data FAIR, in particular by providing sufficient metadata.
+To this aime, general recommendations have been proposed to enhance data FAIRness in ecology, but which
 can also be applied to other disciplines [@Roche2015-aq].
 
 Key recommendations include:
