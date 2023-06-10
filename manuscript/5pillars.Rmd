@@ -199,6 +199,11 @@ An example R Markdown script and output report is given in **Figure 2**.
 
 Around the same time, Project Jupyter was developed to provide a "notebook" type interface, incorporating
 R, Python, Julia and other computer language chunks into documents [@kluyver2016; @granger2021; @Perkel2018-rz].
+A noteworthy attempt to use litterate programming in Jupyter notebooks to aim for reproducibility 
+has been the analysis of RNA-seq samples from patients infected by the Zika virus [@wang2016].
+In this work, authors provided along the traditionnal research paper a 
+[Jupyter notebook](https://nbviewer.org/github/maayanlab/Zika-RNAseq-Pipeline/blob/master/Zika.ipynb) 
+that performed and documented the entire analysis procedure.
 The MyST{NB} (short for Markedly Structured Text notebook) is built on top of Jupyter and has some
 notable advantages around flexibility of content that make it an attractive choice for executable
 article authoring [@DuPre2022-bk].
