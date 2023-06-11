@@ -123,7 +123,7 @@ Learn how integrate version control into your development environment.
 
 * [Tutorial: How to link and use Git with RStudio](https://anderfernandez.com/en/blog/how-to-link-and-use-git-with-rstudio/)
 
-* [Ebook:Happy Git and GitHub for the useR](https://happygitwithr.com/index.html)
+* [Ebook: Happy Git and GitHub for the useR](https://happygitwithr.com/index.html)
 
 * [Ebook: Reproducible workflow and version control with Git and Github](https://jules32.github.io/2016-07-12-Oxford/git/)
 
