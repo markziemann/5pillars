@@ -148,6 +148,8 @@ whole figures or research articles.
 
 * [Tutorial: A short introduction to drake (An R based workflow manager)](https://data.nozav.org/posts/2019-a-short-introduction-to-drake/)
 
+* [Tutorial: Reproducible Data Analysis with Snakemake] (https://www.youtube.com/watch?v=hPrXcUUp70Y) 
+
 * [Tutorial: An example Snakemake workflow](https://snakemake.readthedocs.io/en/stable/tutorial/basics.html)
 
 * [Tutorial compendium: Learn Nextflow in 2023](https://snakemake.readthedocs.io/en/stable/tutorial/basics.html)
