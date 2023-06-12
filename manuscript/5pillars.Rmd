@@ -790,6 +790,12 @@ platform supported by the NCRIS-funded Australian Research Data Commons (ARDC).
 
 <br>
 
+## Funding
+
+The authors received no specific funding for this work.
+
+<br>
+
 ## Availability of materials
 
 Code repository: https://github.com/markziemann/5pillars
