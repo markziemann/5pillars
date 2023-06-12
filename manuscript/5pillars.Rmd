@@ -200,7 +200,7 @@ An example R Markdown script and output report is given in **Figure 2**.
 
 Around the same time, Project Jupyter was developed to provide a "notebook" type interface, incorporating
 R, Python, Julia and other computer language chunks into documents [@kluyver2016; @granger2021; @Perkel2018-rz].
-A noteworthy attempt to use litterate programming in Jupyter notebooks to aim for reproducibility 
+A noteworthy attempt to use literate programming in Jupyter notebooks to aim for reproducibility 
 has been the analysis of RNA-seq samples from patients infected by the Zika virus [@wang2016].
 In this work, authors provided along the traditionnal research paper a 
 [Jupyter notebook](https://nbviewer.org/github/maayanlab/Zika-RNAseq-Pipeline/blob/master/Zika.ipynb) 
@@ -346,7 +346,7 @@ text(c(8.2) ,c(6.2), labels="pull",srt=-60)
 
 Computational researchers can benefit significantly by adopting DVCS into their routine
 practices.
-Below I outline some of the benefits.
+Below we outline some of the benefits.
 
 * Keeps a complete history of all code changes over time.
 We always know which version of the script is the most up to date.
@@ -582,7 +582,7 @@ If no specialized repository exists, then a general-purpose repository such as
 [Dryad](https://datadryad.org/), [FigShare](https://figshare.com/), or [Zenodo](https://zenodo.org/)
 should be considered. Researchers should be aware, however, that these repositories are often not moderated, 
 and that it is their responsibility to make their data FAIR, in particular by providing sufficient metadata.
-To this aime, general recommendations have been proposed to enhance data FAIRness in ecology, but which
+To this aim, general recommendations have been proposed to enhance data FAIRness in ecology, but which
 can also be applied to other disciplines [@Roche2015-aq].
 
 Key recommendations include:
