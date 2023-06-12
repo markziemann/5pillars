@@ -113,15 +113,29 @@ Learn how integrate version control into your development environment.
 
 * [Tutorial: How to Use Git and GitHub – Introduction for Beginners](https://www.freecodecamp.org/news/introduction-to-git-and-github/)
 
+* [Video Tutorial: Git and GitHub for Beginners - Crash Course](https://www.youtube.com/watch?v=RGOj5yH7evk)
+
+* [Video Tutorial: Git basics - 4 short video tutorials](https://git-scm.com/videos)
+
+* [Quick Guide: Git for humans](https://speakerdeck.com/alicebartlett/git-for-humans)
+
 * [Tutorial: How to use Git with R and RStudio](https://www.geo.uzh.ch/microsite/reproducible_research/post/rr-rstudio-git/)
 
 * [Tutorial: How to link and use Git with RStudio](https://anderfernandez.com/en/blog/how-to-link-and-use-git-with-rstudio/)
+
+* [Ebook: Happy Git and GitHub for the useR](https://happygitwithr.com/index.html)
+
+* [Ebook: Reproducible workflow and version control with Git and Github](https://jules32.github.io/2016-07-12-Oxford/git/)
 
 * [Tutorial: Introduction to Using Git in Jupyter](https://andgarc.github.io/basic-git-jupyter-lesson/index.html)
 
 * [Tutorial: How to use Git / GitHub with Jupyter Notebook](https://blog.reviewnb.com/github-jupyter-notebook/)
 
 * [Tutorial: Introduction to Using Git in Jupyter](https://andgarc.github.io/basic-git-jupyter-lesson/index.html)
+
+* [Ebook: Version Control with Git](https://swcarpentry.github.io/git-novice/)
+
+* [Tutorial: Using Git source control in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview)
 
 ## Practical guides to data sharing
 
@@ -148,9 +162,13 @@ whole figures or research articles.
 
 * [Tutorial: A short introduction to drake (An R based workflow manager)](https://data.nozav.org/posts/2019-a-short-introduction-to-drake/)
 
-* [Tutorial: Reproducible Data Analysis with Snakemake] (https://www.youtube.com/watch?v=hPrXcUUp70Y) 
+* [Video Tutorial: Reproducible Data Analysis with Snakemake](https://www.youtube.com/watch?v=hPrXcUUp70Y)
+
+* [Tutorial: Understanding Snakemake](https://vincebuffalo.com/blog/2020/03/04/understanding-snakemake.html)
 
 * [Tutorial: An example Snakemake workflow](https://snakemake.readthedocs.io/en/stable/tutorial/basics.html)
+
+* [Quick Guide: Using snakemake to do simple wildcard operations on many, many, many files](http://ivory.idyll.org/blog/2021-snakemake-simple-operations.html)
 
 * [Tutorial compendium: Learn Nextflow in 2023](https://snakemake.readthedocs.io/en/stable/tutorial/basics.html)
 
