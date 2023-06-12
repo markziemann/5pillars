@@ -723,7 +723,7 @@ Continuous analysis might therefore be a future pediment (crowning feature) to t
 The key technological advances enabling the five pillars approach have been around for about a decade,
 yet progress on integrating these into computational research publications has been minimal.
 Indeed the number of systematic replication studies in bioinformatics remains small
-[@Zaringhalam2020-ms ; @Ioannidis2009-hv; @Samuel2022-ha], so the severity of the problem isn't
+[@Ioannidis2009-hv; @Zaringhalam2020-ms; @Samuel2022-ha], so the severity of the problem isn't
 well understood.
 Part of the problem is the incentive structures in academia, with funding bodies and journals
 largely focused on novel research directions rather than confirming previous findings
