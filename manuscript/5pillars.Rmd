@@ -89,8 +89,8 @@ in practice this is rarely achieved.
 
 A number of guides recommending enhanced computational reproducibility practices have been developed
 [ @Tan2010-is; @Peng2011-ia; @Sandve2013-lk; @Piccolo2016-ji; @Lewis2016-qh;
-@Wilson2017-uq ; @Akalin2018-eg ; @Gruning2018-sg; @Brito2020-ld; @Peikert2021-eq ; @Rodrigues2023-fw;
-@DuPre2022-bk].
+@Gruning2018-sg; @Akalin2018-eg; @Brito2020-ld; @Peikert2021-eq;
+@Rodrigues2023-fw; @DuPre2022-bk].
 Inspired by these principles, this article presents the
 *five pillars of reproducible computational research* (**Figure 1**).
 There are clear parallels with the established three pillars of the open science framework,
