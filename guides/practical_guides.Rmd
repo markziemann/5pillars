@@ -1,6 +1,6 @@
 ---
 title: "Practical guides for implementing 'Five Pillar' principles"
-author: "Mark Ziemann, Samuel S. Minot, Pierre Poulain, Anusuiya Bora"
+author: "Mark Ziemann, Pierre Poulain, Anusuiya Bora"
 date: "`r Sys.Date()`"
 output:
   rmdformats::robobook:
@@ -14,30 +14,27 @@ bibliography: practical_guides.bib
 csl: plos-computational-biology.csl
 ---
 
-Mark Ziemann<sup>1*</sup>, Samuel S. Minot<sup>2</sup>, Pierre Poulain<sup>3</sup>,
+Mark Ziemann<sup>1*</sup>, Pierre Poulain<sup>2</sup>,
 Anusuiya Bora<sup>1</sup>
 
-<details><summary>Author information (*click to expand*)</summary><p>
+Author information
 
 1. Deakin University, School of Life and Environmental Sciences, Geelong, Australia.
 
-2. Fred Hutchinson Cancer Center, Seattle, USA.
-
-3. Université Paris Cité, CNRS, Institut Jacques Monod, Paris, France.
+2. Université Paris Cité, CNRS, Institut Jacques Monod, Paris, France.
 
 Correspondance: m.ziemann@deakin.edu.au
 
 | Author | ORCID |
 | --- | --- |
 | Mark Ziemann | 0000-0002-7688-6974 |
-| Samuel S. Minot | 0000-0003-1639-3905 |
 | Pierre Poulain | 0000-0003-4177-3619 |
 | Anusuiya Bora | 0009-0006-2908-1352 |
 
 </details>
 </p>
 
-Source: https://github.com/markziemann/5pillars/blob/main/manuscript/practical_guides.Rmd
+Source: https://github.com/markziemann/5pillars/blob/main/guides/practical_guides.Rmd
 
 The five pillar approach is a synthesis of over a decade of learnings around computational
 reproducibility, and contains six key recommendaions and many best practices.
@@ -49,24 +46,34 @@ One of the questions practitioners may have is *"Where do I start?"* and
 The following sections have been arranged in order, and have been submitted to the
 [Internet Archive](https://archive.org/) for posterity.
 
+<br>
+
 ## Getting started with data analysis in R and Python
 
 Learn the basics of your scripting language (R/Python/shell) so that you can do useful analyses
 with it. Learn by solving problems.
 
-### Introduction to R and Rstudio
+<br>
 
-* [Ebook: R for data science](https://r4ds.had.co.nz/)
+### Introduction to R and Rstudio
 
 * [Video: Rstudio for the Total Beginner](https://www.youtube.com/watch?v=FIrsOBy5k58)
 
+* [Video: Running Basic Statistical Analysis in R](https://www.youtube.com/watch?v=I6FJo8x1wZE)
+
+* [Ebook: R for data science](https://r4ds.had.co.nz/)
+
 * [Ebook: YaRrr! The Pirate’s Guide to R](https://bookdown.org/ndphillips/YaRrr/)
+
+<br>
 
 ### Introduction to Unix and Shell programming
 
 * [Ebook: Bioinformatics Data Skills](https://vincebuffalo.com/book/)
 
 * [Book: Unix Shell Programming (ISBN:0672324903)](https://www.amazon.com/Unix-Shell-Programming-Stephen-Kochan/dp/0672324903)
+
+<br>
 
 ### Introduction to Python
 
@@ -76,9 +83,13 @@ with it. Learn by solving problems.
 
 * [Video: Python Tutorial for Absolute Beginners](https://www.youtube.com/watch?v=Z1Yd7upQsXY&t=19s)
 
+<br>
+
 ### Introduction to VS Code
 
 * [Tutorial and video: Getting Started with Visual Studio Code](https://code.visualstudio.com/docs/introvideos/basics)
+
+<br>
 
 ## Literate programming with R Markdown, Jupyter and Quarto
 
@@ -104,6 +115,8 @@ graphical interfaces to the programming languages.
 * [Tutorial: How to Use Jupyter Notebook](https://www.dataquest.io/blog/jupyter-notebook-tutorial/)
 
 * [Tutorial: The Ultimate Beginner’s Guide to Jupyter Notebooks](https://medium.com/velotio-perspectives/the-ultimate-beginners-guide-to-jupyter-notebooks-6b00846ed2af)
+
+<br>
 
 ## Practical guides for `git` and GitHub
 
@@ -131,11 +144,11 @@ Learn how integrate version control into your development environment.
 
 * [Tutorial: How to use Git / GitHub with Jupyter Notebook](https://blog.reviewnb.com/github-jupyter-notebook/)
 
-* [Tutorial: Introduction to Using Git in Jupyter](https://andgarc.github.io/basic-git-jupyter-lesson/index.html)
-
 * [Ebook: Version Control with Git](https://swcarpentry.github.io/git-novice/)
 
 * [Tutorial: Using Git source control in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview)
+
+<br>
 
 ## Practical guides to data sharing
 
@@ -145,9 +158,13 @@ Learn about the FAIR principles and make the research data available in a public
 
 * [Guide: Best practice for managing your outputs on Figshare](https://help.figshare.com/article/best-practice-for-managing-your-outputs-on-figshare)
 
-* [Guide: Introduction to data sharing](https://zenodo.org/badge/DOI/10.5281/zenodo.3518692.svg)
+* [Guide: Introduction to data sharing](https://doi.org/10.5281/zenodo.3518692)
 
 * [Guide: FAIR Data (according to Australian Research Data Commons)](https://ardc.edu.au/resource/fair-data/)
+
+* [Documentation: FAIRsharing.org](https://fairsharing.org/)
+
+<br>
 
 ## Extend the scripts to make them end-to-end processes
 
@@ -160,7 +177,7 @@ whole figures or research articles.
 
 * [Ebook: Building reproducible analytical pipelines with R](https://raps-with-r.dev/)
 
-* [Tutorial: A short introduction to drake (An R based workflow manager)](https://data.nozav.org/posts/2019-a-short-introduction-to-drake/)
+* [Documentation: The {targets} R package user manual (workflow manager for R)](https://books.ropensci.org/targets/)
 
 * [Video Tutorial: Reproducible Data Analysis with Snakemake](https://www.youtube.com/watch?v=hPrXcUUp70Y)
 
@@ -171,6 +188,8 @@ whole figures or research articles.
 * [Quick Guide: Using snakemake to do simple wildcard operations on many, many, many files](http://ivory.idyll.org/blog/2021-snakemake-simple-operations.html)
 
 * [Tutorial compendium: Learn Nextflow in 2023](https://snakemake.readthedocs.io/en/stable/tutorial/basics.html)
+
+<br>
 
 ## Practical guides for Conda, Guix and Docker
 
@@ -189,6 +208,8 @@ Select the option that works best for your project.
 
 * [Documentation: Getting started with GNU Guix](https://guix.gnu.org/manual/en/html_node/Getting-Started.html)
 
+<br>
+
 ## Practical guides for documenting computational research
 
 Document the process of reproduction as if you were an external researcher.
@@ -196,7 +217,11 @@ Test the instructions.
 
 * [Guide: How to write an Awesome README](https://towardsdatascience.com/how-to-write-an-awesome-readme-68bf4be91f8b)
 
+* [Ebook: Bioinformatics Data Skills Chapter 2](https://vincebuffalo.com/book/)
+
 * [Example: README for "A Reproducible Data Analysis Workflow with R Markdown, Git, Make, and Docker"](https://github.com/aaronpeikert/reproducible-research/blob/master/README.md)
+
+<br>
 
 ## Moving from "dev" to "prod": testing and continuous analysis
 

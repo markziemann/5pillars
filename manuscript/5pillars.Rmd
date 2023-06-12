@@ -173,7 +173,7 @@ Using free and open source software ensures that the research is accessible to t
 Free and open source software also enjoy relatively larger libraries of add-on packages contributed by
 the scientific community.
 Projects entailing big data analysis might benefit from a build/workflow automation solution like `make`,
-`snakemake` [@Koster2012-sq; @Molder2021-mp], `drake` [@Michael_Landau2018-kk] or
+`snakemake` [@Koster2012-sq; @Molder2021-mp], `targets` [@Landau2012] or
 `nextflow` [@Di_Tommaso2017-yo].
 The advantage of such tools is that if the analysis were to terminate due to an issue mid-way,
 for example, a hardware problem at step 8 of a 15-step workflow, the analysis of steps 1-7 wouldn't
