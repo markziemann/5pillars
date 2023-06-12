@@ -59,8 +59,9 @@ Reproducibility is only the first step towards overall reliability, for example 
 reproducible, but suffer from analytical problems that invalidate the results.
 If a study is reproducible, then at least these analytical issues can be more easily identified and
 rectified.
-Therefore, reproducibility is a necessary stepping-stone that should enhance the overall
-reliability of computational research including replicability and robustness.
+Therefore, reproducibility is a necessary stepping-stone in the framework of cumulative science.
+Reproducibility should enhance the overall reliability of computational research 
+including replicability and robustness.
 Replicability being defined as the ability to repeat the entire study and come up with similar overall
 results.
 Robustness refers to the ability for the findings to be generalisable to other situations
@@ -198,9 +199,14 @@ An example R Markdown script and output report is given in **Figure 2**.
 ![Figure 2. An example R Markdown script (left) and output document (right) @Grolemund2017-le.](../img/markdownchunk.png)
 
 Around the same time, Project Jupyter was developed to provide a "notebook" type interface, incorporating
-R, Python, Julia and other computer language chunks into documents @Perkel2018-rz.
-The MyST{NB} (short for Markedly Structured Text notebook) is built on top of Jupyter and has some
-notable advantages around flexibility of content that make it an attractive choice for executable
+R, Python, Julia and other computer language chunks into documents [@kluyver2016; @granger2021; @Perkel2018-rz].
+A noteworthy attempt to use litterate programming in Jupyter notebooks to aim for reproducibility 
+has been the analysis of RNA-seq samples from patients infected by the Zika virus [@wang2016].
+In this work, authors provided along the traditionnal research paper a 
+[Jupyter notebook](https://nbviewer.org/github/maayanlab/Zika-RNAseq-Pipeline/blob/master/Zika.ipynb) 
+that performed and documented the entire analysis procedure.
+The MyST-NB (short for Markedly Structured Text notebook) is built on top of Jupyter notebooks or Markdown documents
+and has some notable advantages around flexibility of content that make it an attractive choice for executable
 article authoring [@DuPre2022-bk].
 
 In 2022, the company behind RStudio (Posit) released Quarto, the conceptual successor of R Markdown,
@@ -385,15 +391,22 @@ and the end of Mercurial support by the Bitbucket platform in 2020.
 The code needs to be deposited to a long-term repository.
 [Zenodo](https://zenodo.org/) and [Figshare](https://figshare.com/) are often used
 to store the content of a repository but do not retain the history of the development of the source code.
-[Software Heritage](https://www.softwareheritage.org/) @dicosmo2017 is the universal software archive
+[Software Heritage](https://www.softwareheritage.org/) [@dicosmo2017; abramatic2018] is the universal software archive
 whose mission is to collect, preserve and share source code. Software Heritage provides
 an intrinsic persistent identifier called SWHID that allows to cite the archived source code
-in the respective journal article/preprint. The archival of the source code in Software Heritage
-can be performed manually or automated by a webhook within a continuous integration.
+in the respective journal article/preprint [@cosmo2020]. The archival of the source code in Software Heritage
+can be performed [manually](https://archive.softwareheritage.org/save/) 
+or automated by a [webhook](https://docs.softwareheritage.org/user/save_code_now/webhooks/index.html) 
+within continuous integration.
 
 `git` is typically used at the command line, however it is also integrated into Rstudio, JupyterLab and
 VS Code, and there are also several `git` clients with graphical interfaces which better allow inspection
 of code changes.
+
+Finally, although DVCSs come from the world of software engineering, 
+their use has become a standard in computational biology, as witnessed by the numerous guides 
+and best practices on the subject [@ram2013; @blischak2016; @perez-riverol2016].
+
 
 <br>
 
@@ -441,7 +454,7 @@ across different systems.
 For example, the most popular containerisation system, Docker [@Merkel2014-ek], makes it
 possible to run Windows and Linux/Unix containers on any computer with Docker installed, with the
 promise of reproducibility.
-While there are several alternatives such as Podman and Rkt, Docker remains the most widely used
+While there are several alternatives such as Podman, Rkt or Apptainer/Singularity, Docker remains the most widely used
 containerisation system for web development and research.
 Due to its early adoption, Docker now has a large community of users, extensive documentation and
 a vast collection of pre-built container images in the DockerHub registry.
@@ -560,15 +573,16 @@ These principles are summarized in **Figure 5**.
 ![Figure 5. Overview of the FAIR data principles @Kalendralis2021-jb.](../img/gr2.jpg)
 
 High throughput biology has already built a number of data repositories for specific data types
-conforming to FAIR principles (e.g.: GEO, SRA, PRIDE [@Edgar2002-hs; @Kodama2012-bn; @Deutsch2017-hc]).
+conforming to FAIR principles (e.g.: GEO, SRA, ENA, PRIDE [@Edgar2002-hs; @Kodama2012-bn; @Deutsch2017-hc]).
 However other domains lack well known specialized organized data repositories, such as evolutionary
-biology, ecology, cell biology, social sciences and computing.
+biology, ecology, cell biology, molecular simulation, social sciences and computing.
 The [re3data.org](https://www.re3data.org/) registry of data repositories may be useful to find a
 repository that accepts data from these fields [@Pampel2013-ep].
 If no specialized repository exists, then a general-purpose repository such as
 [Dryad](https://datadryad.org/), [FigShare](https://figshare.com/), or [Zenodo](https://zenodo.org/)
-should be considered.
-Moreover, general recommendations have been proposed to enhance data FAIRness in ecology, but which
+should be considered. Researchers should be aware, however, that these repositories are often not moderated, 
+and that it is their responsibility to make their data FAIR, in particular by providing sufficient metadata.
+To this aime, general recommendations have been proposed to enhance data FAIRness in ecology, but which
 can also be applied to other disciplines [@Roche2015-aq].
 
 Key recommendations include:
@@ -618,7 +632,7 @@ From a reproducibility standpoint, the methods section is the most critical part
 It should be detailed enough so that other researchers can understand and replicate the
 experiments/analysis and yield similar results.
 Unfortunately, key details in bioinformatics data processing procedures are often omitted which limits
-their reproducibility [@Garijo2013-zl; @Simoneau2021-kp].
+their reproducibility [@Nekrutenko2012; @Garijo2013-zl; @Simoneau2021-kp].
 Commonly missing information includes versions of software and packages as well as any parameter setting
 and configuration files.
 The "Materials Design Analysis Reporting" (MDAR) checklist for authors has been developed to assist in
@@ -751,7 +765,7 @@ such as charts and tables.
 
 ## Key points
 
-* Irreproducibility of bioinformatics studies remains a significant problem.
+* Irreproducibility of bioinformatics studies remains a significant and still relevant problem.
 
 * We present the *five pillars* framework, a set of best practices that enable extremely reproducible
 workflows.
@@ -796,7 +810,7 @@ His research spans bioinformatics as applied to omics data analysis in biomedici
 of research rigor.
 
 **Pierre Poulain** is an Associate Professor at Université Paris Cité, Institut Jacques Monod, France.
-Research directions include proteomics, bioinformatics and education/pedagogy.
+Research directions include bioinformatics, large scale data analysis and education/pedagogy.
 
 **Anusuiya Bora** is a PhD student at Deakin University School of Life and Environmental Sciences.
 Her research project involves improving the reproducibility of commonly used bioinformatics tools.
