@@ -395,18 +395,17 @@ to store the content of a repository but do not retain the history of the develo
 whose mission is to collect, preserve and share source code. Software Heritage provides
 an intrinsic persistent identifier called SWHID that allows to cite the archived source code
 in the respective journal article/preprint [@cosmo2020]. The archival of the source code in Software Heritage
-can be performed [manually](https://archive.softwareheritage.org/save/) 
-or automated by a [webhook](https://docs.softwareheritage.org/user/save_code_now/webhooks/index.html) 
+can be performed [manually](https://archive.softwareheritage.org/save/)
+or automated by a [webhook](https://docs.softwareheritage.org/user/save_code_now/webhooks/index.html)
 within continuous integration.
 
 `git` is typically used at the command line, however it is also integrated into Rstudio, JupyterLab and
 VS Code, and there are also several `git` clients with graphical interfaces which better allow inspection
 of code changes.
 
-Finally, although DVCSs come from the world of software engineering, 
-their use has become a standard in computational biology, as witnessed by the numerous guides 
+Finally, although DVCSs come from the world of software engineering,
+their use has become a standard in computational biology, as witnessed by the numerous guides
 and best practices on the subject [@ram2013; @blischak2016; @perez-riverol2016].
-
 
 <br>
 
@@ -648,6 +647,7 @@ This is particularly helpful when there are strict word limits on articles.
 
 The article should have clear links to supporting materials including datasets, software code and
 other resources like computational environments.
+
 The code repository should have a detailed `README` file which plays a critical role in reproducibility.
 It should outline the purpose of the code/software/overall project and how it relates to the
 article.

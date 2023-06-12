@@ -221,6 +221,8 @@ Test the instructions.
 
 * [Example: README for "A Reproducible Data Analysis Workflow with R Markdown, Git, Make, and Docker"](https://github.com/aaronpeikert/reproducible-research/blob/master/README.md)
 
+* [Guide: A Quick Guide to Organizing Computational Biology Projects](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424)
+
 <br>
 
 ## Moving from "dev" to "prod": testing and continuous analysis
