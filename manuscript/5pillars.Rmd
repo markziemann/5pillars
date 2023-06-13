@@ -34,8 +34,8 @@ Source: https://github.com/markziemann/5pillars/blob/main/manuscript/5pillars.Rm
 
 ## Abstract
 
-Computational reproducibility is a simple premise in theory, but in practice it is difficult to
-achieve.
+Computational reproducibility is a simple premise in theory, but is difficult to
+achieve in practice.
 Building upon past efforts and proposals to maximize reproducibility and rigor in
 bioinformatics, we present a framework called the five pillars of reproducible computational
 research.
@@ -200,10 +200,10 @@ An example R Markdown script and output report is given in **Figure 2**.
 
 Around the same time, Project Jupyter was developed to provide a "notebook" type interface, incorporating
 R, Python, Julia and other computer language chunks into documents [@kluyver2016; @granger2021; @Perkel2018-rz].
-A noteworthy attempt to use literate programming in Jupyter notebooks to aim for reproducibility 
+A noteworthy attempt to use literate programming in Jupyter notebooks to aim for reproducibility
 has been the analysis of RNA-seq samples from patients infected by the Zika virus [@wang2016].
-In this work, authors provided along the traditionnal research paper a 
-[Jupyter notebook](https://nbviewer.org/github/maayanlab/Zika-RNAseq-Pipeline/blob/master/Zika.ipynb) 
+In this work, authors provided along the traditional research paper a
+[Jupyter notebook](https://nbviewer.org/github/maayanlab/Zika-RNAseq-Pipeline/blob/master/Zika.ipynb)
 that performed and documented the entire analysis procedure.
 The MyST-NB (short for Markedly Structured Text notebook) is built on top of Jupyter notebooks or Markdown documents
 and has some notable advantages around flexibility of content that make it an attractive choice for executable
@@ -391,13 +391,14 @@ and the end of Mercurial support by the Bitbucket platform in 2020.
 The code needs to be deposited to a long-term repository.
 [Zenodo](https://zenodo.org/) and [Figshare](https://figshare.com/) are often used
 to store the content of a repository but do not retain the history of the development of the source code.
-[Software Heritage](https://www.softwareheritage.org/) [@dicosmo2017; abramatic2018] is the universal software archive
-whose mission is to collect, preserve and share source code. Software Heritage provides
-an intrinsic persistent identifier called SWHID that allows to cite the archived source code
-in the respective journal article/preprint [@cosmo2020]. The archival of the source code in Software Heritage
-can be performed [manually](https://archive.softwareheritage.org/save/)
-or automated by a [webhook](https://docs.softwareheritage.org/user/save_code_now/webhooks/index.html)
-within continuous integration.
+[Software Heritage](https://www.softwareheritage.org/) [@dicosmo2017; @abramatic2018] is the universal
+software archive whose mission is to collect, preserve and share source code.
+Software Heritage provides an intrinsic persistent identifier called SWHID that allows to cite the
+archived source code in the respective journal article/preprint [@cosmo2020].
+Archiving source code in Software Heritage can be performed
+[manually](https://archive.softwareheritage.org/save/) or automatically using a
+[webhook](https://docs.softwareheritage.org/user/save_code_now/webhooks/index.html) within continuous
+integration.
 
 `git` is typically used at the command line, however it is also integrated into Rstudio, JupyterLab and
 VS Code, and there are also several `git` clients with graphical interfaces which better allow inspection
@@ -468,9 +469,6 @@ library("RColorBrewer")
 cols <- brewer.pal(5, "Set2")
 cols2 <- adjustcolor( cols, alpha.f = 0.7)
 plot(0,type='n',axes=FALSE,ann=FALSE, xlim=c(0, 12), ylim=c(0, 8))
-
-#border
-polygon(c(0,12,12,0),c(0,0,8,8),border="gray")
 
 polygon(c(0,5.5,5.5,0),c(0,0,0.9,0.9), col=cols2[1], border = NA)
 polygon(c(0,5.5,5.5,0),c(1,1,1.9,1.9), col=cols2[2], border = NA)
@@ -779,8 +777,11 @@ largely focused on novel research directions rather than confirming previous fin
 [@Garijo2013-zl ; @Huang2013-xr; @Kaelin2017-id; @Munafo2017-ty; @Diong2021-is].
 
 A lack of technical computer skills in many research groups is another culprit.
-Specific workshop-based training in these areas could help, but the most scalable solution would be to
-provide comprehensive beginner-friendly step-by-step guides for frequently used routines.
+Specific workshop-based training in these areas could help [@Williams2023-ic].
+The [Software Carpentry](https://software-carpentry.org/) initiative is focused on this mission
+[@Wilson2014-mh].
+However, the most scalable solution would be to provide comprehensive beginner-friendly step-by-step
+guides for frequently used routines.
 For example, our group has just released such a protocol that walks novice users through the process
 of implementing functional enrichment analysis of gene expression data with the five pillars principles
 @Ziemann2023-nm.
