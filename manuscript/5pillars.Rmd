@@ -308,10 +308,10 @@ polygon(c(7,10,10,7),c(4,4,5,5), col=cols[3], border = NA)
 polygon(c(2.5,7.3,7.3,2.5),c(7,7,8.5,8.5), col=cols[4], border = NA)
 
 labs <- c("Developer 1",
-  "Local Repo",
+  "Local Repository",
   "Working Files",
   "Developer 2",
-  "Local Repo",
+  "Local Repository",
   "Working Files",
   "Developer 3",
   "Local Repository",
@@ -369,7 +369,7 @@ For example, this feature is used extensively during the peer review process for
 Open-Source Software* @Editorial2018-kt.
 
 * Supports documentation best practices.
-Books, educational resources and other data types are well served using DVCS (see below).
+Books, tutorials, protocols and other educational resources are well served using DVCS (see below).
 
 * Makes works easily shareable.
 Work is easier to reproduce because the source folder contains a complete workflow with code linked
@@ -377,7 +377,7 @@ to data and metadata, so it doesn't need any modifications before reproduction.
 It is relatively easy to add a software license with a DVCS like GitHub, so consumers can understand
 the conditions of using it.
 
-* Protect against code loss.
+* Protects against code loss.
 Computers sometimes fail and we sometimes delete or overwrite important files.
 If code is lost and unrecoverable it can be a significant cost to replace.
 Although DVCSs are not a back-up solution, they do add a layer of protection to the
@@ -456,7 +456,7 @@ possible to run Windows and Linux/Unix containers on any computer with Docker in
 promise of reproducibility.
 While there are several alternatives such as Podman, Rkt or Apptainer/Singularity, Docker remains the most widely used
 containerisation system for web development and research.
-Due to its early adoption, Docker now has a large community of users, extensive documentation and
+Docker now has a large community of users, extensive documentation and
 a vast collection of pre-built container images in the DockerHub registry.
 Docker can fetch images from DockerHub and run them on the host system with just a couple of commands,
 and typically within a few minutes.
@@ -646,7 +646,7 @@ accessible.
 values (CSV) files are preferred over Excel files.
 
 6. Provide detailed metadata; e.g.: sample descriptions that match the article; describe the columns
-in tabular data.
+in tabular data (i.e.: data dictionary).
 
 Once the quality of the data set has been established researchers may consider depositing it
 to a data repository early, before publicization, as it has some advantages.
@@ -820,7 +820,7 @@ such as charts and tables.
 * We present the *five pillars* framework, a set of best practices that enable extremely reproducible
 workflows.
 
-* Widespread adoption of these principles will enhance research reliability and speed translation of
+* Widespread adoption of these principles will enhance research reliability and will speed translation of
 basic research to tangible benefits.
 
 <br>
@@ -835,6 +835,7 @@ Dr Irene López Santiago (EMBL-EBI).
 Special thanks to Dr Altuna Akalin (Max Delbrück Center, Germany) and
 Dr Simon Tournier (Paris Cité University, France) for advice on Guix.
 We appreciate advice on Python notebooks from Samuel S. Minot (Fred Hutchinson Cancer Center).
+We are grateful to Dr Martin O'Hely (Deakin University) for critical comments on the manuscript.
 This research was supported by use of the Nectar Research Cloud, a collaborative Australian research
 platform supported by the NCRIS-funded Australian Research Data Commons (ARDC).
 
