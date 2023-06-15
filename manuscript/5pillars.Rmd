@@ -162,6 +162,17 @@ A caveat for end-to-end automation is that sometimes manual data cleaning is una
 In those cases, retaining raw and cleaned data along with a cleaning protocol is recommended.
 Then the computational workflow can begin with the cleaned dataset.
 
+Another issue is that perfect reproducibility isn't possible in cases where some element of randomness
+is requrired by the underlying algorithms.
+Such algorithms are extensively used in molecular simulation, machine learning, permutation-based
+statistical tests and certain data projection methods, namely t-distributed stochastic neighbour
+embedding [@Van_der_Maaten2008-zn] and uniform manifold approximation and projection [@McInnes2018-of],
+which are popular for visualising high-dimensional omics data [@Becht2018-ca].
+To make such workflows deterministic, the pseudo-random number generator can be initialized with a fixed
+value (sometimes called "setting the seed")[@Sandve2013-lk].
+However this needs to be done with care to ensure the results do not misrepresent the bulk of
+iterations (see [@Benureau2017-uo]).
+
 A guiding principle of the five pillars approach is that the publishing researchers should strive
 to make the reproduction process easier and faster for those who wish to.
 A "master script" that coordinates the execution of individual parts of an analysis is an excellent
