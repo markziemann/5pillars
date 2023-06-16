@@ -163,11 +163,11 @@ In those cases, retaining raw and cleaned data along with a cleaning protocol is
 Then the computational workflow can begin with the cleaned dataset.
 
 Another issue is that perfect reproducibility isn't possible in cases where some element of randomness
-is requrired by the underlying algorithms.
+is required by the underlying algorithms.
 Such algorithms are extensively used in molecular simulation, machine learning, permutation-based
-statistical tests and certain data projection methods, namely t-distributed stochastic neighbour
+statistical tests and certain data projection methods, namely t-distributed stochastic neighbor
 embedding (t-SNE) [@Van_der_Maaten2008-zn] and uniform manifold approximation and projection UMAP [@McInnes2018-of],
-which are popular for visualising high-dimensional omics data [@Becht2018-ca].
+which are popular for visualizing high-dimensional omics data [@Becht2018-ca].
 To make such workflows deterministic, the pseudo-random number generator can be initialized with a fixed
 value (sometimes called "setting the seed")[@Sandve2013-lk].
 However this needs to be done with care to ensure the results do not misrepresent the bulk of
