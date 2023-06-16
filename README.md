@@ -22,8 +22,6 @@ There are three folders:
 
 * `manuscript`: the source document and bibliography.
 
-* `coverletter`: to the editor.
-
 * `img`: images.
 
 * `LICENCE`: MIT Licence.
