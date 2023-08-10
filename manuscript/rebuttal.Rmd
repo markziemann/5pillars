@@ -1,0 +1,14 @@
+
+Dear Editor,
+
+Many thanks for your consideration of our manuscript.
+Below is our point-by-point response to reviewer comments.
+
+### Reviewer 1
+
+> In this manuscript, the authors present a framework that computational researchers should follow to maximize the reproducibility of their computational research. The five pillars that they identified are 1) code version control and sharing, 2) compute environment control,  3) literate programming, 4) documentation and 5) FAIR data sharing. They give a fair amount of detail regarding each pillar. This paper contains no original research and is more of an opinion piece. With that in mind, if BiB is interested in this topic, I recommend publishing. The authors make very reasonable suggestions. My only request for edits is to rearrange the section structure of the manuscript to be in line with the numbering of the pillars. Right now it is quite confusing.
+
+Response: We thank the reviewer for their positive feedback.
+With regards to the ordering of the five pillars, we have altered Figure 1 so that the pillars now
+appear in the same order as they are detailed in sections following.
+

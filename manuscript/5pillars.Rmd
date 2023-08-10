@@ -1,6 +1,5 @@
 ---
 title: "The five pillars of computational reproducibility: Bioinformatics and beyond"
-author: "Mark Ziemann, Pierre Poulain, Anusuiya Bora"
 date: "`r Sys.Date()`"
 output:
   rmdformats::robobook:
@@ -14,7 +13,7 @@ bibliography: 5pillars.bib
 csl: plos-computational-biology.csl
 ---
 
-Mark Ziemann<sup>1*</sup>, Pierre Poulain<sup>2</sup>, Anusuiya Bora<sup>1</sup>
+<strong>Mark Ziemann<sup>1*</sup>, Pierre Poulain<sup>2</sup>, Anusuiya Bora<sup>1</sup></strong>
 
 1. Deakin University, School of Life and Environmental Sciences, Geelong, Australia.
 
@@ -117,11 +116,11 @@ points( c(0.9,2.9,4.9,6.9,8.9) , c(4.5,2.5,4.5,2.5,4.5), pch=19,cex=18,col=cols 
 text(5,7,lab="Five pillars of reproducible computational research", cex=1.5)
 #mtext("Five pillars of reproducible computational research", cex=1.5)
 
-labs <- c("Code version\ncontrol &\npersistent\n sharing",
+labs <- c("Literate\nprogramming",
+  "Code version\ncontrol &\npersistent\n sharing",
   "Compute \nenvironment \ncontrol",
-  "Literate\nprogramming",
-  "Documentation",
-  "FAIR &\npersistent\ndata sharing")
+  "FAIR &\npersistent\ndata sharing",
+  "Documentation")
 
 text( c(0.9,2.9,4.9,6.9,8.9) , c(4.5,2.5,4.5,2.5,4.5) , lab=labs)
 text( 5 , 0.2 , lab="End-to-end automated process")
