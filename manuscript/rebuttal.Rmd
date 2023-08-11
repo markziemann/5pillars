@@ -1,3 +1,14 @@
+---
+title: "Response to reviewer comments (The five pillars)"
+author: "Mark Ziemann, Pierre Poulain, Anusuiya Bora"
+date: "`r Sys.Date()`"
+output: word_document
+code_folding: hide
+fig_width: 7
+fig_height: 6
+bibliography: 5pillars.bib
+csl: plos-computational-biology.csl
+---
 
 Dear Editor,
 
@@ -12,3 +23,68 @@ Response: We thank the reviewer for their positive feedback.
 With regards to the ordering of the five pillars, we have altered Figure 1 so that the pillars now
 appear in the same order as they are detailed in sections following.
 
+### Reviewer 2
+
+> Comments to the Author: The article offers a comprehensive perspective on reproducibility in computational research, delivering clear and logically backed recommendations. It is indeed a very interesting topic that needs our attention. Nevertheless, there are areas that could benefit from further development and clarity:
+
+Response: We appreciate reviewer 2's positive feedback and thoughtful suggestions.
+
+> 1. Inclusion of Case Studies or Examples: To strengthen your argument, consider incorporating case studies or practical examples that demonstrate the effectiveness of your recommendations. Highlighting specific instances where these best practices have enhanced reproducibility or solved particular issues could substantiate your points more effectively.
+
+Consider case study of enrichment analysis.
+
+> 2. Expanding on Current Shortcomings: The article mentions that current practices are not meeting the goal of reproducibility. An expanded discussion on the ramifications of these shortcomings on scientific progress could accentuate the urgency and significance of addressing this issue.
+
+After the paragraph ending in "... yet as we see, in practice this is rarely achieved." it would be
+good to discuss the ramifications of such shortcomings on scientific progress.
+This will highlight the urgency and significance of the proposed measures.
+
+> 3. Focus on Implementation Challenges: While the article acknowledges the importance of certain practices, an increased focus on potential obstacles researchers may face when trying to implement these suggestions, as well as strategies to overcome these challenges, would be insightful.
+
+Just before the paragraph "A lack of technical computer skills in many research groups is another culprit."
+We should explicitly discuss implementation challenges.
+Part of the preceeding paragraph can also be amended.
+
+> 4. Clear Structure: Consider organizing the article into clearly defined sections such as 'Introduction', 'Background', 'Recommendations', 'Challenges', and 'Conclusion'. This could significantly enhance readability and comprehensibility.
+
+The subheading structure has been amended in line with these recommendations.
+
+* Abstract
+
+* Introduction
+
+* Recommendations
+
+  * End-to-end automated process
+
+  * Literate programming
+
+  * Code version control and persistent sharing
+
+  * Compute environment control
+
+  * FAIR and persistent data sharing
+
+  * Documentation
+
+* Challenges
+
+* Conclusion
+
+* Key points
+
+> 5. Engaging Conclusion: Reworking the conclusion to be more impactful could be beneficial. Instead of merely summarizing the recommendations, it would be useful to indicate the potential trajectory of computational research if these recommendations are adopted, as well as highlighting the potential risks if they aren't.
+
+Response: We have completely rewritten the conclusion.
+Instead of reiterating the five pillars, we focus on the motivation for adoption:
+
+>Large scale datasets are becoming commonplace in medicine and life sciences thanks to the commoditisation
+>of platform technologies like DNA sequencing, mass spectrometry and advanced imaging systems.
+>These big datasets are enabling breakthrough discoveries, but due to their size and complexity, require
+>significant expertise to analyze and distill key observations.
+>The measures proposed here are designed to enhance transparency and foster the reuse of data and code.
+>Such reuse reduces waste and enhances the cost-effectiveness of research.
+>The transparency provided by sharing data, code and documentation makes it easier for problems to be
+>identified, so that erroneous findings are less likely to pollute the scientific literature.
+>Researchers, their institutions, publishers and funders each have a major role to play in fighting the
+>reproducibility crisis by encouraging highly reproducible research practices.

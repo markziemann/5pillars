@@ -13,11 +13,13 @@ bibliography: 5pillars.bib
 csl: plos-computational-biology.csl
 ---
 
-<strong>Mark Ziemann<sup>1*</sup>, Pierre Poulain<sup>2</sup>, Anusuiya Bora<sup>1</sup></strong>
+<strong>Mark Ziemann<sup>1,2*</sup>, Pierre Poulain<sup>3</sup>, Anusuiya Bora<sup>1</sup></strong>
 
 1. Deakin University, School of Life and Environmental Sciences, Geelong, Australia.
 
-2. Université Paris Cité, CNRS, Institut Jacques Monod, Paris, France.
+2. Burnet Institute, Melbourne, Australia
+
+3. Université Paris Cité, CNRS, Institut Jacques Monod, Paris, France.
 
 * Correspondance: m.ziemann@deakin.edu.au
 
@@ -66,8 +68,6 @@ results.
 Robustness refers to the ability for the findings to be generalisable to other situations
 @Nosek2022-zc.
 
-Unreliable research is a waste of resources and time and can mislead readers to pursue doomed
-research directions.
 Much has been written on how irreproducibility has reached crisis levels in psychology and life
 sciences [@Baker2015; @Begley2012-di].
 Indeed, in bioinformatics, the situation is grim with a 2009 systematic evaluation showing only
@@ -85,6 +85,14 @@ Irreproducible bioinformatics has the potential to place patient safety at risk,
 earlier case study @Baggerly2010-nr.
 Researchers are theoretically able to achieve 100% computational reproducibility, yet as we see,
 in practice this is rarely achieved.
+
+(TODO: discuss the ramifications of such shortcomings on scientific progress.
+This will highlight the urgency and significance of the proposed measures.)
+
+(Unreliable research is a waste of resources and time and can mislead readers to pursue doomed
+research directions.)
+
+## Recommendations
 
 A number of guides recommending enhanced computational reproducibility practices have been developed
 [ @Tan2010-is; @Peng2011-ia; @Sandve2013-lk; @Piccolo2016-ji; @Lewis2016-qh;
@@ -131,7 +139,7 @@ text( 5 , 0.2 , lab="End-to-end automated process")
 
 <br>
 
-## End-to-end automated process
+### End-to-end automated process
 
 For a bioinformatics project to be reproducible, it needs to be enshrined by code and include all
 instructions, from inspecting the raw data to generating the outputs that form the conclusions of the
@@ -193,7 +201,7 @@ which saves labor and compute time.
 
 <br>
 
-## Literate programming
+### Literate programming
 
 Literate programming combines "chunks" of analytical code with human readable text @Knuth1984-di.
 After compilation, the resulting output document contains the code together with computational results
@@ -284,7 +292,7 @@ This further makes the job of reproducibility easier.
 
 <br>
 
-## Code version control and persistent sharing
+### Code version control and persistent sharing
 
 A version control system (sometimes called "source control") is a type of program that "tracks changes"
 made to sets of files, typically other computer program source code, scripts and documentation.
@@ -420,7 +428,7 @@ and best practices on the subject [@ram2013; @blischak2016; @perez-riverol2016].
 
 <br>
 
-## Compute environment control
+### Compute environment control
 
 Most popular software undergoes regular updates to patch bugs and add new features.
 Bioinformatics software is no different, and it is well known that such changes have the
@@ -579,7 +587,7 @@ used in an article to a suitable persistent long-term archive (discussed below).
 
 <br>
 
-## FAIR and persistent data sharing
+### FAIR and persistent data sharing
 
 Without data sharing, computational research is not reproducible nor auditable.
 Lack of data sharing is one of the key reasons why research is irreproducible
@@ -679,7 +687,7 @@ and shared if the license permits it.
 
 <br>
 
-## Documentation
+### Documentation
 
 Documentation is the glue that binds a data science project together.
 The published article is the central artifact that outlines the research project and
@@ -751,7 +759,7 @@ relative to the overall research project.
 
 <br>
 
-## Limitations and challenges
+## Challenges
 
 Due to the constantly developing software landscape, this review is not intended to give strong
 recommendations on the exact combination of tools or resources to use in computational research,
@@ -786,6 +794,22 @@ Part of the problem is the incentive structures in academia, with funding bodies
 largely focused on novel research directions rather than confirming previous findings
 [@Garijo2013-zl ; @Huang2013-xr; @Kaelin2017-id; @Munafo2017-ty; @Diong2021-is].
 
+(TODO: reviewer 2 point 3: focus on implementation challenges and strategies to overcome.
+Expand this section articulating the difficulties with making gold standard reproducibility the norm.
+Detail some strategies that can be used.
+Case in point: spreadsheet causing gene name errors
+
+1. described in 2004
+
+2. followed by large scale screens in 2016,2022
+
+3. HUGO finally takes action
+
+4. Public awareness
+
+5. Numbers of affected articles diminishes
+)
+
 A lack of technical computer skills in many research groups is another culprit.
 Specific workshop-based training in these areas could help [@Williams2023-ic].
 The [Software Carpentry](https://software-carpentry.org/) initiative is focused on this mission
@@ -803,23 +827,16 @@ provided in the supplementary information.
 
 ## Conclusion
 
-Reproducibility is an essential feature of reliable computational research yet current practices
-are falling short of this goal.
-Our recommendations for computational researchers are summarized as:
-
-0. Encapsulate the entire workflow in an end-to-end automated process, executable with a master script.
-
-1. Share the code repository and deposit a snapshot to an archive.
-
-2. Share a controlled environment; options include a Docker or virtual machine image or
-configuration for Conda or Guix.
-
-3. Use literate scripting tools like R Markdown or Jupyter notebooks to generate all outputs,
-such as charts and tables.
-
-4. Document the workflow sufficiently for reproduction, especially the repository `README`.
-
-5. Share research data and metadata according to FAIR principles.
+Large scale datasets are becoming commonplace in medicine and life sciences thanks to the commoditisation
+of platform technologies like DNA sequencing, mass spectrometry and advanced imaging systems.
+These big datasets are enabling breakthrough discoveries, but due to their size and complexity, require
+significant expertise to analyze and distill key observations.
+The measures proposed here are designed to enhance transparency and foster the reuse of data and code.
+Such reuse reduces waste and enhances the cost-effectiveness of research.
+The transparency provided by sharing data, code and documentation makes it easier for problems to be
+identified, so that erroneous findings are less likely to pollute the scientific literature.
+Researchers, their institutions, publishers and funders each have a major role to play in fighting the
+reproducibility crisis by encouraging highly reproducible research practices.
 
 <br>
 
@@ -873,6 +890,7 @@ to five pillar concepts.](https://ziemann-lab.net/public/5pillars/practical_guid
 ## Author biographies 
 
 **Mark Ziemann** is a Senior Lecturer in Biotechnology and Bioinformatics at Deakin University.
+He has recently been recruited to Burnet Institute as Head of Bioinformatics.
 His research spans bioinformatics as applied to omics data analysis in biomedicine, as well as aspects
 of research rigor.
 
