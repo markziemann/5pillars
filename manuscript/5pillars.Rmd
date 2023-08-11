@@ -61,7 +61,7 @@ reproducible, but suffer from analytical problems that invalidate the results.
 If a study is reproducible, then at least these analytical issues can be more easily identified and
 rectified.
 Therefore, reproducibility is a necessary stepping-stone in the framework of cumulative science.
-Reproducibility should enhance the overall reliability of computational research 
+Reproducibility should enhance the overall reliability of computational research
 including replicability and robustness.
 Replicability being defined as the ability to repeat the entire study and come up with similar overall
 results.
@@ -81,16 +81,46 @@ only 245/4169 notebooks (5.9%) giving similar results compared to the original, 
 blamed on missing data, broken dependencies and buggy code @Samuel2022-ha.
 A similar survey of R scripts in the Harvard Dataverse repository found slightly better results,
 with 26% of scripts completing without errors [@Trisovic2022-dq].
-Irreproducible bioinformatics has the potential to place patient safety at risk, as demonstrated by an
-earlier case study @Baggerly2010-nr.
-Researchers are theoretically able to achieve 100% computational reproducibility, yet as we see,
-in practice this is rarely achieved.
 
-(TODO: discuss the ramifications of such shortcomings on scientific progress.
-This will highlight the urgency and significance of the proposed measures.)
+The ramifications of unreliable research include misleading the community, wasting research funds,
+slowing scientific progress, eroding public confidence in science and tarnishing the reputation
+of associated institutions and colleagues.
+In certain cases, irreproducible bioinformatics has the potential to place patient safety at risk.
 
-(Unreliable research is a waste of resources and time and can mislead readers to pursue doomed
-research directions.)
+For example in 2006, an article entitled "Genomic signatures to guide the use of chemotherapeutics"
+generated a great deal of interest as it was an early application of high throughput transcriptomics
+in the prediction of individual patient responses to different chemotherapies @Potti2006-yk.
+After identifying some unusual features of the patient group, Baggerly and Coombes attempted
+reproduction of some of the key findings @Baggerly2010-nr.
+Without the help of scripted workflows to guide the re-analysis, the team used forensic bioinformatic
+techniques to piece together how the dataset was originally analysed.
+Their investigations found a litany of issues.
+Firstly, the labeling of patients in the test set as "responders" or
+"non-responders" had been reversed in the original.
+Secondly, some of the patients were included more than once (some up to four times) in the analysis,
+which is likely to lead to major distortions in results.
+Confusingly, some of the reused data has inconsistent grouping; ie: some of the samples are labeled
+both sensitive and resistant.
+Additional errors include two cases of reported results for the wrong drug.
+Baggerly and Coombes highlight that such mistakes can inadvertently occur when using spreadsheets, and
+they note that poor documentation and lack of code contributed to a lack of transparency and poor data
+hygiene.
+The article underwente two corrigenda, but was untimately retracted in 2011, as the authors were not
+able to reproduce the findings themselves due to "corruption of several validation data sets"
+@Potti2011-ut.
+As the array findings were the basis for clinical trials where patients were allocated to treatments,
+the flawed data analysis may have had damaging consequences to patients given the wrong drug in the
+period 2007-2010, before Duke terminated the trials and suspended the lead author, Dr Anil Potti, who
+later resigned.
+Duke was served eight lawsuits by families of affected patients seeking compensation for exposure to
+harmful and unnecessary chemotherapy, which were settled out of court @Dyer2015-my.
+
+In order for bioinformatic-driven findings to be tranalated to the clinic, they need to be 
+
+as demonstrated by an earlier case study @Baggerly2010-nr. <more detail here>
+
+These consequences highlight the urgency for which we must improve stadards for computational research
+
 
 ## Recommendations
 
@@ -837,6 +867,8 @@ The transparency provided by sharing data, code and documentation makes it easie
 identified, so that erroneous findings are less likely to pollute the scientific literature.
 Researchers, their institutions, publishers and funders each have a major role to play in fighting the
 reproducibility crisis by encouraging highly reproducible research practices.
+
+https://bmcresnotes.biomedcentral.com/articles/10.1186/s13104-021-05875-3#Sec2
 
 <br>
 

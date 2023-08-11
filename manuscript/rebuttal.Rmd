@@ -17,27 +17,39 @@ Below is our point-by-point response to reviewer comments.
 
 ### Reviewer 1
 
-> In this manuscript, the authors present a framework that computational researchers should follow to maximize the reproducibility of their computational research. The five pillars that they identified are 1) code version control and sharing, 2) compute environment control,  3) literate programming, 4) documentation and 5) FAIR data sharing. They give a fair amount of detail regarding each pillar. This paper contains no original research and is more of an opinion piece. With that in mind, if BiB is interested in this topic, I recommend publishing. The authors make very reasonable suggestions. My only request for edits is to rearrange the section structure of the manuscript to be in line with the numbering of the pillars. Right now it is quite confusing.
+> In this manuscript, the authors present a framework that computational researchers should follow to
+> maximize the reproducibility of their computational research. The five pillars that they identified
+> are 1) code version control and sharing, 2) compute environment control,  3) literate programming,
+> 4) documentation and 5) FAIR data sharing. They give a fair amount of detail regarding each pillar.
+> This paper contains no original research and is more of an opinion piece. With that in mind, if BiB
+> is interested in this topic, I recommend publishing. The authors make very reasonable suggestions.
+> My only request for edits is to rearrange the section structure of the manuscript to be in line with
+> the numbering of the pillars. Right now it is quite confusing.
 
 Response: We thank the reviewer for their positive feedback.
-With regards to the ordering of the five pillars, we have altered Figure 1 so that the pillars now
+With regards to the ordering of the five pillars, we have amended Figure 1 so that the pillars now
 appear in the same order as they are detailed in sections following.
 
 ### Reviewer 2
 
-> Comments to the Author: The article offers a comprehensive perspective on reproducibility in computational research, delivering clear and logically backed recommendations. It is indeed a very interesting topic that needs our attention. Nevertheless, there are areas that could benefit from further development and clarity:
+> Comments to the Author: The article offers a comprehensive perspective on reproducibility in
+> computational research, delivering clear and logically backed recommendations. It is indeed a very
+> interesting topic that needs our attention. Nevertheless, there are areas that could benefit from
+> further development and clarity:
 
 Response: We appreciate reviewer 2's positive feedback and thoughtful suggestions.
 
-> 1. Inclusion of Case Studies or Examples: To strengthen your argument, consider incorporating case studies or practical examples that demonstrate the effectiveness of your recommendations. Highlighting specific instances where these best practices have enhanced reproducibility or solved particular issues could substantiate your points more effectively.
+> 1. Inclusion of Case Studies or Examples: To strengthen your argument, consider incorporating case
+> studies or practical examples that demonstrate the effectiveness of your recommendations.
+> Highlighting specific instances where these best practices have enhanced reproducibility or solved
+> particular issues could substantiate your points more effectively.
 
 Consider case study of enrichment analysis.
 
-> 2. Expanding on Current Shortcomings: The article mentions that current practices are not meeting the goal of reproducibility. An expanded discussion on the ramifications of these shortcomings on scientific progress could accentuate the urgency and significance of addressing this issue.
+> 2. Expanding on Current Shortcomings: The article mentions that current practices are not meeting the
+> goal of reproducibility. An expanded discussion on the ramifications of these shortcomings on
+> scientific progress could accentuate the urgency and significance of addressing this issue.
 
-After the paragraph ending in "... yet as we see, in practice this is rarely achieved." it would be
-good to discuss the ramifications of such shortcomings on scientific progress.
-This will highlight the urgency and significance of the proposed measures.
 
 > 3. Focus on Implementation Challenges: While the article acknowledges the importance of certain practices, an increased focus on potential obstacles researchers may face when trying to implement these suggestions, as well as strategies to overcome these challenges, would be insightful.
 
@@ -73,7 +85,10 @@ The subheading structure has been amended in line with these recommendations.
 
 * Key points
 
-> 5. Engaging Conclusion: Reworking the conclusion to be more impactful could be beneficial. Instead of merely summarizing the recommendations, it would be useful to indicate the potential trajectory of computational research if these recommendations are adopted, as well as highlighting the potential risks if they aren't.
+> 5. Engaging Conclusion: Reworking the conclusion to be more impactful could be beneficial. Instead of
+> merely summarizing the recommendations, it would be useful to indicate the potential trajectory of
+> computational research if these recommendations are adopted, as well as highlighting the potential
+> risks if they aren't.
 
 Response: We have completely rewritten the conclusion.
 Instead of reiterating the five pillars, we focus on the motivation for adoption:
