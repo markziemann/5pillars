@@ -26,7 +26,7 @@ Below is our point-by-point response to reviewer comments.
 > My only request for edits is to rearrange the section structure of the manuscript to be in line with
 > the numbering of the pillars. Right now it is quite confusing.
 
-Response: We thank the reviewer for their positive feedback.
+Response: We thank reviewer 1 for their positive feedback.
 With regards to the ordering of the five pillars, we have amended Figure 1 so that the pillars now
 appear in the same order as they are detailed in sections following.
 
@@ -37,21 +37,62 @@ appear in the same order as they are detailed in sections following.
 > interesting topic that needs our attention. Nevertheless, there are areas that could benefit from
 > further development and clarity:
 
-Response: We appreciate reviewer 2's positive feedback and thoughtful suggestions.
+Response: We appreciate reviewer 2's positive feedback, insights and thoughtful suggestions.
 
 > 1. Inclusion of Case Studies or Examples: To strengthen your argument, consider incorporating case
 > studies or practical examples that demonstrate the effectiveness of your recommendations.
 > Highlighting specific instances where these best practices have enhanced reproducibility or solved
 > particular issues could substantiate your points more effectively.
 
-Consider case study of enrichment analysis.
+To demonstrate the importance of computational reprodcibility, we elaborate on the
+"forensic bioinformatics" case study of Baggerly and Coombes (2010) critique of Potti et al (2006)
+in the introduction.
+
+> For example, in 2006 an article entitled "Genomic signatures to guide the use of chemotherapeutics"
+> generated a great deal of interest as it was an early application of high throughput transcriptomics
+> in the prediction of individual patient responses to different chemotherapies @Potti2006-yk.
+> After observing some unusual features of the patient group, Baggerly and Coombes attempted
+> reproduction of some of the key findings @Baggerly2010-nr.
+> Without the help of scripted workflows to guide the re-analysis, the team used forensic bioinformatic
+> techniques to piece together how the dataset was originally analysed.
+> Their investigations found a litany of issues.
+> Firstly, the labeling of patients in the test set as "responders" or "non-responders" had been reversed
+> in the original analysis.
+> Secondly, some of the patients were included more than once (some up to four times) in the analysis,
+> likely to cause major distortions in results.
+> Confusingly, some of the reused data has inconsistent grouping; ie: some of the samples are labeled
+> both sensitive and resistant.
+> Additional errors include two cases where results (charts) were ascribed to the wrong drug.
+> Baggerly and Coombes highlight that such mistakes can inadvertently occur when conducting unscripted
+> data analysis such as using spreadsheets, and such problems can be obscured by a lack of documentation.
+> The article underwent two corrigenda, but was untimately retracted in 2011, as the authors were not
+> able to reproduce the findings themselves due to "corruption of several validation data sets"
+> @Potti2011-ut.
+> As the array findings were the basis for clinical trials where patients were allocated to treatments,
+> the flawed data analysis may have harmed patients given the wrong drug in the
+> period 2007-2010.
+> In 2010, Duke University terminated the trials and suspended the lead author, Dr Anil Potti, who
+> later resigned.
+> Duke was served eight lawsuits by families of affected patients seeking compensation for exposure to
+> harmful and unnecessary chemotherapy, which were settled out of court @Dyer2015-my.
+> This worst-case scenario emphasizes that computational reproducibility is crucial for
+> translating bioinformatics research into real-world outcomes.
 
 > 2. Expanding on Current Shortcomings: The article mentions that current practices are not meeting the
 > goal of reproducibility. An expanded discussion on the ramifications of these shortcomings on
 > scientific progress could accentuate the urgency and significance of addressing this issue.
 
+In the introduction we have spoken to the consequences of poor computational research, and emphasize
+the urgency of this issue (which complements the case study above).
 
-> 3. Focus on Implementation Challenges: While the article acknowledges the importance of certain practices, an increased focus on potential obstacles researchers may face when trying to implement these suggestions, as well as strategies to overcome these challenges, would be insightful.
+> The ramifications of irreproducible and unreliable research includes misleading the community,
+> wasting research funds, slowing scientific progress, eroding public confidence in science and
+> tarnishing the reputation of associated institutions and colleagues.
+> In certain cases, irreproducible bioinformatics has the potential to place patient safety at risk.
+
+> 3. Focus on Implementation Challenges: While the article acknowledges the importance of certain
+> practices, an increased focus on potential obstacles researchers may face when trying to implement
+> these suggestions, as well as strategies to overcome these challenges, would be insightful.
 
 Just before the paragraph "A lack of technical computer skills in many research groups is another culprit."
 We should explicitly discuss implementation challenges.

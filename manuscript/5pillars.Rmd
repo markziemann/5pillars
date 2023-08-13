@@ -82,45 +82,40 @@ blamed on missing data, broken dependencies and buggy code @Samuel2022-ha.
 A similar survey of R scripts in the Harvard Dataverse repository found slightly better results,
 with 26% of scripts completing without errors [@Trisovic2022-dq].
 
-The ramifications of unreliable research include misleading the community, wasting research funds,
-slowing scientific progress, eroding public confidence in science and tarnishing the reputation
-of associated institutions and colleagues.
+The ramifications of irreproducible and unreliable research includes misleading the community,
+wasting research funds, slowing scientific progress, eroding public confidence in science and
+tarnishing the reputation of associated institutions and colleagues.
 In certain cases, irreproducible bioinformatics has the potential to place patient safety at risk.
 
-For example in 2006, an article entitled "Genomic signatures to guide the use of chemotherapeutics"
+For example, in 2006 an article entitled "Genomic signatures to guide the use of chemotherapeutics"
 generated a great deal of interest as it was an early application of high throughput transcriptomics
 in the prediction of individual patient responses to different chemotherapies @Potti2006-yk.
-After identifying some unusual features of the patient group, Baggerly and Coombes attempted
+After observing some unusual features of the patient group, Baggerly and Coombes attempted
 reproduction of some of the key findings @Baggerly2010-nr.
 Without the help of scripted workflows to guide the re-analysis, the team used forensic bioinformatic
 techniques to piece together how the dataset was originally analysed.
 Their investigations found a litany of issues.
-Firstly, the labeling of patients in the test set as "responders" or
-"non-responders" had been reversed in the original.
+Firstly, the labeling of patients in the test set as "responders" or "non-responders" had been reversed
+in the original analysis.
 Secondly, some of the patients were included more than once (some up to four times) in the analysis,
-which is likely to lead to major distortions in results.
+likely to cause major distortions in results.
 Confusingly, some of the reused data has inconsistent grouping; ie: some of the samples are labeled
 both sensitive and resistant.
-Additional errors include two cases of reported results for the wrong drug.
-Baggerly and Coombes highlight that such mistakes can inadvertently occur when using spreadsheets, and
-they note that poor documentation and lack of code contributed to a lack of transparency and poor data
-hygiene.
-The article underwente two corrigenda, but was untimately retracted in 2011, as the authors were not
+Additional errors include two cases where results (charts) were ascribed to the wrong drug.
+Baggerly and Coombes highlight that such mistakes can inadvertently occur when conducting unscripted
+data analysis such as using spreadsheets, and such problems can be obscured by a lack of documentation.
+The article underwent two corrigenda, but was untimately retracted in 2011, as the authors were not
 able to reproduce the findings themselves due to "corruption of several validation data sets"
 @Potti2011-ut.
 As the array findings were the basis for clinical trials where patients were allocated to treatments,
-the flawed data analysis may have had damaging consequences to patients given the wrong drug in the
-period 2007-2010, before Duke terminated the trials and suspended the lead author, Dr Anil Potti, who
+the flawed data analysis may have harmed patients given the wrong drug in the
+period 2007-2010.
+In 2010, Duke University terminated the trials and suspended the lead author, Dr Anil Potti, who
 later resigned.
 Duke was served eight lawsuits by families of affected patients seeking compensation for exposure to
 harmful and unnecessary chemotherapy, which were settled out of court @Dyer2015-my.
-
-In order for bioinformatic-driven findings to be tranalated to the clinic, they need to be 
-
-as demonstrated by an earlier case study @Baggerly2010-nr. <more detail here>
-
-These consequences highlight the urgency for which we must improve stadards for computational research
-
+This worst-case scenario emphasizes that computational reproducibility is crucial for
+translating bioinformatics research into real-world outcomes.
 
 ## Recommendations
 
