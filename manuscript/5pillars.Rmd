@@ -786,10 +786,64 @@ relative to the overall research project.
 
 ## Challenges
 
-Due to the constantly developing software landscape, this review is not intended to give strong
-recommendations on the exact combination of tools or resources to use in computational research,
-but to set out key principles and highlight some useful solutions that users can incorporate
-into their toolkit to improve the overall reproducibility of their work.
+Progress on implementing these best practices into computational research publications has been minimal, as
+researchers face a range of obstacles.
+
+These include:
+
+* The "publish-or-perish" incentive structures in academia reward prolific rather than scrupulous
+authors.
+Part of the problem is the incentive structures in academia, with funding bodies and journals
+largely focused on novel research directions rather than confirming previous findings
+[@Garijo2013-zl ; @Huang2013-xr; @Kaelin2017-id; @Munafo2017-ty; @Diong2021-is].
+
+* Journal standards are slow to progress.
+To illustrate this, many journals still allow publication without deposition of code or data to public
+repositories.
+
+* A lack of systematic reproducibility/replication studies in bioinformatics remains small
+[@Ioannidis2009-hv; @Zaringhalam2020-ms; @Samuel2022-ha], so the severity of the problem isn't
+well understood.
+
+* A lack of documentated protocols and tutorial materials.
+
+* An overall lack of coding/data science expertise among life science researchers and new graduates.
+
+Overcoming these challenges will require a multi-pronged strategy:
+
+* Incentive structures will need to change.
+How we measure and value research achievement.
+A change in culture or research assessment.
+How we fund research data analytics and infrastructure.
+Value rigour as well as prolificness.
+
+* Journals need to progress towards publishing reproducible workflows.
+Peng 2011 speaks about the lack of infrastructure for disseminating reproducible research.
+
+* Enhanced training.
+A lack of technical computer skills in many research groups is another culprit.
+Specific workshop-based training in these areas could help [@Williams2023-ic].
+The [Software Carpentry](https://software-carpentry.org/) initiative is focused on this mission
+[@Wilson2014-mh].
+Undergraduate and postgraduate courses in the life sciences would benefit from enhanced training in data
+science.
+
+* Enhanced documentation, protocols and tutorials.
+The most scalable solution would be to provide comprehensive beginner-friendly step-by-step
+guides for frequently used routines.
+For example, our group has just released such a protocol that walks novice users through the process
+of implementing functional enrichment analysis of gene expression data with the five pillars principles
+@Ziemann2023-nm.
+More such protocols are needed to make extreme reproducibility mainstream.
+A compendium of publicly available learning materials around the five pillar concepts are
+provided in the supplementary information.
+
+* What individuals can do.
+
+* Overall change in culture.
+Recognition that life sciences is a data intensive discipline.
+
+## Future directions
 
 When these principles are not integrated correctly and checked, problems readily emerge
 [@Barba2016-kk; @Samuel2022-ha; @Zaringhalam2020-ms].
@@ -809,44 +863,6 @@ article can be assessed computationally, then such tests could be used to demons
 reproducibility without the need for individuals to execute the workflow themselves.
 Continuous analysis might therefore be a future pediment (crowning feature) to the five-pillared
 "temple" of reproducible research.
-
-The key technological advances enabling the five pillars approach have been around for about a decade,
-yet progress on integrating these into computational research publications has been minimal.
-Indeed the number of systematic replication studies in bioinformatics remains small
-[@Ioannidis2009-hv; @Zaringhalam2020-ms; @Samuel2022-ha], so the severity of the problem isn't
-well understood.
-Part of the problem is the incentive structures in academia, with funding bodies and journals
-largely focused on novel research directions rather than confirming previous findings
-[@Garijo2013-zl ; @Huang2013-xr; @Kaelin2017-id; @Munafo2017-ty; @Diong2021-is].
-
-(TODO: reviewer 2 point 3: focus on implementation challenges and strategies to overcome.
-Expand this section articulating the difficulties with making gold standard reproducibility the norm.
-Detail some strategies that can be used.
-Case in point: spreadsheet causing gene name errors
-
-1. described in 2004
-
-2. followed by large scale screens in 2016,2022
-
-3. HUGO finally takes action
-
-4. Public awareness
-
-5. Numbers of affected articles diminishes
-)
-
-A lack of technical computer skills in many research groups is another culprit.
-Specific workshop-based training in these areas could help [@Williams2023-ic].
-The [Software Carpentry](https://software-carpentry.org/) initiative is focused on this mission
-[@Wilson2014-mh].
-However, the most scalable solution would be to provide comprehensive beginner-friendly step-by-step
-guides for frequently used routines.
-For example, our group has just released such a protocol that walks novice users through the process
-of implementing functional enrichment analysis of gene expression data with the five pillars principles
-@Ziemann2023-nm.
-More such protocols are needed to make extreme reproducibility mainstream.
-A compendium of publicly available learning materials around the five pillar concepts are
-provided in the supplementary information.
 
 <br>
 

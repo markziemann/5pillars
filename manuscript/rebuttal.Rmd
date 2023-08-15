@@ -46,7 +46,7 @@ Response: We appreciate reviewer 2's positive feedback, insights and thoughtful 
 
 To demonstrate the importance of computational reprodcibility, we elaborate on the
 "forensic bioinformatics" case study of Baggerly and Coombes (2010) critique of Potti et al (2006)
-in the introduction.
+in the introduction:
 
 > For example, in 2006 an article entitled "Genomic signatures to guide the use of chemotherapeutics"
 > generated a great deal of interest as it was an early application of high throughput transcriptomics
@@ -83,9 +83,9 @@ in the introduction.
 > scientific progress could accentuate the urgency and significance of addressing this issue.
 
 In the introduction we have spoken to the consequences of poor computational research, and emphasize
-the urgency of this issue (which complements the case study above).
+the urgency of this issue (which complements the case study above):
 
-> The ramifications of irreproducible and unreliable research includes misleading the community,
+> The ramifications of irreproducible and unreliable research include misleading the community,
 > wasting research funds, slowing scientific progress, eroding public confidence in science and
 > tarnishing the reputation of associated institutions and colleagues.
 > In certain cases, irreproducible bioinformatics has the potential to place patient safety at risk.
