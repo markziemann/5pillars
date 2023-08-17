@@ -103,7 +103,7 @@ Confusingly, some of the reused data has inconsistent grouping; ie: some of the 
 both sensitive and resistant.
 Additional errors include two cases where results (charts) were ascribed to the wrong drug.
 Baggerly and Coombes highlight that such mistakes can inadvertently occur when conducting unscripted
-data analysis such as using spreadsheets, and such problems can be obscured by a lack of documentation.
+data analysis such as using spreadsheets, and these problems can be obscured by a lack of documentation.
 The article underwent two corrigenda, but was untimately retracted in 2011, as the authors were not
 able to reproduce the findings themselves due to "corruption of several validation data sets"
 @Potti2011-ut.
@@ -122,7 +122,7 @@ translating bioinformatics research into real-world outcomes.
 A number of guides recommending enhanced computational reproducibility practices have been developed
 [ @Tan2010-is; @Peng2011-ia; @Sandve2013-lk; @Piccolo2016-ji; @Lewis2016-qh;
 @Gruning2018-sg; @Akalin2018-eg; @Brito2020-ld; @Peikert2021-eq;
-@Rodrigues2023-fw; @DuPre2022-bk].
+@Rodrigues2023-fw; @DuPre2022-bk; @Krafczyk2021-xv; @Stodden2016-aj].
 Inspired by these principles, this article presents the
 *five pillars of reproducible computational research* (**Figure 1**).
 There are clear parallels with the established three pillars of the open science framework,
@@ -504,7 +504,7 @@ a vast collection of pre-built container images in the DockerHub registry.
 Docker can fetch images from DockerHub and run them on the host system with just a couple of commands,
 and typically within a few minutes.
 This accelerates the installation procedure dramatically which is a known bottleneck for bioinformatic
-reproducibility [@Mangul2019-ei;@Mangul2019-xp].
+reproducibility [@Mangul2019-ei;@Mangul2019-xp;@Krafczyk2021-xv].
 
 ```{r,containers,fig.cap="Figure 4. Architecture of containers (left) compared to VMs (right). Adapted from @noauthor_2021-lt.",echo=FALSE,fig.height=6}
 
@@ -786,30 +786,48 @@ relative to the overall research project.
 
 ## Challenges
 
-Progress on implementing these best practices into computational research publications has been minimal, as
-researchers face a range of obstacles.
+Although the technological tools underlying these best practices have existed for a decade,
+progress on implementing them into computational research publications has been minimal.
 
-These include:
+Researchers face several hurdles in adopting these.
 
 * The "publish-or-perish" incentive structures in academia reward prolific rather than scrupulous
 authors.
-Part of the problem is the incentive structures in academia, with funding bodies and journals
-largely focused on novel research directions rather than confirming previous findings
-[@Garijo2013-zl ; @Huang2013-xr; @Kaelin2017-id; @Munafo2017-ty; @Diong2021-is].
-
-* Journal standards are slow to progress.
-To illustrate this, many journals still allow publication without deposition of code or data to public
-repositories.
+Funding bodies, institutions and journals generally prefer to focus on novel research directions rather
+than meticulous confirmation of previous findings [@Garijo2013-zl ; @Huang2013-xr; @Kaelin2017-id;
+@Munafo2017-ty; @Diong2021-is].
 
 * A lack of systematic reproducibility/replication studies in bioinformatics remains small
-[@Ioannidis2009-hv; @Zaringhalam2020-ms; @Samuel2022-ha], so the severity of the problem isn't
-well understood.
+[@Ioannidis2009-hv; @Zaringhalam2020-ms; @Samuel2022-ha], so the severity of the reproducibility
+problem isn't well appreciated.
 
-* A lack of documentated protocols and tutorial materials.
+* Journal standards are slow to progress.
+Our observations indicate that sharing of data and code remains optional for most medical
+journals in PubMed, but in the field of computational biology, providing these resources is
+becoming standard practice.
+
+* A lack of documentated protocols and tutorial materials for highly-reproducible analysis makes it
+difficult for researchers to confidently update their code development practices.
 
 * An overall lack of coding/data science expertise among life science researchers and new graduates.
+Due to strong demand from industry and government, academia has a deficit of workers fluent in data
+science [@Committee_on_Envisioning_the_Data_Science_Discipline_The_Undergraduate_Perspective2018-pe].
+This makes it challenging for organisations to recruit capable data analysts and cultivate a
+community of practice.
 
-Overcoming these challenges will require a multi-pronged strategy:
+Stodden et al have outlined some practical recommendations for tackling these problems [@Stodden2016-aj].
+
+Overcoming these obstacles will require a multi-pronged strategy and effort from different stakeholders.
+
+* What researchers can do.
+
+* What journals can do.
+
+* What insitutions can do.
+
+* What universities can do.
+
+* What funders can do.
 
 * Incentive structures will need to change.
 How we measure and value research achievement.
