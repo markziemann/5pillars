@@ -117,6 +117,8 @@ harmful and unnecessary chemotherapy, which were settled out of court @Dyer2015-
 This worst-case scenario emphasizes that computational reproducibility is crucial for
 translating bioinformatics research into real-world outcomes.
 
+<br>
+
 ## Recommendations
 
 A number of guides recommending enhanced computational reproducibility practices have been developed
@@ -504,7 +506,7 @@ a vast collection of pre-built container images in the DockerHub registry.
 Docker can fetch images from DockerHub and run them on the host system with just a couple of commands,
 and typically within a few minutes.
 This accelerates the installation procedure dramatically which is a known bottleneck for bioinformatic
-reproducibility [@Mangul2019-ei;@Mangul2019-xp;@Krafczyk2021-xv].
+reproducibility [@Mangul2019-ei; @Mangul2019-xp; @Krafczyk2021-xv].
 
 ```{r,containers,fig.cap="Figure 4. Architecture of containers (left) compared to VMs (right). Adapted from @noauthor_2021-lt.",echo=FALSE,fig.height=6}
 
@@ -788,78 +790,56 @@ relative to the overall research project.
 
 Although the technological tools underlying these best practices have existed for a decade,
 progress on implementing them into computational research publications has been minimal.
+There are very many challenges, some of which have been discussed before
+[ @Peng2011-ia; @Stodden2016-aj; @Munafo2017-gf ; @Diaba-Nuhoho2021-nt ].
 
-Researchers face several hurdles in adopting these.
+Due to the relative lack of systematic reproducibility/replication studies in bioinformatics,
+the severity of the reproducibility problem isn't well appreciated.
+The studies that have been conducted point to reproducibility rates of ~10% in computational
+life sciences [@Ioannidis2009-hv;@Zaringhalam2020-ms; @Samuel2022-ha], but further systematic studies
+are required to bring attention to the issue.
 
-* The "publish-or-perish" incentive structures in academia reward prolific rather than scrupulous
-authors.
-Funding bodies, institutions and journals generally prefer to focus on novel research directions rather
+Journals are partly responsible, as their editorial policies influence author behaviours.
+Except for a few outliers, verification of computational reproducibility is not in the scope of peer
+review, but this should be considered.
+As others have noted, it is in the interests of funders to provide the infrastructure to facilitate this
+[@Peng2011-ia].
+
+Another hindrance to reproducibility more broadly is the fixation on novel research directions rather
 than meticulous confirmation of previous findings [@Garijo2013-zl ; @Huang2013-xr; @Kaelin2017-id;
 @Munafo2017-ty; @Diong2021-is].
+This is a direct result of research assessment policies that incentivize journal-level prestige
+metrics and number of publications rather than the rigour [@Munafo2017-gf].
+A change in research assessment ("eg: track-record") that recognises and credits contributions toward
+reproducibility and rigor would help decrease funds wasted on sloppy research.
 
-* A lack of systematic reproducibility/replication studies in bioinformatics remains small
-[@Ioannidis2009-hv; @Zaringhalam2020-ms; @Samuel2022-ha], so the severity of the reproducibility
-problem isn't well appreciated.
-
-* Journal standards are slow to progress.
-Our observations indicate that sharing of data and code remains optional for most medical
-journals in PubMed, but in the field of computational biology, providing these resources is
-becoming standard practice.
-
-* A lack of documentated protocols and tutorial materials for highly-reproducible analysis makes it
-difficult for researchers to confidently update their code development practices.
-
-* An overall lack of coding/data science expertise among life science researchers and new graduates.
-Due to strong demand from industry and government, academia has a deficit of workers fluent in data
-science [@Committee_on_Envisioning_the_Data_Science_Discipline_The_Undergraduate_Perspective2018-pe].
-This makes it challenging for organisations to recruit capable data analysts and cultivate a
-community of practice.
-
-Stodden et al have outlined some practical recommendations for tackling these problems [@Stodden2016-aj].
-
-Overcoming these obstacles will require a multi-pronged strategy and effort from different stakeholders.
-
-* What researchers can do.
-
-* What journals can do.
-
-* What insitutions can do.
-
-* What universities can do.
-
-* What funders can do.
-
-* Incentive structures will need to change.
-How we measure and value research achievement.
-A change in culture or research assessment.
-How we fund research data analytics and infrastructure.
-Value rigour as well as prolificness.
-
-* Journals need to progress towards publishing reproducible workflows.
-Peng 2011 speaks about the lack of infrastructure for disseminating reproducible research.
-
-* Enhanced training.
-A lack of technical computer skills in many research groups is another culprit.
-Specific workshop-based training in these areas could help [@Williams2023-ic].
+Individual researchers also face difficulties.
+Life science graduates often receive inadequate training in data science that places them in a
+disadvantage considering the data intensive nature of contemporary biology.
+This is compounded by the strong demand for data science experts in industry and government which
+leads to a deficit of academics fluent in data science
+[@Committee_on_Envisioning_the_Data_Science_Discipline_The_Undergraduate_Perspective2018-pe].
+This makes it challenging for organisations to recruit and retain capable data analysts and cultivate
+a community of practice.
+Addressing this problem is not straightforward.
+It requires ehancement of data science skills in undergraduate life science courses, investment in
+upskilling the current workforce and offering working conditions that are competitive with other sectors.
+Specific workshop-based training for current researchers could help [@Williams2023-ic].
 The [Software Carpentry](https://software-carpentry.org/) initiative is focused on this mission
 [@Wilson2014-mh].
-Undergraduate and postgraduate courses in the life sciences would benefit from enhanced training in data
-science.
 
-* Enhanced documentation, protocols and tutorials.
-The most scalable solution would be to provide comprehensive beginner-friendly step-by-step
+A lack of documentated protocols and tutorial materials for highly reproducible analysis makes it
+difficult for researchers to confidently update their code development practices.
+Expert bioinformaticians can help by publishing comprehensive beginner-friendly step-by-step
 guides for frequently used routines.
+This approach is highly scalable and the reach of open-access publishing ensures these materials are
+broadly accesible.
 For example, our group has just released such a protocol that walks novice users through the process
 of implementing functional enrichment analysis of gene expression data with the five pillars principles
 @Ziemann2023-nm.
-More such protocols are needed to make extreme reproducibility mainstream.
+More guides like this are needed to make extreme reproducibility mainstream.
 A compendium of publicly available learning materials around the five pillar concepts are
 provided in the supplementary information.
-
-* What individuals can do.
-
-* Overall change in culture.
-Recognition that life sciences is a data intensive discipline.
 
 ## Future directions
 
@@ -890,14 +870,12 @@ Large scale datasets are becoming commonplace in medicine and life sciences than
 of platform technologies like DNA sequencing, mass spectrometry and advanced imaging systems.
 These big datasets are enabling breakthrough discoveries, but due to their size and complexity, require
 significant expertise to analyze and distill key observations.
-The measures proposed here are designed to enhance transparency and foster the reuse of data and code.
-Such reuse reduces waste and enhances the cost-effectiveness of research.
-The transparency provided by sharing data, code and documentation makes it easier for problems to be
-identified, so that erroneous findings are less likely to pollute the scientific literature.
+The measures proposed here are designed to enhance transparency and foster the reuse of data and code;
+reducing research waste.
+Transparency makes it easier for problems to be identified, so that erroneous findings are less likely to
+pollute the scientific literature.
 Researchers, their institutions, publishers and funders each have a major role to play in fighting the
 reproducibility crisis by encouraging highly reproducible research practices.
-
-https://bmcresnotes.biomedcentral.com/articles/10.1186/s13104-021-05875-3#Sec2
 
 <br>
 

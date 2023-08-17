@@ -83,7 +83,7 @@ in the introduction:
 > scientific progress could accentuate the urgency and significance of addressing this issue.
 
 In the introduction we have spoken to the consequences of poor computational research, and emphasize
-the urgency of this issue (which complements the case study above):
+the urgency of this issue (which complements the case study summary above):
 
 > The ramifications of irreproducible and unreliable research include misleading the community,
 > wasting research funds, slowing scientific progress, eroding public confidence in science and
@@ -94,13 +94,16 @@ the urgency of this issue (which complements the case study above):
 > practices, an increased focus on potential obstacles researchers may face when trying to implement
 > these suggestions, as well as strategies to overcome these challenges, would be insightful.
 
-Just before the paragraph "A lack of technical computer skills in many research groups is another culprit."
-We should explicitly discuss implementation challenges.
-Part of the preceeding paragraph can also be amended.
+We have re-written the Challenges section to highlight some of the barriers slowing the
+adoption of best practices, with reference to previous contributions on the topic.
+These are structured around what different stakeholders can do to improve the situation (including
+funders, journals, institutions and individual researchers).
 
-> 4. Clear Structure: Consider organizing the article into clearly defined sections such as 'Introduction', 'Background', 'Recommendations', 'Challenges', and 'Conclusion'. This could significantly enhance readability and comprehensibility.
+> 4. Clear Structure: Consider organizing the article into clearly defined sections such as
+> 'Introduction', 'Background', 'Recommendations', 'Challenges', and 'Conclusion'.
+> This could significantly enhance readability and comprehensibility.
 
-The subheading structure has been amended in line with these recommendations.
+The subheading structure has been amended accordingly.
 
 * Abstract
 
@@ -134,13 +137,14 @@ The subheading structure has been amended in line with these recommendations.
 Response: We have completely rewritten the conclusion.
 Instead of reiterating the five pillars, we focus on the motivation for adoption:
 
->Large scale datasets are becoming commonplace in medicine and life sciences thanks to the commoditisation
->of platform technologies like DNA sequencing, mass spectrometry and advanced imaging systems.
->These big datasets are enabling breakthrough discoveries, but due to their size and complexity, require
->significant expertise to analyze and distill key observations.
->The measures proposed here are designed to enhance transparency and foster the reuse of data and code.
->Such reuse reduces waste and enhances the cost-effectiveness of research.
->The transparency provided by sharing data, code and documentation makes it easier for problems to be
->identified, so that erroneous findings are less likely to pollute the scientific literature.
->Researchers, their institutions, publishers and funders each have a major role to play in fighting the
->reproducibility crisis by encouraging highly reproducible research practices.
+> Large scale datasets are becoming commonplace in medicine and life sciences thanks to the commoditisation
+> of platform technologies like DNA sequencing, mass spectrometry and advanced imaging systems.
+> These big datasets are enabling breakthrough discoveries, but due to their size and complexity, require
+> significant expertise to analyze and distill key observations.
+> The measures proposed here are designed to enhance transparency and foster the reuse of data and code;
+> reducing research waste.
+> Transparency makes it easier for problems to be identified, so that erroneous findings are less likely to
+> pollute the scientific literature.
+> Researchers, their institutions, publishers and funders each have a major role to play in fighting the
+> reproducibility crisis by encouraging highly reproducible research practices.
+
