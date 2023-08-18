@@ -131,7 +131,7 @@ There are clear parallels with the established three pillars of the open science
 (open data, code and papers) [@Gorgolewski2016-hv].
 Here, the emphasis is on practical reproducibility with an increased focus on programming practices,
 transparent reporting and the role of computational environments.
-The intended audience is bioinformatics data analysts (not tool developers), however the
+The intended audience is anyone who analyzes biological data (not tool developers), however the
 principles described here could equally apply to other domains of study.
 
 ```{r,5pillars,fig.cap="Figure 1. The five pillars of computational reproducibility.",echo=FALSE,fig.height=6}
@@ -168,7 +168,7 @@ text( 5 , 0.2 , lab="End-to-end automated process")
 
 ### End-to-end automated process
 
-For a bioinformatics project to be reproducible, it needs to be enshrined by code and include all
+For a bioinformatics project to be reproducible, it needs to be formalised in code and include all
 instructions, from inspecting the raw data to generating the outputs that form the conclusions of the
 study.
 This automated process removes the need for any manual steps, which are time-consuming and
@@ -791,7 +791,7 @@ relative to the overall research project.
 Although the technological tools underlying these best practices have existed for a decade,
 progress on implementing them into computational research publications has been minimal.
 There are very many challenges, some of which have been discussed before
-[ @Peng2011-ia; @Stodden2016-aj; @Munafo2017-gf ; @Diaba-Nuhoho2021-nt ].
+[ @Peng2011-ia; @Stodden2016-aj; @Munafo2017-gf ; @Diaba-Nuhoho2021-nt].
 
 Due to the relative lack of systematic reproducibility/replication studies in bioinformatics,
 the severity of the reproducibility problem isn't well appreciated.

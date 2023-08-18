@@ -148,3 +148,81 @@ Instead of reiterating the five pillars, we focus on the motivation for adoption
 > Researchers, their institutions, publishers and funders each have a major role to play in fighting the
 > reproducibility crisis by encouraging highly reproducible research practices.
 
+## Reviewer 3
+
+> The paper is mostly well written and addresses an important topic: computational reproducibility and
+> tools to achieve it. The authors describe five "pillars" under which various tools and techniques can
+> be categorized. The paper is pretty comprehensive in what it covers and has useful supplementary
+> material. My main issue with the paper is that it reiterates many things that have been covered in
+> other papers. The authors cite 11 such papers. Many of the topics covered in submitted paper have
+> already been covered well in other papers. I am most familiar with reference 13, which covers many of
+> the same topics, although this paper goes into more detail on many issues. The authors could do more
+> to differentiate their paper from previous ones and perhaps remove some topics that are already
+> covered well elsewhere.
+
+RESPONSE: XX
+
+> Aside from that, I have listed below some relatively minor issues that, if addressed, would improve the paper. When I list page numbers, I am using the PDF page numbers rather than the numbers shown in the top-left corner of the manuscript.
+
+> 2. Page 3, Line 36: "bioinformatics data analysts (not tool developers)".
+> The authors state these individuals as the primary audience, but some parts of the paper seem to be
+> targeted at a more technical audience. Or maybe I am misunderstanding the intent. If the audience
+> is "bioinformatics data analysts," that would imply people who are bioinformaticians but are
+> analyzing data rather than creating tools. However, a much bigger audience (and perhaps more
+> important audience) are non-bioinformaticians who analyze data.
+
+RESPONSE: The passage has been amended for clarity:
+
+> The intended audience is anyone who analyzes biological data.
+
+> 3. Page 3, Line 43: "enshrined by code" (this language is awkward)
+
+RESPONSE: The passage has been amended for clarity:
+
+> "... it needs to be formalised in code and ... "
+
+> 4. Page 3, Lines 45-47: What about tasks that cannot be automated? U see that this topic is addressed later. But this part implies that everything can be automated.
+
+> 5. Page 3, Line 52: It says that spreadsheets are "overused and misused." This is subjective and not backed by evidence, other than the well-known examples of gene symbols being formatted as dates.
+
+> 6. Page 3, Line 56: It is not necessarily true that analyses performed using web tools are not reproducible. Although rare, some web tools facilitate reproducibility by providing code or configuration files and/or allowing the apps to be executed locally.
+
+> 7. Page 5, Line 15, type-o = "authors provided along the"
+
+> 8. Page 6, Line 21: "quantum leap" (this term is overly optimistic in this context)
+
+> 9. How do you get from a notebook to an actual paper submission if you have to do custom formatting of the document, including references? My understanding is that this is still not possible, but please correct me if I'm wrong.
+
+> 10. What about when your data files are too large to fit on a personal computer?
+
+> 11. What about computationally intensive tasks that must be performed using specialized computing environments like the cloud or clusters?
+
+> 12. Page 6, line 32: The master script idea was already mentioned earlier.
+
+> 13. Section on version control: This section focuses mostly on using VC for software development (that is my interpretation). To be consistent with the introduction, it should focus more on data analyses. Although I use VC for analyses, I feel that simpler approaches are better in many cases. For example Dropbox and Google Drive provide some version-control and backup functionality and do not require the same level of knowledge as git.
+
+> 14. Page 7: Many data analysts will not know what JupyterLab or VS Code are. References are also needed.
+
+> 15. Page 9, line 7: References are missing for these other tools.
+
+> 16. Page 9, lines 7-8: I believe you, but I am not aware of evidence that supports this claim.
+
+> 17. The Biocontainers project should be mentioned.
+
+> 18. Page 10, lines 51-52: I disagree that the risk is small. There are many instances of using genomic data to identify individuals who have committed crimes.
+
+> 19. Figures 2 and 4 are very similar to figures used in reference 13.
+
+> 20. Figure 5: I don't think it's really necessary to resummarize the FAIR principles. People can go to the source article for that.
+
+> 21. Page 11, line 13: I disagree that repositories like GEO and SRA are FAIR. There are lots of problems with FAIRness in these repositories.
+
+> 22. Page 11, lines 13-15: That's not true for some of these disciplines. Ecology has NEON, evo bio has NCBI.
+
+> 23. Page 11, line 34: Need evidence to back this up.
+
+> 24. Page 11, line 39: It is not necessarily true that CSV files are better than Excel. Excel can retain information about data types, for example, whereas CSVs do not. It depends on what you are trying to accomplish.
+
+> 25. One thing that could be added is something about Common Workflow Language. It's a community-supported specification for accomplishing many of the objectives described here. There are some recent papers about this.
+
+> 26. Page 14, lines 9-10: The big question is how to make more progress. We have the tools to achieve reproducibility, but why are we rarely achieving it? The paper mentions incentives and lack of training, which are true. You might consider elaborating a bit. My cynical view is that writing more papers and tutorials will do little without strong incentives and more automation.
