@@ -177,7 +177,7 @@ RESPONSE: The passage has been amended for clarity:
 
 > 3. Page 3, Line 43: "enshrined by code" (this language is awkward)
 
-RESPONSE: The passage has been amended for clarity:
+RESPONSE: The passage has been amended:
 
 > "... it needs to be formalised in code and ... "
 
@@ -202,19 +202,91 @@ survey that found that ~69% of university academics used MS Excel in their resea
 > reproducible. Although rare, some web tools facilitate reproducibility by providing code or
 > configuration files and/or allowing the apps to be executed locally.
 
+RESPONSE: Thank you for raising this point. We have amended the section in question:
+
+> While webtools are valuable for data exploration, there are worries that they undermine
+> reproducibility for the sake of convenience [@Wijesooriya2022-ly].
+> Transferring data between compute platforms is also discouraged.
+> For example, having workflows that involve combinations of web-based and scripted tools require
+> data transfer steps which are inefficient and error-prone.
+> On the other hand, some web based tools excel at reproducibility.
+> The web-based analysis platforms Galaxy and GenePattern enable sophisticated point-and-click
+> bioinformatics analysis in the browser, and those workflows can also be shared in a reproducible way
+> [@The_Galaxy_Community2022-dt;@Reich2006-na].
+> Some webtools facilitate reproducibility by providing code (e.g.: Degust @Powell2019-dw)
+> or by allowing apps to be executed locally (e.g.: ShinyGO @Ge2020-qe).
+
 > 7. Page 5, Line 15, type-o = "authors provided along the"
+
+RESPONSE: The passage in question has been amended:
+
+> In this work, authors provided alongside the traditional research paper a Jupyter notebook ..
 
 > 8. Page 6, Line 21: "quantum leap" (this term is overly optimistic in this context)
 
-> 9. How do you get from a notebook to an actual paper submission if you have to do custom formatting of the document, including references? My understanding is that this is still not possible, but please correct me if I'm wrong.
+RESPONSE: The passage in question has been amended:
+
+> These features make literate programming a useful tool for science communication in a range of
+> situations.
+
+> 9. How do you get from a notebook to an actual paper submission if you have to do custom formatting
+> of the document, including references?
+> My understanding is that this is still not possible, but please correct me if I'm wrong.
+
+RESPONSE: It is possible to achieve accurate journal-specific formatting of references with a Rmarkdown
+document.
+It requires a few things:
+
+* A .bib file that contains the bibliography in bibtex format.
+
+* A .csl file that specifies the citation style.
+These are avaialble from [GitHub](https://github.com/citation-style-language/styles).
+
+* Modifcation to the Rmd header section that specifies the path of the bib and csl files.
+
+This enables convenient reformatting of the bibliography for different venues.
+In terms of overall document formatting, the `rticles` package provides a suite of
+custom R Markdown LaTeX formats suitable for many journals.
+
+We have amended the Literate Programming section to mention these features briefly:
+
+> Quarto and R Markdown have the ability to automatically generate a bibliography in many different
+> journal styles [@noauthor_undated-pg].
+> Further, thanks to the `rticles` package, dozens of journal style R Markdown document templates are
+> freely available @Xie2018-rf.
 
 > 10. What about when your data files are too large to fit on a personal computer?
 
-> 11. What about computationally intensive tasks that must be performed using specialized computing environments like the cloud or clusters?
+RESPONSE: When data files are too large for a PC, it is common to use high performance computers, shared
+clusters or cloud computers.
+These computers are typically accessed via SSH (headless mode), so Quarto and Rstudio graphical
+interfaces might not be available.
+In those cases, the commands `quarto render document1.qmd` and `rmarkdown::render("document2.Rmd")` will
+work for Quarto and R Markdown respectively.
+
+> 11. What about computationally intensive tasks that must be performed using specialized computing
+> environments like the cloud or clusters?
+
+RESPONSE: We have amended the relevant section to suggest a specific workflow manager for compute
+intensive applications.
+
+> Projects involving computationally intensive tasks might benefit from a build/workflow automation
+> solution like `make`, `snakemake` [@Koster2012-sq; @Molder2021-mp], `targets` [@Landau2021] or
+> `nextflow` [@Di_Tommaso2017-yo].
 
 > 12. Page 6, line 32: The master script idea was already mentioned earlier.
 
-> 13. Section on version control: This section focuses mostly on using VC for software development (that is my interpretation). To be consistent with the introduction, it should focus more on data analyses. Although I use VC for analyses, I feel that simpler approaches are better in many cases. For example Dropbox and Google Drive provide some version-control and backup functionality and do not require the same level of knowledge as git.
+RESPONSE: True. We have amended the "Documentation" section to remove the unnecessary reiteration:
+
+> As outlined above, one of the goals is to reduce the complexity of reproduction, in particular by
+> minimising the number of commands required.
+
+> 13. Section on version control: This section focuses mostly on using VC for software development
+> (that is my interpretation).
+> To be consistent with the introduction, it should focus more on data analyses.
+> Although I use VC for analyses, I feel that simpler approaches are better in many cases.
+> For example Dropbox and Google Drive provide some version-control and backup functionality and do
+> not require the same level of knowledge as git.
 
 > 14. Page 7: Many data analysts will not know what JupyterLab or VS Code are. References are also needed.
 

@@ -187,8 +187,14 @@ reproducibility for the sake of convenience [@Wijesooriya2022-ly].
 Transferring data between compute platforms is also discouraged.
 For example, having workflows that involve combinations of web-based and scripted tools require
 data transfer steps which are inefficient and error-prone.
+On the other hand, some web based tools excel at reproducibility.
+The web-based analysis platforms Galaxy and GenePattern enable sophisticated point-and-click
+bioinformatics analysis in the browser, and those workflows can also be shared in a reproducible way
+[@The_Galaxy_Community2022-dt;@Reich2006-na].
+Some webtools facilitate reproducibility by providing code (e.g.: Degust @Powell2019-dw)
+or by allowing apps to be executed locally (e.g.: ShinyGO @Ge2020-qe).
 
-To facilitate an end-to-end automated process, the code and data need to be "linked", which means the
+To facilitate an end-to-end automated process, code and data need to be "linked", which means the
 code is aware of the location of the data and how to get it automatically @Peng2011-ia.
 The code should be able to fetch the data from a publicly accessible location and conduct the downstream
 processing and analysis without having to acquire the data some other way.
@@ -214,12 +220,13 @@ A "master script" that coordinates the execution of individual parts of an analy
 way to reduce the number of commands required for reproduction.
 This can be coded in standard open source languages like R/R Markdown, Python/Jupyter notebook or the
 Unix Shell.
+These approaches work equally well on personal computers, cloud servers and high performance clusters.
 Using free and open source software ensures that the research is accessible to the greatest audience
 @Garijo2013-zl, as opposed to proprietary software like SPSS, STATA and MatLab which are cost inhibitory.
 Free and open source software also enjoy relatively larger libraries of add-on packages contributed by
 the scientific community.
-Projects entailing big data analysis might benefit from a build/workflow automation solution like `make`,
-`snakemake` [@Koster2012-sq; @Molder2021-mp], `targets` [@Landau2021] or
+Projects involving computationally intensive tasks might benefit from a build/workflow automation
+solution like `make`, `snakemake` [@Koster2012-sq; @Molder2021-mp], `targets` [@Landau2021] or
 `nextflow` [@Di_Tommaso2017-yo].
 The advantage of such tools is that if the analysis were to terminate due to an issue mid-way,
 for example, a hardware problem at step 8 of a 15-step workflow, the analysis of steps 1-7 wouldn't
@@ -248,7 +255,7 @@ Around the same time, Project Jupyter was developed to provide a "notebook" type
 R, Python, Julia and other computer language chunks into documents [@kluyver2016; @granger2021; @Perkel2018-rz].
 A noteworthy attempt to use literate programming in Jupyter notebooks to aim for reproducibility
 has been the analysis of RNA-seq samples from patients infected by the Zika virus [@wang2016].
-In this work, authors provided along the traditional research paper a
+In this work, authors provided alongside the traditional research paper a
 [Jupyter notebook](https://nbviewer.org/github/maayanlab/Zika-RNAseq-Pipeline/blob/master/Zika.ipynb)
 that performed and documented the entire analysis procedure.
 The MyST-NB (short for Markedly Structured Text notebook) is built on top of Jupyter notebooks or Markdown documents
@@ -302,8 +309,12 @@ These include PDF, DOC/DOCX and HTML, the latter having some notable benefits
 including better usability for mobile devices like phones and tablets, and the ability to
 support richer content such as interactive charts and dynamic tables (searchable, filterable, sortable).
 Outputs include HTML documents, but also slideshows and even ebooks.
+Quarto and R Markdown have the ability to automatically generate a bibliography in many different
+journal styles [@noauthor_undated-pg].
+Further, thanks to the `rticles` package, dozens of journal style R Markdown document templates are
+freely available @Xie2018-rf.
 
-These features make literate programming a quantum leap for science communication in a range of
+These features make literate programming a useful tool for science communication in a range of
 situations.
 Whether this is sharing a data analysis report, giving a presentation at a meeting,
 writing a research article or self-publishing an ebook, literate programming provides the
@@ -762,9 +773,9 @@ it more accessible for reproducers to comprehend the workflow details, which is 
 standard code comments [@Rule2019-eh].
 These instructions should be tested whenever changes are made to the codebase.
 
-As outlined above, one of the goals is to reduce the complexity of reproduction, and using a master
-script is a simple way to do this.
-It also makes the `README` documentation much simpler.
+As outlined above, one of the goals is to reduce the complexity of reproduction, in particular by
+minimising the number of commands required.
+This also makes the `README` documentation much simpler.
 For example, the pathway analysis workflow we previously developed could be reproduced and inspected
 with just six commands, starting from a new Ubuntu Linux installation [@Ziemann2023-nm].
 By minimizing the complexity of reproduction and writing the instructions clearly in the `README`,
