@@ -181,11 +181,26 @@ RESPONSE: The passage has been amended for clarity:
 
 > "... it needs to be formalised in code and ... "
 
-> 4. Page 3, Lines 45-47: What about tasks that cannot be automated? U see that this topic is addressed later. But this part implies that everything can be automated.
+> 4. Page 3, Lines 45-47: What about tasks that cannot be automated? I see that this topic is addressed
+later. But this part implies that everything can be automated.
 
-> 5. Page 3, Line 52: It says that spreadsheets are "overused and misused." This is subjective and not backed by evidence, other than the well-known examples of gene symbols being formatted as dates.
+RESPONSE: The section has been amended to acknowledge that not all steps can be automated.
 
-> 6. Page 3, Line 56: It is not necessarily true that analyses performed using web tools are not reproducible. Although rare, some web tools facilitate reproducibility by providing code or configuration files and/or allowing the apps to be executed locally.
+> To ensure reproducibility of bioinformatics workflows, they need to be formalised in code wherever
+> possible, from inspecting the raw data to generating the outputs that form the conclusions of the study.
+
+> 5. Page 3, Line 52: It says that spreadsheets are "overused and misused." This is subjective and not
+> backed by evidence, other than the well-known examples of gene symbols being formatted as dates.
+
+RESPONSE: The passage in question has been replaced, with reference to evidence from a large
+survey that found that ~69% of university academics used MS Excel in their research activities.
+
+> Spreadsheet errors could be widespread, given that it is used as an analysis tool by ~69% of
+> researchers according to a survey undertaken in 2015-16 of 20,000 university academics @Kramer2016-fj.
+
+> 6. Page 3, Line 56: It is not necessarily true that analyses performed using web tools are not
+> reproducible. Although rare, some web tools facilitate reproducibility by providing code or
+> configuration files and/or allowing the apps to be executed locally.
 
 > 7. Page 5, Line 15, type-o = "authors provided along the"
 
