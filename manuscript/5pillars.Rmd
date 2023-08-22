@@ -401,9 +401,9 @@ text(c(8.2) ,c(6.2), labels="pull",srt=-60)
 
 ```
 
-Computational researchers can benefit significantly by adopting DVCS into their routine
-practices.
-Below we outline some of the benefits.
+Although DVCSs come from the world of software engineering, data analysts can significantly
+benefit from their use in the life sciences [@ram2013; @blischak2016; @perez-riverol2016].
+Below we outline some of these advantages.
 
 * Keeps a complete history of all code changes over time.
 We always know which version of the script is the most up to date.
@@ -457,13 +457,11 @@ Archiving source code in Software Heritage can be performed
 [webhook](https://docs.softwareheritage.org/user/save_code_now/webhooks/index.html) within continuous
 integration.
 
-`git` is typically used at the command line, however it is also integrated into Rstudio, JupyterLab and
-VS Code, and there are also several `git` clients with graphical interfaces which better allow inspection
-of code changes.
-
-Finally, although DVCSs come from the world of software engineering,
-their use has become a standard in computational biology, as witnessed by the numerous guides
-and best practices on the subject [@ram2013; @blischak2016; @perez-riverol2016].
+`git` is typically used at the command line, however it is also incorporated into integrated development
+environments commonly used in bioinformatics including Rstudio, JupyterLab
+[@Kluyver2016jupyter;@noauthor_undated-hg] and VS Code [@noauthor_undated-fn ;@Extensions_undated-ln].
+There are also several `git` clients with graphical interfaces which better allow inspection
+of code changes (e.g.: @noauthor_undated-rh, @noauthor_undated-kj).
 
 <br>
 
@@ -656,18 +654,16 @@ policy leadership by funding bodies
 (eg [@Packer2018-ru; @Hanson2011-ub ; @Cheifet2020-wu]), although there are some challenges.
 Some researchers would rather keep data for their private use.
 Some may keep data private due to concerns over participant privacy.
-This is a well-founded concern for identifiable data, however once identifying features are removed,
-it is nearly impossible to re-identify genomic data @Venkatesaramani2021-tn unless the attackers have
-pre-existing genomic data describing an individual or ancestry [@Schadt2012-md; @Gymrek2013-fz].
-Therefore, sharing de-identified genomic data and metadata is likely to carry little risk to participant
-privacy.
-Still, much human genomic data and metadata resides in restricted databases due to the scope of
-data sharing that was agreed to in the consent process.
-For example, the consent form may only allow sharing of data to researchers investigating certain
-diseases, which means a vetting process must be undertaken before sharing data with external
-investigators.
-In the interests of reuse and reproducibility, future studies could consider a consent form that allows
-more broad sharing of de-identified data.
+
+While deidentification of data has been widely used to safeguard participant privacy, this may not
+be suitable for genomics data due to the availability of existing public genetic data sets that heighten
+reidentification risks @Heeney2011-ri.
+For example, the surnames of some male participants can be inferred based on the Y chromosome variants
+seen in deidentified genomic data together with public geneology web sites @Gymrek2013-fz.
+To foster the responsible reuse of sensitive genomic and health data, the Global Alliance for
+Genomics and Health (GA4GH) initiative has proposed strategies, technical standards and policy
+frameworks designed to protect personal data in a way that perserves reproducibility
+[@Rehm2021-kt;@Thorogood2021-kt].
 
 In order to maximize the value of shared data for reuse and reproducibility, it needs to be Findable,
 Accessible, Interoperable and Reusable (FAIR) for people and for computers @Wilkinson2016-qq.
@@ -675,12 +671,14 @@ These principles are summarized in **Figure 5**.
 
 ![Figure 5. Overview of the FAIR data principles @Kalendralis2021-jb.](../img/gr2.jpg)
 
-High throughput biology has already built a number of data repositories for specific data types
-conforming to FAIR principles (e.g.: GEO, SRA, ENA, PRIDE [@Edgar2002-hs; @Kodama2012-bn; @Deutsch2017-hc]).
-However other domains lack well known specialized organized data repositories, such as evolutionary
-biology, ecology, cell biology, molecular simulation, social sciences and computing.
-The [re3data.org](https://www.re3data.org/) registry of data repositories may be useful to find a
-repository that accepts data from these fields [@Pampel2013-ep].
+High throughput biology has already built a number of data repositories for specific data types mostly
+conforming to FAIR principles.
+Repositories like GEO, SRA, ENA and PRIDE were developed in the aftermath of the draft human
+genome assembly and have become well known to omics researchers
+[@Edgar2002-hs; @Kodama2012-bn; Martens2005-wo]).
+The [re3data.org](https://www.re3data.org/) registry of data repositories may be useful to find
+FAIR repositories that accepts data from other domains of study like ecology,
+physiology, molecular simulation, social sciences and computing [@Pampel2013-ep].
 If no specialized repository exists, then a general-purpose repository such as
 [Dryad](https://datadryad.org/), [FigShare](https://figshare.com/), or [Zenodo](https://zenodo.org/)
 should be considered. Researchers should be aware, however, that these repositories are often not moderated, 

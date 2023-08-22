@@ -162,7 +162,9 @@ Instead of reiterating the five pillars, we focus on the motivation for adoption
 
 RESPONSE: XX
 
-> Aside from that, I have listed below some relatively minor issues that, if addressed, would improve the paper. When I list page numbers, I am using the PDF page numbers rather than the numbers shown in the top-left corner of the manuscript.
+> Aside from that, I have listed below some relatively minor issues that, if addressed, would improve
+> the paper. When I list page numbers, I am using the PDF page numbers rather than the numbers shown in
+> the top-left corner of the manuscript.
 
 > 2. Page 3, Line 36: "bioinformatics data analysts (not tool developers)".
 > The authors state these individuals as the primary audience, but some parts of the paper seem to be
@@ -288,28 +290,110 @@ RESPONSE: True. We have amended the "Documentation" section to remove the unnece
 > For example Dropbox and Google Drive provide some version-control and backup functionality and do
 > not require the same level of knowledge as git.
 
-> 14. Page 7: Many data analysts will not know what JupyterLab or VS Code are. References are also needed.
+RESPONSE: In accordance with this suggestion, we have rephrased some of the text to highlight the
+utility of DVCS for data analysts.
+
+> Although DVCSs come from the world of software engineering, data analysts can significantly
+> benefit from their use in the life sciences [@ram2013; @blischak2016; @perez-riverol2016].
+
+The bullet points following this passage outline the benefits of using DVCS.
+While cloud storage like dropbox could protect against code loss, they cannot other five points cannot
+be satisfied.
+
+> 14. Page 7: Many data analysts will not know what JupyterLab or VS Code are.
+References are also needed.
+
+RESPONSE: The phrase has been updated accordingly:
+
+> `git` is typically used at the command line, however it is also incorporated into integrated
+> development environments commonly used in bioinformatics including Rstudio, JupyterLab [68,69] and
+> VS Code [70,71].
 
 > 15. Page 9, line 7: References are missing for these other tools.
 
+TODO: Podman, Rkt or Apptainer/Singularity, Docker need refs.
+
 > 16. Page 9, lines 7-8: I believe you, but I am not aware of evidence that supports this claim.
+
+TODO: "Docker remains the most widely used containerisation system for web development and research"
 
 > 17. The Biocontainers project should be mentioned.
 
-> 18. Page 10, lines 51-52: I disagree that the risk is small. There are many instances of using genomic data to identify individuals who have committed crimes.
+RESPONSE: Biocontainers is mentioned in the last paragraph of the "Compute environment control" section
+and has reference (Ref #91).
+
+> 18. Page 10, lines 51-52: I disagree that the risk is small.
+> There are many instances of using genomic data to identify individuals who have committed crimes.
+
+RESPONSE: In light of this, we have changed the section in question:
+
+> While deidentification of data has been widely used to safeguard participant privacy, this may not be
+> suitable for genomics data due to the availability of existing public genetic data sets that heighten
+> reidentification risks [105].
+> For example, the surnames of some male participants can be inferred based on the Y chromosome
+> variants seen in deidentified genomic data together with public geneology web sites [106].
+> To foster the responsible reuse of sensitive genomic and health data, the Global Alliance for
+> Genomics and Health (GA4GH) initiative has proposed strategies, technical standards and policy
+> frameworks designed to protect personal data in a way that perserves reproducibility [107,108].
 
 > 19. Figures 2 and 4 are very similar to figures used in reference 13.
 
-> 20. Figure 5: I don't think it's really necessary to resummarize the FAIR principles. People can go to the source article for that.
+Figure 4 is adapted from the diagram on the Docker official website, which was originally published in
+2015 or earlier (https://web.archive.org/web/20151023003338/https://www.docker.com/what-docker).
+We have cited the original source.
 
-> 21. Page 11, line 13: I disagree that repositories like GEO and SRA are FAIR. There are lots of problems with FAIRness in these repositories.
+Figure 2 is somewhat different from reference 13, as it shows an Rstudio window with windows for raw code
+in text format beside the output document.
+The figure in reference 13 shows a Jupyter notebook window, which has a different arrangement of code
+and outputs.
 
-> 22. Page 11, lines 13-15: That's not true for some of these disciplines. Ecology has NEON, evo bio has NCBI.
+> 20. Figure 5: I don't think it's really necessary to resummarize the FAIR principles.
+> People can go to the source article for that.
+
+RESPONSE: We acknowledge that it can sometimes be tiresome to reiterate things like the FAIR principles.
+However summarising the key points succinctly will be in the interests of readers with limited time.
+We note that the original description of the FAIR principles by Wilkinson and colleagues is ~5,000 words,
+while this entire manuscript is ~6,500. We note that other reviewers did not insist on removing this
+section.
+
+> 21. Page 11, line 13: I disagree that repositories like GEO and SRA are FAIR.
+There are lots of problems with FAIRness in these repositories.
+
+RESPONSE: While there may be problems with FAIRness with NCBI GEO and SRA, these repositries mostly
+satisfy FAIR principles (eg: https://www.biorxiv.org/content/10.1101/739334v1.full.pdf).
+From the perspective of a researcher sharing genomic data, they are "good enough" as compared to the
+well known alternatives (eg: general purpose repository, institutional data storage, supplementary file,
+dropbox, etc.).
+
+> 22. Page 11, lines 13-15: That's not true for some of these disciplines. Ecology has NEON, evo bio
+has NCBI.
+
+RESPONSE: We acknowledge that NCBI is a well known repository for evolutionary biology.
+We have altered the section for clarity:
+
+> The [re3data.org](https://www.re3data.org/) registry of data repositories may be useful to find
+> FAIR repositories that accepts data from other domains of study like ecology,
+> physiology, molecular simulation, social sciences and computing [@Pampel2013-ep].
 
 > 23. Page 11, line 34: Need evidence to back this up.
 
-> 24. Page 11, line 39: It is not necessarily true that CSV files are better than Excel. Excel can retain information about data types, for example, whereas CSVs do not. It depends on what you are trying to accomplish.
+TODO: "Supplementary data files are not FAIR."
 
-> 25. One thing that could be added is something about Common Workflow Language. It's a community-supported specification for accomplishing many of the objectives described here. There are some recent papers about this.
+> 24. Page 11, line 39: It is not necessarily true that CSV files are better than Excel.
+Excel can retain information about data types, for example, whereas CSVs do not.
+It depends on what you are trying to accomplish.
 
-> 26. Page 14, lines 9-10: The big question is how to make more progress. We have the tools to achieve reproducibility, but why are we rarely achieving it? The paper mentions incentives and lack of training, which are true. You might consider elaborating a bit. My cynical view is that writing more papers and tutorials will do little without strong incentives and more automation.
+TODO:
+
+> 25. One thing that could be added is something about Common Workflow Language.
+It's a community-supported specification for accomplishing many of the objectives described here.
+There are some recent papers about this.
+
+TODO:
+
+> 26. Page 14, lines 9-10: The big question is how to make more progress.
+We have the tools to achieve reproducibility, but why are we rarely achieving it?
+The paper mentions incentives and lack of training, which are true.
+You might consider elaborating a bit.
+My cynical view is that writing more papers and tutorials will do little without strong incentives
+and more automation.
