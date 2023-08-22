@@ -134,12 +134,14 @@ transparent reporting and the role of computational environments.
 The intended audience is anyone who analyzes biological data (not tool developers), however the
 principles described here could equally apply to other domains of study.
 
-```{r,5pillars,fig.cap="Figure 1. The five pillars of computational reproducibility.",echo=FALSE,fig.height=6}
+```{r,5pillars,fig.cap="Figure 1. The five pillars of computational reproducibility.",echo=FALSE,fig.height=5}
+
+par(mar = c(0.1,0.1,0.1,0.1))
 
 library("RColorBrewer")
 cols <- brewer.pal(5, "Set2")
 cols2 <- adjustcolor( cols, alpha.f = 0.7)
-plot(0,type='n',axes=FALSE,ann=FALSE, xlim=c(0, 10), ylim=c(0, 8.5))
+plot(0,type='n',axes=FALSE,ann=FALSE, xlim=c(0, 10), ylim=c(0, 9))
 polygon(c(0,1.8,1.8,0),c(1,1,6,6), col=cols2[1], border = NA)
 polygon(c(2,3.8,3.8,2),c(1,1,6,6), col=cols2[2], border = NA)
 polygon(c(4,5.8,5.8,4),c(1,1,6,6), col=cols2[3], border = NA)
@@ -148,8 +150,8 @@ polygon(c(8,9.8,9.8,8),c(1,1,6,6), col=cols2[5], border = NA)
 polygon(c(-0.2,10,10,-0.2),c(-0.4,-0.4,0.8,0.8),col="lightgray", border = NA)
 polygon(c(-0.2,5,10),c(6.3,8.5,6.3),col="lightgray", border = NA)
 points( c(0.9,2.9,4.9,6.9,8.9) , c(4.5,2.5,4.5,2.5,4.5), pch=19,cex=18,col=cols )
-text(5,7,lab="Five pillars of reproducible computational research", cex=1.5)
-#mtext("Five pillars of reproducible computational research", cex=1.5)
+text(5,9,lab="Five pillars of reproducible computational research", cex=1.5)
+
 
 labs <- c("Literate\nprogramming",
   "Code version\ncontrol &\npersistent\n sharing",
@@ -158,9 +160,8 @@ labs <- c("Literate\nprogramming",
   "Documentation")
 
 text( c(0.9,2.9,4.9,6.9,8.9) , c(4.5,2.5,4.5,2.5,4.5) , lab=labs)
-text( 5 , 0.2 , lab="End-to-end automated process")
-#text(5,7,lab="Code testing")
-#text( 9, -0.2 , lab=expression(italic("created by Mark Ziemann")),cex=0.5)
+text( 5 , 0.2 , lab="End-to-end automated process",cex=1.2)
+text(5,7,lab="Code testing",cex=1.2)
 
 ```
 
@@ -345,11 +346,17 @@ code to consumers.
 There are many such DVCSs (Subversion, Git, mercurial, etc), but `git` has emerged as the most popular
 solution due to its many powerful features, speed/efficiency and large community and ecosystem.
 
-```{r,dvcs,fig.cap="Figure 3. Distributed version control. Adapted from @Chacon2014-ys.",echo=FALSE,fig.height=6}
+```{r,dvcs,fig.cap="Figure 3. Distributed version control. Adapted from @Chacon2014-ys.",echo=FALSE,fig.height=8}
 
+library(png)
+library(grid)
+
+cols <- brewer.pal(5, "Set2")
 cols2 <- adjustcolor( cols, alpha.f = 0.4)
 
-plot(0,type='n',axes=FALSE,ann=FALSE, xlim=c(0, 10), ylim=c(0, 8.5))
+par(mar = c(0.1,0.1,0.1,0.1))
+
+plot(0,type='n',axes=FALSE,ann=FALSE, xlim=c(0, 10), ylim=c(-5, 8.5))
 polygon(c(-0.6,3,3,-0.6),c(0.8,0.8,5.2,5.2), col=cols2[1], border = NA)
 polygon(c(-0.2,2.8,2.8,-0.2),c(1,1,2,2), col=cols[1], border = NA)
 polygon(c(-0.2,2.8,2.8,-0.2),c(4,4,5,5), col=cols[1], border = NA)
@@ -398,6 +405,9 @@ text(c(4.4) ,c(6), labels="push",srt=90)
 text(c(5.4) ,c(6), labels="pull",srt=-90)
 text(c(7.3) ,c(5.9), labels="push",srt=-60)
 text(c(8.2) ,c(6.2), labels="pull",srt=-60)
+
+mypng = readPNG('../img/version_control.png')
+grid.raster(mypng, x=.55, y=.2, width=0.85)
 
 ```
 
@@ -521,6 +531,7 @@ reproducibility [@Mangul2019-ei; @Mangul2019-xp; @Krafczyk2021-xv].
 ```{r,containers,fig.cap="Figure 4. Architecture of containers (left) compared to VMs (right). Adapted from @noauthor_2021-lt.",echo=FALSE,fig.height=6}
 
 library("RColorBrewer")
+par(mar = c(0.1,0.1,0.1,0.1))
 cols <- brewer.pal(5, "Set2")
 cols2 <- adjustcolor( cols, alpha.f = 0.7)
 plot(0,type='n',axes=FALSE,ann=FALSE, xlim=c(0, 12), ylim=c(0, 8))
