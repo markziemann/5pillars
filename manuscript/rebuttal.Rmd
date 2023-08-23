@@ -15,7 +15,7 @@ Dear Editor,
 Many thanks for your consideration of our manuscript.
 Below is our point-by-point response to reviewer comments.
 
-### Reviewer 1
+## Reviewer 1
 
 > In this manuscript, the authors present a framework that computational researchers should follow to
 > maximize the reproducibility of their computational research. The five pillars that they identified
@@ -30,7 +30,7 @@ Response: We thank reviewer 1 for their positive feedback.
 With regards to the ordering of the five pillars, we have amended Figure 1 so that the pillars now
 appear in the same order as they are detailed in sections following.
 
-### Reviewer 2
+## Reviewer 2
 
 > Comments to the Author: The article offers a comprehensive perspective on reproducibility in
 > computational research, delivering clear and logically backed recommendations. It is indeed a very
@@ -39,12 +39,14 @@ appear in the same order as they are detailed in sections following.
 
 Response: We appreciate reviewer 2's positive feedback, insights and thoughtful suggestions.
 
+### R2 Point 1
+
 > 1. Inclusion of Case Studies or Examples: To strengthen your argument, consider incorporating case
 > studies or practical examples that demonstrate the effectiveness of your recommendations.
 > Highlighting specific instances where these best practices have enhanced reproducibility or solved
 > particular issues could substantiate your points more effectively.
 
-To demonstrate the importance of computational reprodcibility, we elaborate on the
+RESPONSE: To demonstrate the importance of computational reprodcibility, we elaborate on the
 "forensic bioinformatics" case study of Baggerly and Coombes (2010) critique of Potti et al (2006)
 in the introduction:
 
@@ -78,6 +80,8 @@ in the introduction:
 > This worst-case scenario emphasizes that computational reproducibility is crucial for
 > translating bioinformatics research into real-world outcomes.
 
+### R2 Point 2
+
 > 2. Expanding on Current Shortcomings: The article mentions that current practices are not meeting the
 > goal of reproducibility. An expanded discussion on the ramifications of these shortcomings on
 > scientific progress could accentuate the urgency and significance of addressing this issue.
@@ -90,6 +94,8 @@ the urgency of this issue (which complements the case study summary above):
 > tarnishing the reputation of associated institutions and colleagues.
 > In certain cases, irreproducible bioinformatics has the potential to place patient safety at risk.
 
+### R2 Point 3
+
 > 3. Focus on Implementation Challenges: While the article acknowledges the importance of certain
 > practices, an increased focus on potential obstacles researchers may face when trying to implement
 > these suggestions, as well as strategies to overcome these challenges, would be insightful.
@@ -98,6 +104,8 @@ We have re-written the Challenges section to highlight some of the barriers slow
 adoption of best practices, with reference to previous contributions on the topic.
 These are structured around what different stakeholders can do to improve the situation (including
 funders, journals, institutions and individual researchers).
+
+### R2 Point 4
 
 > 4. Clear Structure: Consider organizing the article into clearly defined sections such as
 > 'Introduction', 'Background', 'Recommendations', 'Challenges', and 'Conclusion'.
@@ -129,6 +137,8 @@ The subheading structure has been amended accordingly.
 
 * Key points
 
+### R2 Point 5
+
 > 5. Engaging Conclusion: Reworking the conclusion to be more impactful could be beneficial. Instead of
 > merely summarizing the recommendations, it would be useful to indicate the potential trajectory of
 > computational research if these recommendations are adopted, as well as highlighting the potential
@@ -150,6 +160,8 @@ Instead of reiterating the five pillars, we focus on the motivation for adoption
 
 ## Reviewer 3
 
+### R3 Point 1
+
 > The paper is mostly well written and addresses an important topic: computational reproducibility and
 > tools to achieve it. The authors describe five "pillars" under which various tools and techniques can
 > be categorized. The paper is pretty comprehensive in what it covers and has useful supplementary
@@ -166,6 +178,8 @@ RESPONSE: XX
 > the paper. When I list page numbers, I am using the PDF page numbers rather than the numbers shown in
 > the top-left corner of the manuscript.
 
+### R3 Point 2
+
 > 2. Page 3, Line 36: "bioinformatics data analysts (not tool developers)".
 > The authors state these individuals as the primary audience, but some parts of the paper seem to be
 > targeted at a more technical audience. Or maybe I am misunderstanding the intent. If the audience
@@ -177,11 +191,15 @@ RESPONSE: The passage has been amended for clarity:
 
 > The intended audience is anyone who analyzes biological data.
 
+### R3 Point 3
+
 > 3. Page 3, Line 43: "enshrined by code" (this language is awkward)
 
 RESPONSE: The passage has been amended:
 
 > "... it needs to be formalised in code and ... "
+
+### R3 Point 4
 
 > 4. Page 3, Lines 45-47: What about tasks that cannot be automated? I see that this topic is addressed
 later. But this part implies that everything can be automated.
@@ -191,6 +209,8 @@ RESPONSE: The section has been amended to acknowledge that not all steps can be 
 > To ensure reproducibility of bioinformatics workflows, they need to be formalised in code wherever
 > possible, from inspecting the raw data to generating the outputs that form the conclusions of the study.
 
+### R3 Point 5
+
 > 5. Page 3, Line 52: It says that spreadsheets are "overused and misused." This is subjective and not
 > backed by evidence, other than the well-known examples of gene symbols being formatted as dates.
 
@@ -199,6 +219,8 @@ survey that found that ~69% of university academics used MS Excel in their resea
 
 > Spreadsheet errors could be widespread, given that it is used as an analysis tool by ~69% of
 > researchers according to a survey undertaken in 2015-16 of 20,000 university academics @Kramer2016-fj.
+
+### R3 Point 6
 
 > 6. Page 3, Line 56: It is not necessarily true that analyses performed using web tools are not
 > reproducible. Although rare, some web tools facilitate reproducibility by providing code or
@@ -218,11 +240,15 @@ RESPONSE: Thank you for raising this point. We have amended the section in quest
 > Some webtools facilitate reproducibility by providing code (e.g.: Degust @Powell2019-dw)
 > or by allowing apps to be executed locally (e.g.: ShinyGO @Ge2020-qe).
 
+### R3 Point 7
+
 > 7. Page 5, Line 15, type-o = "authors provided along the"
 
 RESPONSE: The passage in question has been amended:
 
 > In this work, authors provided alongside the traditional research paper a Jupyter notebook ..
+
+### R3 Point 8
 
 > 8. Page 6, Line 21: "quantum leap" (this term is overly optimistic in this context)
 
@@ -230,6 +256,8 @@ RESPONSE: The passage in question has been amended:
 
 > These features make literate programming a useful tool for science communication in a range of
 > situations.
+
+### R3 Point 9
 
 > 9. How do you get from a notebook to an actual paper submission if you have to do custom formatting
 > of the document, including references?
@@ -257,6 +285,8 @@ We have amended the Literate Programming section to mention these features brief
 > Further, thanks to the `rticles` package, dozens of journal style R Markdown document templates are
 > freely available @Xie2018-rf.
 
+### R3 Point 10
+
 > 10. What about when your data files are too large to fit on a personal computer?
 
 RESPONSE: When data files are too large for a PC, it is common to use high performance computers, shared
@@ -265,6 +295,8 @@ These computers are typically accessed via SSH (headless mode), so Quarto and Rs
 interfaces might not be available.
 In those cases, the commands `quarto render document1.qmd` and `rmarkdown::render("document2.Rmd")` will
 work for Quarto and R Markdown respectively.
+
+### R3 Point 11
 
 > 11. What about computationally intensive tasks that must be performed using specialized computing
 > environments like the cloud or clusters?
@@ -276,12 +308,16 @@ intensive applications.
 > solution like `make`, `snakemake` [@Koster2012-sq; @Molder2021-mp], `targets` [@Landau2021] or
 > `nextflow` [@Di_Tommaso2017-yo].
 
+### R3 Point 12
+
 > 12. Page 6, line 32: The master script idea was already mentioned earlier.
 
 RESPONSE: True. We have amended the "Documentation" section to remove the unnecessary reiteration:
 
 > As outlined above, one of the goals is to reduce the complexity of reproduction, in particular by
 > minimising the number of commands required.
+
+### R3 Point 13
 
 > 13. Section on version control: This section focuses mostly on using VC for software development
 > (that is my interpretation).
@@ -300,6 +336,8 @@ The bullet points following this passage outline the benefits of using DVCS.
 While cloud storage like dropbox could protect against code loss, they cannot other five points cannot
 be satisfied.
 
+### R3 Point 14
+
 > 14. Page 7: Many data analysts will not know what JupyterLab or VS Code are.
 References are also needed.
 
@@ -309,18 +347,27 @@ RESPONSE: The phrase has been updated accordingly:
 > development environments commonly used in bioinformatics including Rstudio, JupyterLab [68,69] and
 > VS Code [70,71].
 
+### R3 Point 15
+
 > 15. Page 9, line 7: References are missing for these other tools.
 
-TODO: Podman, Rkt or Apptainer/Singularity, Docker need refs.
+RESPONSE: Citations have been added for Podman and Apptainer/Singularity.
+Rkt was removed, as it appears that development of the project has ceased.
+
+### R3 Point 16
 
 > 16. Page 9, lines 7-8: I believe you, but I am not aware of evidence that supports this claim.
 
 TODO: "Docker remains the most widely used containerisation system for web development and research"
 
+### R3 Point 17
+
 > 17. The Biocontainers project should be mentioned.
 
 RESPONSE: Biocontainers is mentioned in the last paragraph of the "Compute environment control" section
 and has reference (Ref #91).
+
+### R3 Point 18
 
 > 18. Page 10, lines 51-52: I disagree that the risk is small.
 > There are many instances of using genomic data to identify individuals who have committed crimes.
@@ -336,6 +383,8 @@ RESPONSE: In light of this, we have changed the section in question:
 > Genomics and Health (GA4GH) initiative has proposed strategies, technical standards and policy
 > frameworks designed to protect personal data in a way that perserves reproducibility [107,108].
 
+### R3 Point 19
+
 > 19. Figures 2 and 4 are very similar to figures used in reference 13.
 
 Figure 4 is adapted from the diagram on the Docker official website, which was originally published in
@@ -347,6 +396,8 @@ in text format beside the output document.
 The figure in reference 13 shows a Jupyter notebook window, which has a different arrangement of code
 and outputs.
 
+### R3 Point 20
+
 > 20. Figure 5: I don't think it's really necessary to resummarize the FAIR principles.
 > People can go to the source article for that.
 
@@ -356,6 +407,8 @@ We note that the original description of the FAIR principles by Wilkinson and co
 while this entire manuscript is ~6,500. We note that other reviewers did not insist on removing this
 section.
 
+### R3 Point 21
+
 > 21. Page 11, line 13: I disagree that repositories like GEO and SRA are FAIR.
 There are lots of problems with FAIRness in these repositories.
 
@@ -364,6 +417,8 @@ satisfy FAIR principles (eg: https://www.biorxiv.org/content/10.1101/739334v1.fu
 From the perspective of a researcher sharing genomic data, they are "good enough" as compared to the
 well known alternatives (eg: general purpose repository, institutional data storage, supplementary file,
 dropbox, etc.).
+
+### R3 Point 22
 
 > 22. Page 11, lines 13-15: That's not true for some of these disciplines. Ecology has NEON, evo bio
 has NCBI.
@@ -375,15 +430,52 @@ We have altered the section for clarity:
 > FAIR repositories that accepts data from other domains of study like ecology,
 > physiology, molecular simulation, social sciences and computing [@Pampel2013-ep].
 
+### R3 Point 23
+
 > 23. Page 11, line 34: Need evidence to back this up.
 
-TODO: "Supplementary data files are not FAIR."
+RESPONSE: Reviewer 3 commented on the passage saying supplementary data files are less
+findable and accessible as compared to FAIR data repositories.
+We note that Roche and colleagues previously stated that [@Roche2015-aq]:
+
+> There are no standards for organizing supplementary data both within and across journals
+> and such data are often not readily discoverable or openly accessible
+> (to those without a relevant journal subscription, for example).
+
+They also cite an article by Caetano and Aisenberg that speaks directly to the findability and
+accessibility @Caetano2014-bi:
+
+> Many journals provide the option for authors to
+> include supplementary data that are made available in the digital version of the publication.
+> However, repositories increase data discoverability, are more reliable for long-term storage and
+> make it possible to make data sets available under open access even
+> when authors transfer copyright ownership to publishers.
+
+In light of this argument, we have added a citation to Caetano and Aisenberg in the updated text.
+
+### R3 Point 24
 
 > 24. Page 11, line 39: It is not necessarily true that CSV files are better than Excel.
 Excel can retain information about data types, for example, whereas CSVs do not.
 It depends on what you are trying to accomplish.
 
-TODO:
+RESPONSE: It is true that in some cases, Excel files are more convenient to view.
+However, in the context of large data sets with thousands of rows and their analytical
+reproducibility, Excel is a non-starter.
+For example, it is well known that the behaviour of Excel changes between versions.
+Earlier versions have limitations around the number of allowed rows and columns.
+Small changes to Excel files such as merging cells can break machine readibility.
+Excel users often use cell highlighting or text colour to encode some information which isn't
+easily machine readable.
+The simplicity of TSV and CSV formats means they are readily and rapidly ingested by commonly used
+programming languages without needing to install extra packages.
+In line with this, the point in question has been amended:
+
+> 5. Use file formats that are machine-readable and compatible with many different types of software.
+> For example, the comma-separated values (CSV) and tab-separated values (TSV) formats are simple file
+> specifications that are suitable for very large data.
+
+### R3 Point 25
 
 > 25. One thing that could be added is something about Common Workflow Language.
 It's a community-supported specification for accomplishing many of the objectives described here.
@@ -391,9 +483,11 @@ There are some recent papers about this.
 
 TODO:
 
+### R3 Point 26
+
 > 26. Page 14, lines 9-10: The big question is how to make more progress.
-We have the tools to achieve reproducibility, but why are we rarely achieving it?
-The paper mentions incentives and lack of training, which are true.
-You might consider elaborating a bit.
-My cynical view is that writing more papers and tutorials will do little without strong incentives
-and more automation.
+> We have the tools to achieve reproducibility, but why are we rarely achieving it?
+> The paper mentions incentives and lack of training, which are true.
+> You might consider elaborating a bit.
+> My cynical view is that writing more papers and tutorials will do little without strong incentives
+> and more automation.

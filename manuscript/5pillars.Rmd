@@ -519,8 +519,8 @@ across different systems.
 For example, the most popular containerisation system, Docker [@Merkel2014-ek], makes it
 possible to run Windows and Linux/Unix containers on any computer with Docker installed, with the
 promise of reproducibility.
-While there are several alternatives such as Podman, Rkt or Apptainer/Singularity, Docker remains the most widely used
-containerisation system for web development and research.
+While there are several alternatives such as Podman [@Heon2018-lc] or Apptainer/Singularity
+[@Kurtzer2017-zq], Docker remains the most widely used containerisation system for web development and research.
 Docker now has a large community of users, extensive documentation and
 a vast collection of pre-built container images in the DockerHub registry.
 Docker can fetch images from DockerHub and run them on the host system with just a couple of commands,
@@ -704,12 +704,13 @@ Key recommendations include:
 2. Avoid commodity cloud storage as these are impermanent and susceptible to link decay @Hennessey2013-tj.
 
 3. Avoid large supplementary data files accompanying journal articles as these are less findable and
-accessible.
+accessible [@Caetano2014-bi].
 
 4. Preferably archive and share raw data and use existing standards for the discipline.
 
-5. Use file formats that are compatible with many different types of software; e.g.: comma-separated
-values (CSV) files are preferred over Excel files.
+5. Use file formats that are machine-readable and compatible with many different types of software.
+For example, the comma-separated values (CSV) and tab-separated values (TSV) formats are simple file
+specifications that are suitable for very large data.
 
 6. Provide detailed metadata; e.g.: sample descriptions that match the article; describe the columns
 in tabular data (i.e.: data dictionary).
