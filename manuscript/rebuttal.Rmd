@@ -172,7 +172,21 @@ Instead of reiterating the five pillars, we focus on the motivation for adoption
 > to differentiate their paper from previous ones and perhaps remove some topics that are already
 > covered well elsewhere.
 
-RESPONSE: XX
+RESPONSE: We thank reviewer 3 for their careful assessment of our article and appreciate the suggestions
+which have improved the manuscript.
+Indeed, this article does reiterate a great deal of what has already been said, it is a review after
+all.
+We note that each of those recommendation articles mentioned have different emphases.
+For example, some of them don't speak to the benefits of literate programming,
+while others do not mention the importance of documentation.
+Some are focused on specific concepts like infrastructure, containerisation or
+continuous analysis.
+Some are proof of principle workflows, which present a rigid combination of tools.
+Here, we describe the ways computational researchers can make their own work more reproducible.
+In addition to the Five Pillars infographic, the specific combination of recommendations
+is unique.
+And ours is the only such article that provides a handy list of recommended tutorials as a supplementary
+resource.
 
 > Aside from that, I have listed below some relatively minor issues that, if addressed, would improve
 > the paper. When I list page numbers, I am using the PDF page numbers rather than the numbers shown in
