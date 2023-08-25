@@ -26,7 +26,7 @@ Below is our point-by-point response to reviewer comments.
 > My only request for edits is to rearrange the section structure of the manuscript to be in line with
 > the numbering of the pillars. Right now it is quite confusing.
 
-Response: We thank reviewer 1 for their positive feedback.
+RESPONSE: We thank reviewer 1 for their positive feedback.
 With regards to the ordering of the five pillars, we have amended Figure 1 so that the pillars now
 appear in the same order as they are detailed in sections following.
 
@@ -145,16 +145,12 @@ The subheading structure has been amended accordingly.
 > risks if they aren't.
 
 Response: We have completely rewritten the conclusion.
-Instead of reiterating the five pillars, we focus on the motivation for adoption:
+Instead of reiterating the five pillars, we provide the following:
 
-> Large scale datasets are becoming commonplace in medicine and life sciences thanks to the commoditisation
-> of platform technologies like DNA sequencing, mass spectrometry and advanced imaging systems.
-> These big datasets are enabling breakthrough discoveries, but due to their size and complexity, require
-> significant expertise to analyze and distill key observations.
-> The measures proposed here are designed to enhance transparency and foster the reuse of data and code;
-> reducing research waste.
-> Transparency makes it easier for problems to be identified, so that erroneous findings are less likely to
-> pollute the scientific literature.
+> As the chemotherapeutics case study highlights, there are significant risks to poorly conducted
+> bioinformatics research, and current standards are falling short.
+> If adopted widely, the transparency and reproducibilty measures proposed here will reduce the chance of
+> such disasters from happening again.
 > Researchers, their institutions, publishers and funders each have a major role to play in fighting the
 > reproducibility crisis by encouraging highly reproducible research practices.
 
@@ -183,10 +179,11 @@ Some are focused on specific concepts like infrastructure, containerisation or
 continuous analysis.
 Some are proof of principle workflows, which present a rigid combination of tools.
 Here, we describe the ways computational researchers can make their own work more reproducible.
-In addition to the Five Pillars infographic, the specific combination of recommendations
-is unique.
-And ours is the only such article that provides a handy list of recommended tutorials as a supplementary
-resource.
+We are assuming that the readers are not advanced analysts, so some topics like pipelining systems
+are covered in less detail and we refer the reader to those relevant reviews.
+What does make this article unique is the Five Pillars infographic, and specific combination of
+recommendations.
+Our article also provides a handy list of recommended tutorials as a supplementary resource.
 
 > Aside from that, I have listed below some relatively minor issues that, if addressed, would improve
 > the paper. When I list page numbers, I am using the PDF page numbers rather than the numbers shown in
@@ -372,7 +369,23 @@ Rkt was removed, as it appears that development of the project has ceased.
 
 > 16. Page 9, lines 7-8: I believe you, but I am not aware of evidence that supports this claim.
 
-TODO: "Docker remains the most widely used containerisation system for web development and research"
+RESPONSE: The claim made in the manuscript is that "Docker remains the most widely used
+containerisation system for web development and research".
+We do not have exact usage data on this, however we can look at other metrics like GitHub stars.
+
+| Container System | GitHub stars* |
+| --- | --- |
+| Docker | 72.2k |
+| Podman | 18.9k |
+| Singularity | 3.1k |
+
+* 25th August.
+
+Based on this we have altered the text:
+
+> While there are several alternatives such as Podman [@Heon2018-lc] or Apptainer/Singularity
+> [@Kurtzer2017-zq], Docker remains the most widely used containerisation system (according to GitHub
+> stars).
 
 ### R3 Point 17
 
@@ -495,7 +508,21 @@ In line with this, the point in question has been amended:
 It's a community-supported specification for accomplishing many of the objectives described here.
 There are some recent papers about this.
 
-TODO:
+RESPONSE: Thanks for raising this. We have added CWL to the section mentioning pipeline solutions, and
+refered readers to dedicated reviews on the topic.
+
+> Projects involving computationally intensive tasks would benefit from a build/workflow automation
+> solution.
+> Guides for selecting and using such systems have been already reviewed by others [@Leipzig2016-bf;
+> @Reiter2021-lh].
+> But it is worth mentioning some of the most used solutions in bioinformatics, which include
+> `snakemake` [@Koster2012-sq; @Molder2021-mp], `targets` [@Landau2021], `CWL` [@Crusoe2022-cb],
+> `WDL` [@Voss2017-vd] and `nextflow` [@Di_Tommaso2017-yo].
+> The advantage of such tools is that if the analysis were to terminate due to an issue mid-way,
+> for example, a hardware problem at step 8 of a 15-step workflow, the analysis of steps 1-7 wouldn't
+> need to be repeated.
+> After fixing the issue, re-running the analysis would pick up at step 8 again,
+> which saves labor and compute time.
 
 ### R3 Point 26
 
@@ -505,3 +532,9 @@ TODO:
 > You might consider elaborating a bit.
 > My cynical view is that writing more papers and tutorials will do little without strong incentives
 > and more automation.
+
+RESPONSE: Thanks for raising this, and I note that similar sentiments were shared by reviewer 2 about the
+challenges that are holding back change.
+Please refer to our response to Reviewer 2's Point #3.
+The Challenges section now includes brief mentions of incentives and automation.
+

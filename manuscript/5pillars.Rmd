@@ -141,16 +141,16 @@ par(mar = c(0.1,0.1,0.1,0.1))
 library("RColorBrewer")
 cols <- brewer.pal(5, "Set2")
 cols2 <- adjustcolor( cols, alpha.f = 0.7)
-plot(0,type='n',axes=FALSE,ann=FALSE, xlim=c(0, 10), ylim=c(0, 9))
+plot(0,type='n',axes=FALSE,ann=FALSE, xlim=c(0, 9.7), ylim=c(0, 9))
 polygon(c(0,1.8,1.8,0),c(1,1,6,6), col=cols2[1], border = NA)
 polygon(c(2,3.8,3.8,2),c(1,1,6,6), col=cols2[2], border = NA)
 polygon(c(4,5.8,5.8,4),c(1,1,6,6), col=cols2[3], border = NA)
 polygon(c(6,7.8,7.8,6),c(1,1,6,6), col=cols2[4], border = NA)
 polygon(c(8,9.8,9.8,8),c(1,1,6,6), col=cols2[5], border = NA)
 polygon(c(-0.2,10,10,-0.2),c(-0.4,-0.4,0.8,0.8),col="lightgray", border = NA)
-polygon(c(-0.2,5,10),c(6.3,8.5,6.3),col="lightgray", border = NA)
-points( c(0.9,2.9,4.9,6.9,8.9) , c(4.5,2.5,4.5,2.5,4.5), pch=19,cex=18,col=cols )
-text(5,9,lab="Five pillars of reproducible computational research", cex=1.5)
+polygon(c(-0.2,4.9,10),c(6.3,8.5,6.3),col="lightgray", border = NA)
+points( c(0.9,2.9,4.9,6.9,8.9) , c(4.5,2.5,4.5,2.5,4.5), pch=19,cex=16,col=cols )
+text(4.8,9,lab="Five pillars of reproducible computational research", cex=1.5)
 
 
 labs <- c("Literate\nprogramming",
@@ -226,13 +226,17 @@ Using free and open source software ensures that the research is accessible to t
 @Garijo2013-zl, as opposed to proprietary software like SPSS, STATA and MatLab which are cost inhibitory.
 Free and open source software also enjoy relatively larger libraries of add-on packages contributed by
 the scientific community.
-Projects involving computationally intensive tasks might benefit from a build/workflow automation
-solution like `make`, `snakemake` [@Koster2012-sq; @Molder2021-mp], `targets` [@Landau2021] or
-`nextflow` [@Di_Tommaso2017-yo].
+Projects involving computationally intensive tasks would benefit from a build/workflow automation
+solution.
+Guides for selecting and using such systems have been already reviewed by others [@Leipzig2016-bf;
+@Reiter2021-lh].
+But it is worth mentioning some of the most used solutions in bioinformatics, which include
+`snakemake` [@Koster2012-sq; @Molder2021-mp], `targets` [@Landau2021], `CWL` [@Crusoe2022-cb],
+`WDL` [@Voss2017-vd] and `nextflow` [@Di_Tommaso2017-yo].
 The advantage of such tools is that if the analysis were to terminate due to an issue mid-way,
 for example, a hardware problem at step 8 of a 15-step workflow, the analysis of steps 1-7 wouldn't
 need to be repeated.
-After fixing the hardware issue, re-running the analysis would pick up at step 8 again,
+After fixing the issue, re-running the analysis would pick up at step 8 again,
 which saves labor and compute time.
 
 <br>
@@ -529,8 +533,9 @@ For example, the most popular containerisation system, Docker [@Merkel2014-ek], 
 possible to run Windows and Linux/Unix containers on any computer with Docker installed, with the
 promise of reproducibility.
 While there are several alternatives such as Podman [@Heon2018-lc] or Apptainer/Singularity
-[@Kurtzer2017-zq], Docker remains the most widely used containerisation system for web development and research.
-Docker now has a large community of users, extensive documentation and
+[@Kurtzer2017-zq], Docker remains the most widely used containerisation system (according to GitHub
+stars as of August 2023).
+Docker has a large community of users, extensive documentation and
 a vast collection of pre-built container images in the DockerHub registry.
 Docker can fetch images from DockerHub and run them on the host system with just a couple of commands,
 and typically within a few minutes.
@@ -806,6 +811,8 @@ the codebase and how to report issues, such as code errors and discrepancies.
 The `README` should also list the contributors to the codebase and acknowledge any financial support.
 It may also include a link to the research article, citation instructions and a mention of the software
 license.
+A recently described set of recommendations for making software FAIR describes further measures
+that data analysts could use to enhance their code documentation.
 
 The need for documentation extends to the other supporting information.
 The deposited data set needs thorough descriptive metadata to provide context.
@@ -814,6 +821,29 @@ a thorough description of their purpose.
 Both the data and container image descriptions need to contain links to the DOI of the article,
 so that machines or individuals browsing these resources can understand the context of these objects
 relative to the overall research project.
+
+<br>
+
+### Process validation and testing
+
+When these principles are not integrated correctly and checked, problems readily emerge
+[@Barba2016-kk; @Samuel2022-ha; @Zaringhalam2020-ms].
+This is why regular code testing is another recommended best practice, especially after making updates
+to the code or data [@Rule2019-eh; @The_Turing_Way_Community2019-ig].
+It is worthwhile to conduct such testing on a separate computer to understand how someone else in the
+scientific community would fare reproducing such a workflow.
+
+Moreover, some have suggested adapting software development
+principles of unit tests and continuous integration/continuous delivery.
+This approach, called "continuous analysis" involves automatic execution and testing whenever a change is
+made to a project's code base [@Beaulieu-Jones2017-vj; @Blischak2019-dq].
+If the workflow executes successfully and tests are passed, the repository can be decorated with a
+"badge" to inform users of the lack of errors in the code.
+If those tests are designed cleverly such that certain conclusions drawn in the corresponding research
+article can be assessed computationally, then such tests could be used to demonstrate computational
+reproducibility without the need for individuals to execute the workflow themselves.
+Continuous analysis might therefore be a future pediment (crowning feature) to the five-pillared
+"temple" of reproducible research.
 
 <br>
 
@@ -827,12 +857,12 @@ There are very many challenges, some of which have been discussed before
 Due to the relative lack of systematic reproducibility/replication studies in bioinformatics,
 the severity of the reproducibility problem isn't well appreciated.
 The studies that have been conducted point to reproducibility rates of ~10% in computational
-life sciences [@Ioannidis2009-hv;@Zaringhalam2020-ms; @Samuel2022-ha], but further systematic studies
+life sciences [@Ioannidis2009-hv; @Zaringhalam2020-ms; @Samuel2022-ha], but further systematic studies
 are required to bring attention to the issue.
 
-Journals are partly responsible, as their editorial policies influence author behaviours.
+Journals are partly responsible, as their editorial policies influence author behaviours [@Han2017-pz].
 Except for a few outliers, verification of computational reproducibility is not in the scope of peer
-review, but this should be considered.
+review, but automating this in the publication process should be considered.
 As others have noted, it is in the interests of funders to provide the infrastructure to facilitate this
 [@Peng2011-ia].
 
@@ -840,7 +870,7 @@ Another hindrance to reproducibility more broadly is the fixation on novel resea
 than meticulous confirmation of previous findings [@Garijo2013-zl ; @Huang2013-xr; @Kaelin2017-id;
 @Munafo2017-ty; @Diong2021-is].
 This is a direct result of research assessment policies that incentivize journal-level prestige
-metrics and number of publications rather than the rigour [@Munafo2017-gf].
+metrics and number of publications rather than the rigor [@Munafo2017-gf; @Oransky2023-zb].
 A change in research assessment ("eg: track-record") that recognises and credits contributions toward
 reproducibility and rigor would help decrease funds wasted on sloppy research.
 
@@ -872,39 +902,14 @@ More guides like this are needed to make extreme reproducibility mainstream.
 A compendium of publicly available learning materials around the five pillar concepts are
 provided in the supplementary information.
 
-## Future directions
-
-When these principles are not integrated correctly and checked, problems readily emerge
-[@Barba2016-kk; @Samuel2022-ha; @Zaringhalam2020-ms].
-This is why regular code testing is another recommended best practice, especially after making updates
-to the code or data [@Rule2019-eh; @The_Turing_Way_Community2019-ig].
-It is worthwhile to conduct such testing on a separate computer to understand how someone else in the
-scientific community would fare reproducing such a workflow.
-
-Moreover, some have suggested adapting software development
-principles of unit tests and continuous integration/continuous delivery.
-This approach, called "continuous analysis" involves automatic execution and testing whenever a change is
-made to a project's code base [@Beaulieu-Jones2017-vj; @Blischak2019-dq].
-If the workflow executes successfully and tests are passed, the repository can be decorated with a
-"badge" to inform users of the lack of errors in the code.
-If those tests are designed cleverly such that certain conclusions drawn in the corresponding research
-article can be assessed computationally, then such tests could be used to demonstrate computational
-reproducibility without the need for individuals to execute the workflow themselves.
-Continuous analysis might therefore be a future pediment (crowning feature) to the five-pillared
-"temple" of reproducible research.
-
 <br>
 
 ## Conclusion
 
-Large scale datasets are becoming commonplace in medicine and life sciences thanks to the commoditisation
-of platform technologies like DNA sequencing, mass spectrometry and advanced imaging systems.
-These big datasets are enabling breakthrough discoveries, but due to their size and complexity, require
-significant expertise to analyze and distill key observations.
-The measures proposed here are designed to enhance transparency and foster the reuse of data and code;
-reducing research waste.
-Transparency makes it easier for problems to be identified, so that erroneous findings are less likely to
-pollute the scientific literature.
+As the chemotherapeutics case study highlights, there are significant risks to poorly conducted
+bioinformatics research; and current standards are falling short.
+If adopted widely, the transparency and reproducibilty measures proposed here will reduce the chance of
+such disasters from happening again.
 Researchers, their institutions, publishers and funders each have a major role to play in fighting the
 reproducibility crisis by encouraging highly reproducible research practices.
 
