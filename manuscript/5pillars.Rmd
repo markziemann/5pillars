@@ -847,6 +847,11 @@ package such as `testthat` for R [@Wickham2011-tt] or `pytest` for Python [@pyte
 In the example in Box 1, `testthat` raises an error to halt the script if the test fails, while
 the `if/else` statement requires an extra line to do this.
 
+*Box 1: An example of a test in R using an if/else statement and with the `testthat` package.
+The test is checking that the `iris` dataset describes three species.*
+
+<hr>
+
 ```{r,test,class.source = 'fold-show'}
 
 data(iris)
@@ -866,8 +871,7 @@ testthat::expect_equal(numspecies, 3)
 
 ```
 
-*Box 1: An example of a test in R using an if/else statement and with the `testthat` package.
-The test is checking that the `iris` dataset describes three species.*
+<hr>
 
 Literate programming also provides an opportunity to record sanity checks in an output report.
 In R, commands like `dim()`, `length()`, `head()`, `str()` are a simple way to show the features of
@@ -885,13 +889,12 @@ software compilation and testing.
 A derivation of this for data analysis has been termed "continuous analysis", and involves automatic
 execution and testing whenever a change is made to a project's code base
 [@Beaulieu-Jones2017-vj; @Blischak2019-dq].
-If the workflow executes successfully and tests are passed, the repository can be decorated with a
-"badge" to inform users of the lack of errors in the code.
+If the workflow executes successfully and tests are passed, the repository and linked research article
+can be decorated with a "badge" to inform users of the lack of errors in the code,
+similar to badges used for other Open Science practices [@Kidwell2016-bb].
 If those tests are designed cleverly such that certain conclusions drawn in the corresponding research
 article can be assessed computationally, then such tests could be used to demonstrate computational
-reproducibility without the need for individuals to execute the workflow themselves.
-Continuous analysis might therefore be a future pediment (crowning feature) to the five-pillared
-"temple" of reproducible research.
+reproducibility without the need for individuals to execute the workflow themselves [@Suetake2022-zq].
 
 <br>
 
@@ -905,7 +908,7 @@ There are very many challenges, some of which have been discussed before
 Due to the relative lack of systematic reproducibility/replication studies in bioinformatics,
 the severity of the reproducibility problem isn't well appreciated.
 The studies that have been conducted point to reproducibility rates of ~10% in computational
-life sciences [@Ioannidis2009-hv; @Zaringhalam2020-ms; @Samuel2022-ha], but further systematic studies
+life sciences [@Ioannidis2009-hv; @Zaringhalam2020-ms; @Samuel2022-ha], but further studies
 are required to bring attention to the issue.
 
 Journals are partly responsible, as their editorial policies influence author behaviours [@Han2017-pz].
@@ -918,7 +921,7 @@ Another hindrance to reproducibility more broadly is the fixation on novel resea
 than meticulous confirmation of previous findings [@Garijo2013-zl ; @Huang2013-xr; @Kaelin2017-id;
 @Munafo2017-ty; @Diong2021-is].
 This is a direct result of research assessment policies that incentivize journal-level prestige
-metrics and number of publications rather than the rigor [@Munafo2017-gf; @Oransky2023-zb].
+metrics and number of publications rather than rigor [@Munafo2017-gf; @Oransky2023-zb].
 A change in research assessment ("eg: track-record") that recognises and credits contributions toward
 reproducibility and rigor would help decrease funds wasted on sloppy research.
 

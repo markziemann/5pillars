@@ -47,7 +47,7 @@ RESPONSE: We appreciate reviewer 2's positive feedback, insights and thoughtful 
 > particular issues could substantiate your points more effectively.
 
 RESPONSE: To demonstrate the importance of computational reprodcibility, we elaborate on the
-"forensic bioinformatics" case study of Baggerly and Coombes (2010)@Baggerly2010-nr critique of Potti
+"forensic bioinformatics" case study of Baggerly and Coombes (2010) @Baggerly2010-nr critique of Potti
 et al (2006) @Potti2006-yk in the introduction:
 
 > For example, in 2006 an article entitled "Genomic signatures to guide the use of chemotherapeutics"
@@ -133,7 +133,7 @@ RESPONSE: The subheading structure has been amended accordingly.
 
   * Documentation
 
-  * Process validation & code testing
+  * Process validation and testing
 
 * Challenges
 
@@ -187,6 +187,8 @@ We are assuming that the readers are not advanced analysts, so some topics like 
 are covered in less detail and we refer the reader to those relevant reviews.
 What does make this article unique is the five pillars infographic, and specific combination of
 recommendations that incorporates new material (eg: Software Heritage, Guix, Continuous Analysis).
+This is useful, because bioinformatics analysts can use the infographic to benchmark their projects
+and identify areas where changes are needed.
 Our article also provides a handy list of recommended tutorials as a supplementary resource.
 
 > Aside from that, I have listed below some relatively minor issues that, if addressed, would improve
@@ -262,7 +264,7 @@ RESPONSE: Thank you for raising this point. We have amended the section in quest
 
 RESPONSE: The passage in question has been amended:
 
-> In this work, authors provided alongside the traditional research paper a Jupyter notebook ..
+> In this work, authors provided alongside the traditional research paper a Jupyter notebook ...
 
 ### R3 Point 8
 
@@ -426,7 +428,7 @@ RESPONSE: In light of this, we have changed the section in question:
 
 > 19. Figures 2 and 4 are very similar to figures used in reference 13.
 
-Figure 4 is adapted from the diagram on the Docker official website, which was originally published in
+RESPONSE: Figure 4 is adapted from the diagram on the Docker official website, which was originally published in
 2015 or earlier (https://web.archive.org/web/20151023003338/https://www.docker.com/what-docker).
 We have cited the original source.
 
@@ -445,7 +447,7 @@ We do not believe any changes to Figure 2 or 4 are necessary.
 RESPONSE: We acknowledge that it can sometimes be tiresome to reiterate things like the FAIR principles.
 However summarising the key points succinctly will be in the interests of readers with limited time.
 We note that the original description of the FAIR principles by Wilkinson and colleagues is ~5,000 words,
-while this entire manuscript is ~6,500. We note that other reviewers did not insist on removing this
+while this entire manuscript is ~7,000. We note that other reviewers did not insist on removing this
 section.
 
 ### R3 Point 21
@@ -453,7 +455,7 @@ section.
 > 21. Page 11, line 13: I disagree that repositories like GEO and SRA are FAIR.
 There are lots of problems with FAIRness in these repositories.
 
-RESPONSE: While there may be problems with FAIRness with NCBI GEO and SRA, these repositries mostly
+RESPONSE: While there may be problems with FAIRness with NCBI GEO and SRA, these repositories mostly
 satisfy FAIR principles (eg: @Bonaretti2019-zs).
 From the perspective of a researcher sharing genomic data, they are "good enough" as compared to the
 well known alternatives (eg: general purpose repository, institutional data storage, supplementary file,
@@ -464,7 +466,7 @@ dropbox, on request, etc.).
 > 22. Page 11, lines 13-15: That's not true for some of these disciplines. Ecology has NEON, evo bio
 has NCBI.
 
-RESPONSE: We acknowledge that NCBI is a well known repository for evolutionary biology.
+RESPONSE: We acknowledge that NCBI is a well known repository for molecular evolution.
 We have altered the section for clarity:
 
 > The [re3data.org](https://www.re3data.org/) registry of data repositories may be useful to find
@@ -483,7 +485,7 @@ We note that Roche and colleagues previously stated that [@Roche2015-aq]:
 > and such data are often not readily discoverable or openly accessible
 > (to those without a relevant journal subscription, for example).
 
-They also cite an article by Caetano and Aisenberg that speaks directly to the findability and
+They also cite an article by Caetano and Aisenberg that speaks directly to findability and
 accessibility @Caetano2014-bi:
 
 > Many journals provide the option for authors to
@@ -543,7 +545,7 @@ refered readers to dedicated reviews on the topic.
 > and more automation.
 
 RESPONSE: Thanks for raising this, and I note that similar sentiments were shared by reviewer 2 about the
-challenges that are holding back change.
+challenges that are holding back progress.
 Please refer to our response to Reviewer 2's Point #3.
 The Challenges section now includes brief mentions of incentives and automation.
 
