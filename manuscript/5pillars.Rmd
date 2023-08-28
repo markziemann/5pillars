@@ -161,7 +161,7 @@ labs <- c("Literate\nprogramming",
 
 text( c(0.9,2.9,4.9,6.9,8.9) , c(4.5,2.5,4.5,2.5,4.5) , lab=labs)
 text( 5 , 0.2 , lab="End-to-end automated process",cex=1.2)
-text(5,7,lab="Process validation & code testing",cex=1.2)
+text(5,7,lab="Process validation & testing",cex=1.2)
 
 ```
 
@@ -338,6 +338,11 @@ This further makes the job of reproducibility easier.
 
 ### Code version control and persistent sharing
 
+In bioinformatics, sharing code is becoming standard practice for reproducibility and transparency,
+and is a requirement for many specialized journals [@Cadwallader2022-dq].
+Code sharing appears to improve the rate of article citations [@Maitner2023-pv].
+One of the most popular ways to share research code is through online software repositories
+[@Cadwallader2022-od] with integrated version control.
 A version control system (sometimes called "source control") is a type of program that "tracks changes"
 made to sets of files, typically other computer program source code, scripts and documentation.
 A set of files under version control is called a "repository" and represents a project or sub-project.
@@ -812,7 +817,7 @@ The `README` should also list the contributors to the codebase and acknowledge a
 It may also include a link to the research article, citation instructions and a mention of the software
 license.
 A recently described set of recommendations for making software FAIR describes further measures
-that data analysts could use to enhance their code documentation.
+that data analysts could use to enhance their code documentation @Patel2023-qr.
 
 The need for documentation extends to the other supporting information.
 The deposited data set needs thorough descriptive metadata to provide context.
@@ -826,17 +831,60 @@ relative to the overall research project.
 
 ### Process validation and testing
 
-When these principles are not integrated correctly and checked, problems readily emerge
+When these principles are not integrated correctly and checked, problems can readily emerge
 [@Barba2016-kk; @Samuel2022-ha; @Zaringhalam2020-ms].
-This is why regular code testing is another recommended best practice, especially after making updates
-to the code or data [@Rule2019-eh; @The_Turing_Way_Community2019-ig].
-It is worthwhile to conduct such testing on a separate computer to understand how someone else in the
-scientific community would fare reproducing such a workflow.
+This is why regular code testing after making updates to the code or data is considered best practice
+[@Rule2019-eh; @The_Turing_Way_Community2019-ig; @Noor2022-uc].
+For bioinformatics software, testing may involve a suite of unit tests of each function, and another
+integration test whether the functions are working properly together [@Sarma2016-ol].
 
-Moreover, some have suggested adapting software development
-principles of unit tests and continuous integration/continuous delivery.
-This approach, called "continuous analysis" involves automatic execution and testing whenever a change is
-made to a project's code base [@Beaulieu-Jones2017-vj; @Blischak2019-dq].
+For data analysts, the situation is somewhat different as a typical bioinformatics workflow might
+involve hundreds of lines of code, so conducting tests at each step in the process would be impractical.
+However incorporating such tests at key points in a workflow such as during quality control of input
+data, after data cleaning, before statistical analysis and a summary of the findings.
+While `if/else` statements can be used for testing, it is recommended to use a dedicated testing
+package such as `testthat` for R [@Wickham2011-tt] or `pytest` for Python [@pytest7.4].
+In the example in Box 1, `testthat` raises an error to halt the script if the test fails, while
+the `if/else` statement requires an extra line to do this.
+
+```{r,test,class.source = 'fold-show'}
+
+data(iris)
+numspecies <- length(unique(iris$Species))
+
+# ifelse test
+if ( numspecies == 3) {
+  print("Iris data describes three species")
+} else {
+  stop("Iris data doesn't describe three species")
+}
+
+# testthat test
+library(testthat)
+data(iris)
+testthat::expect_equal(numspecies, 3)
+
+```
+
+*Box 1: An example of a test in R using an if/else statement and with the `testthat` package.
+The test is checking that the `iris` dataset describes three species.*
+
+Literate programming also provides an opportunity to record sanity checks in an output report.
+In R, commands like `dim()`, `length()`, `head()`, `str()` are a simple way to show the features of
+a dataset to validate that data transformation steps are working as expected.
+
+Successful execution of all literate scripts in a project is an important validation step
+that proves that the scripts are free from code errors.
+It is worthwhile to conduct such testing on a separate computer to understand how others would fare
+reproducing such a workflow.
+Testing extends to documentation as well, so it is important to update it so it remains in accordance
+with the codebase, and actively seek feedback from others on its suitability.
+
+In software development, continuous integration/continuous delivery (CI/CD) is a process of automated
+software compilation and testing.
+A derivation of this for data analysis has been termed "continuous analysis", and involves automatic
+execution and testing whenever a change is made to a project's code base
+[@Beaulieu-Jones2017-vj; @Blischak2019-dq].
 If the workflow executes successfully and tests are passed, the repository can be decorated with a
 "badge" to inform users of the lack of errors in the code.
 If those tests are designed cleverly such that certain conclusions drawn in the corresponding research

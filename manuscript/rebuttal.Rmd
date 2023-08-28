@@ -37,7 +37,7 @@ appear in the same order as they are detailed in sections following.
 > interesting topic that needs our attention. Nevertheless, there are areas that could benefit from
 > further development and clarity:
 
-Response: We appreciate reviewer 2's positive feedback, insights and thoughtful suggestions.
+RESPONSE: We appreciate reviewer 2's positive feedback, insights and thoughtful suggestions.
 
 ### R2 Point 1
 
@@ -47,8 +47,8 @@ Response: We appreciate reviewer 2's positive feedback, insights and thoughtful 
 > particular issues could substantiate your points more effectively.
 
 RESPONSE: To demonstrate the importance of computational reprodcibility, we elaborate on the
-"forensic bioinformatics" case study of Baggerly and Coombes (2010) critique of Potti et al (2006)
-in the introduction:
+"forensic bioinformatics" case study of Baggerly and Coombes (2010)@Baggerly2010-nr critique of Potti
+et al (2006) @Potti2006-yk in the introduction:
 
 > For example, in 2006 an article entitled "Genomic signatures to guide the use of chemotherapeutics"
 > generated a great deal of interest as it was an early application of high throughput transcriptomics
@@ -86,8 +86,8 @@ in the introduction:
 > goal of reproducibility. An expanded discussion on the ramifications of these shortcomings on
 > scientific progress could accentuate the urgency and significance of addressing this issue.
 
-In the introduction we have spoken to the consequences of poor computational research, and emphasize
-the urgency of this issue (which complements the case study summary above):
+RESPONSE: In the introduction we have spoken to the consequences of poor computational research, and
+emphasize the urgency of this issue (which complements the case study summary above):
 
 > The ramifications of irreproducible and unreliable research include misleading the community,
 > wasting research funds, slowing scientific progress, eroding public confidence in science and
@@ -100,10 +100,12 @@ the urgency of this issue (which complements the case study summary above):
 > practices, an increased focus on potential obstacles researchers may face when trying to implement
 > these suggestions, as well as strategies to overcome these challenges, would be insightful.
 
-We have re-written the Challenges section to highlight some of the barriers slowing the
+RESPONSE: We have re-written the Challenges section to highlight some of the barriers slowing the
 adoption of best practices, with reference to previous contributions on the topic.
 These are structured around what different stakeholders can do to improve the situation (including
 funders, journals, institutions and individual researchers).
+We specifically note the effect of incentives on motivation, and the role of automation for
+routine reproducibility checking.
 
 ### R2 Point 4
 
@@ -111,7 +113,7 @@ funders, journals, institutions and individual researchers).
 > 'Introduction', 'Background', 'Recommendations', 'Challenges', and 'Conclusion'.
 > This could significantly enhance readability and comprehensibility.
 
-The subheading structure has been amended accordingly.
+RESPONSE: The subheading structure has been amended accordingly.
 
 * Abstract
 
@@ -130,6 +132,8 @@ The subheading structure has been amended accordingly.
   * FAIR and persistent data sharing
 
   * Documentation
+
+  * Process validation & code testing
 
 * Challenges
 
@@ -181,8 +185,8 @@ Some are proof of principle workflows, which present a rigid combination of tool
 Here, we describe the ways computational researchers can make their own work more reproducible.
 We are assuming that the readers are not advanced analysts, so some topics like pipelining systems
 are covered in less detail and we refer the reader to those relevant reviews.
-What does make this article unique is the Five Pillars infographic, and specific combination of
-recommendations.
+What does make this article unique is the five pillars infographic, and specific combination of
+recommendations that incorporates new material (eg: Software Heritage, Guix, Continuous Analysis).
 Our article also provides a handy list of recommended tutorials as a supplementary resource.
 
 > Aside from that, I have listed below some relatively minor issues that, if addressed, would improve
@@ -208,7 +212,7 @@ RESPONSE: The passage has been amended for clarity:
 
 RESPONSE: The passage has been amended:
 
-> "... it needs to be formalised in code and ... "
+> ... it needs to be formalised in code and ...
 
 ### R3 Point 4
 
@@ -218,7 +222,8 @@ later. But this part implies that everything can be automated.
 RESPONSE: The section has been amended to acknowledge that not all steps can be automated.
 
 > To ensure reproducibility of bioinformatics workflows, they need to be formalised in code wherever
-> possible, from inspecting the raw data to generating the outputs that form the conclusions of the study.
+> possible, from inspecting the raw data to generating the outputs that form the conclusions of the
+study.
 
 ### R3 Point 5
 
@@ -247,7 +252,7 @@ RESPONSE: Thank you for raising this point. We have amended the section in quest
 > On the other hand, some web based tools excel at reproducibility.
 > The web-based analysis platforms Galaxy and GenePattern enable sophisticated point-and-click
 > bioinformatics analysis in the browser, and those workflows can also be shared in a reproducible way
-> [@The_Galaxy_Community2022-dt;@Reich2006-na].
+> [@The_Galaxy_Community2022-dt; @Reich2006-na].
 > Some webtools facilitate reproducibility by providing code (e.g.: Degust @Powell2019-dw)
 > or by allowing apps to be executed locally (e.g.: ShinyGO @Ge2020-qe).
 
@@ -315,9 +320,17 @@ work for Quarto and R Markdown respectively.
 RESPONSE: We have amended the relevant section to suggest a specific workflow manager for compute
 intensive applications.
 
-> Projects involving computationally intensive tasks might benefit from a build/workflow automation
-> solution like `make`, `snakemake` [@Koster2012-sq; @Molder2021-mp], `targets` [@Landau2021] or
-> `nextflow` [@Di_Tommaso2017-yo].
+> Projects involving computationally intensive tasks would benefit from a build/workflow automation
+> solution.
+> Guides for selecting and using such systems have been already reviewed by others [@Leipzig2016-bf; @Reiter2021-lh].
+> But it is worth mentioning some of the most used solutions in bioinformatics, which include
+> `snakemake` [@Koster2012-sq; @Molder2021-mp], `targets` [@Landau2021], `CWL` [@Crusoe2022-cb],
+> `WDL` [@Voss2017-vd] and `nextflow` [@Di_Tommaso2017-yo].
+> The advantage of such tools is that if the analysis were to terminate due to an issue mid-way,
+> for example, a hardware problem at step 8 of a 15-step workflow, the analysis of steps 1-7 wouldn't
+> need to be repeated.
+> After fixing the issue, re-running the analysis would pick up at step 8 again,
+> which saves labor and compute time.
 
 ### R3 Point 12
 
@@ -344,7 +357,7 @@ utility of DVCS for data analysts.
 > benefit from their use in the life sciences [@ram2013; @blischak2016; @perez-riverol2016].
 
 The bullet points following this passage outline the benefits of using DVCS.
-While cloud storage like dropbox could protect against code loss, they cannot other five points cannot
+While cloud storage like dropbox could protect against code loss, the other five points cannot
 be satisfied.
 
 ### R3 Point 14
@@ -355,8 +368,8 @@ References are also needed.
 RESPONSE: The phrase has been updated accordingly:
 
 > `git` is typically used at the command line, however it is also incorporated into integrated
-> development environments commonly used in bioinformatics including Rstudio, JupyterLab [68,69] and
-> VS Code [70,71].
+> development environments commonly used in bioinformatics including Rstudio, JupyterLab
+> [@Kluyver2016jupyter] and VS Code [@noauthor_undated-fn].
 
 ### R3 Point 15
 
@@ -391,8 +404,7 @@ Based on this we have altered the text:
 
 > 17. The Biocontainers project should be mentioned.
 
-RESPONSE: Biocontainers is mentioned in the last paragraph of the "Compute environment control" section
-and has reference (Ref #91).
+RESPONSE: Biocontainers is mentioned in the last paragraph of the "Compute environment control" section.
 
 ### R3 Point 18
 
@@ -403,12 +415,12 @@ RESPONSE: In light of this, we have changed the section in question:
 
 > While deidentification of data has been widely used to safeguard participant privacy, this may not be
 > suitable for genomics data due to the availability of existing public genetic data sets that heighten
-> reidentification risks [105].
+> reidentification risks [@Heeney2011-ri].
 > For example, the surnames of some male participants can be inferred based on the Y chromosome
-> variants seen in deidentified genomic data together with public geneology web sites [106].
+> variants seen in deidentified genomic data together with public geneology web sites [@Gymrek2013-fz].
 > To foster the responsible reuse of sensitive genomic and health data, the Global Alliance for
 > Genomics and Health (GA4GH) initiative has proposed strategies, technical standards and policy
-> frameworks designed to protect personal data in a way that perserves reproducibility [107,108].
+> frameworks designed to protect personal data in a way that perserves reproducibility [@Rehm2021-kt;@Thorogood2021-kt].
 
 ### R3 Point 19
 
@@ -422,6 +434,8 @@ Figure 2 is somewhat different from reference 13, as it shows an Rstudio window 
 in text format beside the output document.
 The figure in reference 13 shows a Jupyter notebook window, which has a different arrangement of code
 and outputs.
+
+We do not believe any changes to Figure 2 or 4 are necessary.
 
 ### R3 Point 20
 
@@ -440,10 +454,10 @@ section.
 There are lots of problems with FAIRness in these repositories.
 
 RESPONSE: While there may be problems with FAIRness with NCBI GEO and SRA, these repositries mostly
-satisfy FAIR principles (eg: https://www.biorxiv.org/content/10.1101/739334v1.full.pdf).
+satisfy FAIR principles (eg: @Bonaretti2019-zs).
 From the perspective of a researcher sharing genomic data, they are "good enough" as compared to the
 well known alternatives (eg: general purpose repository, institutional data storage, supplementary file,
-dropbox, etc.).
+dropbox, on request, etc.).
 
 ### R3 Point 22
 
@@ -478,7 +492,7 @@ accessibility @Caetano2014-bi:
 > make it possible to make data sets available under open access even
 > when authors transfer copyright ownership to publishers.
 
-In light of this argument, we have added a citation to Caetano and Aisenberg in the updated text.
+In light of this argument, we have added citations to Caetano and Aisenberg in the updated text.
 
 ### R3 Point 24
 
@@ -496,7 +510,7 @@ Excel users often use cell highlighting or text colour to encode some informatio
 easily machine readable.
 The simplicity of TSV and CSV formats means they are readily and rapidly ingested by commonly used
 programming languages without needing to install extra packages.
-In line with this, the point in question has been amended:
+In line with this, the passage been amended:
 
 > 5. Use file formats that are machine-readable and compatible with many different types of software.
 > For example, the comma-separated values (CSV) and tab-separated values (TSV) formats are simple file
@@ -518,11 +532,6 @@ refered readers to dedicated reviews on the topic.
 > But it is worth mentioning some of the most used solutions in bioinformatics, which include
 > `snakemake` [@Koster2012-sq; @Molder2021-mp], `targets` [@Landau2021], `CWL` [@Crusoe2022-cb],
 > `WDL` [@Voss2017-vd] and `nextflow` [@Di_Tommaso2017-yo].
-> The advantage of such tools is that if the analysis were to terminate due to an issue mid-way,
-> for example, a hardware problem at step 8 of a 15-step workflow, the analysis of steps 1-7 wouldn't
-> need to be repeated.
-> After fixing the issue, re-running the analysis would pick up at step 8 again,
-> which saves labor and compute time.
 
 ### R3 Point 26
 
