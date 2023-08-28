@@ -169,7 +169,7 @@ text(5,7,lab="Process validation & testing",cex=1.2)
 
 ### End-to-end automated process
 
-To ensure reproducibility of bioinformatics workflows, they need to be formalised in code wherever
+To ensure reproducibility of bioinformatics workflows, they need to be formalized in code wherever
 possible, from inspecting the raw data to generating the outputs that form the conclusions of the study.
 Automated processes remove the need for manual steps, which are time-consuming and
 prone to errors.
@@ -692,7 +692,7 @@ For example, the surnames of some male participants can be inferred based on the
 seen in deidentified genomic data together with public geneology web sites @Gymrek2013-fz.
 To foster the responsible reuse of sensitive genomic and health data, the Global Alliance for
 Genomics and Health (GA4GH) initiative has proposed strategies, technical standards and policy
-frameworks designed to protect personal data in a way that perserves reproducibility
+frameworks designed to protect personal data in a way that preserves reproducibility
 [@Rehm2021-kt;@Thorogood2021-kt].
 
 In order to maximize the value of shared data for reuse and reproducibility, it needs to be Findable,
@@ -803,7 +803,7 @@ standard code comments [@Rule2019-eh].
 These instructions should be tested whenever changes are made to the codebase.
 
 As outlined above, one of the goals is to reduce the complexity of reproduction, in particular by
-minimising the number of commands required.
+minimizing the number of commands required.
 This also makes the `README` documentation much simpler.
 For example, the pathway analysis workflow we previously developed could be reproduced and inspected
 with just six commands, starting from a new Ubuntu Linux installation [@Ziemann2023-nm].
@@ -922,7 +922,7 @@ than meticulous confirmation of previous findings [@Garijo2013-zl ; @Huang2013-x
 @Munafo2017-ty; @Diong2021-is].
 This is a direct result of research assessment policies that incentivize journal-level prestige
 metrics and number of publications rather than rigor [@Munafo2017-gf; @Oransky2023-zb].
-A change in research assessment ("eg: track-record") that recognises and credits contributions toward
+A change in research assessment ("eg: track-record") that recognizes and credits contributions toward
 reproducibility and rigor would help decrease funds wasted on sloppy research.
 
 Individual researchers also face difficulties.
