@@ -28,9 +28,9 @@ There are three folders:
 
 * `README.md`: This helpful document.
 
-* `main.sh`: Master script.
+* `main.sh`: Master script. Execute this to reproduce the manuscript HTML. Requries Docker.
 
-* `test_build.sh`: Build test script.
+* `helper.sh`: This is a helper script required by the main.sh script.
 
 ## Recipe
 
@@ -51,18 +51,14 @@ It will take 2-3 minutes.
 
 ```
 
-sudo docker pull rocker/rstudio:4.3
-
-sudo docker run -it rocker/rstudio:4.3 bash -c "wget https://raw.githubusercontent.com/markziemann/5pillars/main/main.sh ; bash main.sh"
+bash main.sh
 
 ```
 
-If the process completed, the HTML document can be copied from the container to the host and visualised
-with firefox or your favourite web browser.
+If the process completed, the HTML document was copied from the container to the host.
+It can be visualised with firefox or your favourite web browser.
 
 ```
-
-sudo docker cp $(docker ps -aql):/5pillars/manuscript/5pillars.html .
 
 firefox 5pillars.html
 
