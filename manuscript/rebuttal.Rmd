@@ -46,7 +46,7 @@ RESPONSE: We appreciate reviewer 2's positive feedback, insights and thoughtful 
 > Highlighting specific instances where these best practices have enhanced reproducibility or solved
 > particular issues could substantiate your points more effectively.
 
-RESPONSE: To demonstrate the importance of computational reprodcibility, we elaborate on the
+RESPONSE: To demonstrate the importance of computational reproducibility, we elaborate on the
 "forensic bioinformatics" case study of Baggerly and Coombes (2010) @Baggerly2010-nr critique of Potti
 et al (2006) @Potti2006-yk in the introduction:
 
@@ -290,7 +290,7 @@ It requires a few things:
 * A .csl file that specifies the citation style.
 These are avaialble from [GitHub](https://github.com/citation-style-language/styles).
 
-* Modifcation to the Rmd header section that specifies the path of the bib and csl files.
+* Modification to the Rmd header section that specifies the path of the bib and csl files.
 
 This enables convenient reformatting of the bibliography for different venues.
 In terms of overall document formatting, the `rticles` package provides a suite of
@@ -300,8 +300,8 @@ We have amended the Literate Programming section to mention these features brief
 
 > Quarto and R Markdown have the ability to automatically generate a bibliography in many different
 > journal styles [@noauthor_undated-pg].
-> Further, thanks to the `rticles` package, dozens of journal style R Markdown document templates are
-> freely available @Xie2018-rf.
+> Further, dozens of journal-style Markdown document templates are freely available, and integrate
+> with MyST notebook system or the `rticles` R package @Xie2018-rf.
 
 ### R3 Point 10
 
@@ -512,11 +512,11 @@ Excel users often use cell highlighting or text colour to encode some informatio
 easily machine readable.
 The simplicity of TSV and CSV formats means they are readily and rapidly ingested by commonly used
 programming languages without needing to install extra packages.
-In line with this, the passage been amended:
+In line with this and suggestions from others, the passage been amended:
 
 > 5. Use file formats that are machine-readable and compatible with many different types of software.
-> For example, the comma-separated values (CSV) and tab-separated values (TSV) formats are simple file
-> specifications that are suitable for very large data.
+> Some examples include comma- and tab-separated values (CSV/TSV) formats, eXtensible Markup Language (XML),
+> JavaScript Object Notation (JSON), Hierarchical Data Format version 5 (HDF5) and Apache Parquet.
 
 ### R3 Point 25
 

@@ -124,7 +124,7 @@ translating bioinformatics research into real-world outcomes.
 
 A number of guides recommending enhanced computational reproducibility practices have been developed
 [ @Tan2010-is; @Peng2011-ia; @Sandve2013-lk; @Piccolo2016-ji; @Lewis2016-qh;
-@Stodden2016-aj; @Beaulieu-Jones2017-vj; @Gruning2018-sg; @Akalin2018-eg;
+@Stodden2016-aj; @Wilson2017-dv; @Beaulieu-Jones2017-vj; @Gruning2018-sg; @Kim2018-nv; @Akalin2018-eg;
 @Brito2020-ld; @Peikert2021-eq; @Rodrigues2023-fw; @DuPre2022-bk; @Krafczyk2021-xv].
 Inspired by these principles, we presents the *five pillars of reproducible computational research*
 (**Figure 1**).
@@ -264,7 +264,7 @@ has been the analysis of RNA-seq samples from patients infected by the Zika viru
 In this work, authors provided alongside the traditional research paper a
 [Jupyter notebook](https://nbviewer.org/github/maayanlab/Zika-RNAseq-Pipeline/blob/master/Zika.ipynb)
 that performed and documented the entire analysis procedure.
-The MyST-NB (short for Markedly Structured Text notebook) is built on top of Jupyter notebooks or Markdown documents
+The MyST (short for Markedly Structured Text notebook) is built on top of Jupyter notebooks or Markdown documents
 and has some notable advantages around flexibility of content that make it an attractive choice for executable
 article authoring [@DuPre2022-bk].
 
@@ -317,8 +317,8 @@ support richer content such as interactive charts and dynamic tables (searchable
 Outputs include HTML documents, but also slideshows and even ebooks.
 Quarto and R Markdown have the ability to automatically generate a bibliography in many different
 journal styles [@noauthor_undated-pg].
-Further, thanks to the `rticles` package, dozens of journal style R Markdown document templates are
-freely available @Xie2018-rf.
+Further, dozens of journal-style Markdown document templates are freely available, and integrate
+with MyST notebook system or the `rticles` R package @Xie2018-rf.
 
 These features make literate programming a useful tool for science communication in a range of
 situations.
@@ -490,7 +490,7 @@ integration.
 environments commonly used in bioinformatics including Rstudio, JupyterLab
 [@Kluyver2016jupyter;@noauthor_undated-hg] and VS Code [@noauthor_undated-fn ;@Extensions_undated-ln].
 There are also several `git` clients with graphical interfaces which better allow inspection
-of code changes (e.g.: @noauthor_undated-rh, @noauthor_undated-kj).
+of code changes (e.g.: [@noauthor_undated-rh; @noauthor_undated-kj]).
 
 <br>
 
@@ -707,7 +707,7 @@ High throughput biology has already built a number of data repositories for spec
 conforming to FAIR principles.
 Repositories like GEO, SRA, ENA and PRIDE were developed in the aftermath of the draft human
 genome assembly and have become well known to omics researchers
-[@Edgar2002-hs; @Kodama2012-bn; Martens2005-wo]).
+[@Edgar2002-hs; @Kodama2012-bn; @Martens2005-wo].
 The [re3data.org](https://www.re3data.org/) registry of data repositories may be useful to find
 FAIR repositories that accepts data from other domains of study like ecology,
 physiology, molecular simulation, social sciences and computing [@Pampel2013-ep].
@@ -730,8 +730,8 @@ accessible [@Caetano2014-bi].
 4. Preferably archive and share raw data and use existing standards for the discipline.
 
 5. Use file formats that are machine-readable and compatible with many different types of software.
-For example, the comma-separated values (CSV) and tab-separated values (TSV) formats are simple file
-specifications that are suitable for very large data.
+Some examples include comma- and tab-separated values (CSV/TSV) formats, eXtensible Markup Language (XML),
+JavaScript Object Notation (JSON), Hierarchical Data Format version 5 (HDF5) and Apache Parquet.
 
 6. Provide detailed metadata; e.g.: sample descriptions that match the article; describe the columns
 in tabular data (i.e.: data dictionary).
@@ -766,7 +766,7 @@ From a reproducibility standpoint, the methods section is the most critical part
 It should be detailed enough so that other researchers can understand and replicate the
 experiments/analysis and yield similar results.
 Unfortunately, key details in bioinformatics data processing procedures are often omitted which limits
-their reproducibility [@Nekrutenko2012; @Garijo2013-zl; @Simoneau2021-kp].
+their reproducibility [@Nekrutenko2012; @Garijo2013-zl; @Kim2018-nv; @Simoneau2021-kp].
 Commonly missing information includes versions of software and packages as well as any parameter setting
 and configuration files.
 The "Materials Design Analysis Reporting" (MDAR) checklist for authors has been developed to assist in
@@ -814,7 +814,7 @@ reproducibility is made possible to a larger segment of the computational resear
 especially those who are not experts in the languages used.
 
 In addition, the `README` should outline the contents of the repository, how users can contribute to
-the codebase and how to report issues, such as code errors and discrepancies.
+the project and how to report issues, such as code errors and discrepancies.
 The `README` should also list the contributors to the codebase and acknowledge any financial support.
 It may also include a link to the research article, citation instructions and a mention of the software
 license.
@@ -836,7 +836,7 @@ relative to the overall research project.
 When these principles are not integrated correctly and checked, problems can readily emerge
 [@Barba2016-kk; @Samuel2022-ha; @Zaringhalam2020-ms].
 This is why regular code testing after making updates to the code or data is considered best practice
-[@Rule2019-eh; @The_Turing_Way_Community2019-ig; @Noor2022-uc].
+[@Kim2018-nv; @Rule2019-eh; @The_Turing_Way_Community2019-ig; @Noor2022-uc].
 For bioinformatics software, testing may involve a suite of unit tests of each function, and another
 integration test whether the functions are working properly together [@Sarma2016-ol].
 
@@ -895,7 +895,7 @@ execution and testing whenever a change is made to a project's code base
 We prefer the term "continuous validation" as it places more emphasis on the correctness of analyses
 to ensure they are fit to share.
 If a workflow is executed successfully and tests are passed, the repository and linked research article
-can be decorated with a "badge" to inform users of the lack of errors in the code,
+can be decorated with a "badge" to indicate computational reproducibility,
 similar to badges used for other Open Science practices [@Kidwell2016-bb].
 If those tests are designed cleverly such that certain conclusions drawn in the corresponding research
 article can be assessed computationally, then such tests could be used to demonstrate computational
@@ -912,7 +912,7 @@ There are very many challenges, some of which have been discussed before
 
 Due to the relative lack of systematic reproducibility/replication studies in bioinformatics,
 the severity of the reproducibility problem isn't well appreciated.
-The studies that have been conducted point to reproducibility rates of ~10% in computational
+The studies that have been conducted point to reproducibility rates of ~20% in computational
 life sciences [@Ioannidis2009-hv; @Zaringhalam2020-ms; @Samuel2022-ha], but further studies
 are required to bring attention to the issue.
 
@@ -941,8 +941,9 @@ leads to a deficit of academics fluent in data science
 This makes it challenging for organisations to recruit and retain capable data analysts and cultivate
 a community of practice.
 Addressing this problem is not straightforward.
-It requires ehancement of data science skills in undergraduate life science courses, investment in
-upskilling the current workforce and offering working conditions that are competitive with other sectors.
+It requires ehancement of reproducible data science skills in undergraduate life science courses,
+investment in upskilling the current workforce and offering working conditions that are competitive
+with other sectors.
 Specific workshop-based training for current researchers could help [@Williams2023-ic].
 The [Software Carpentry](https://software-carpentry.org/) initiative is focused on this mission
 [@Wilson2014-mh].
@@ -1022,8 +1023,8 @@ to five pillar concepts.](https://ziemann-lab.net/public/5pillars/practical_guid
 
 ## Author biographies 
 
-**Mark Ziemann** is a Senior Lecturer in Biotechnology and Bioinformatics at Deakin University.
-He has recently been recruited to Burnet Institute as Head of Bioinformatics.
+**Mark Ziemann** is Head of Bioinformatics at Burnet Institute and former Lecturer in
+Biotechnology and Bioinformatics at Deakin University.
 His research spans bioinformatics as applied to omics data analysis in biomedicine, as well as aspects
 of research rigor.
 
