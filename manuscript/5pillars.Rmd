@@ -21,9 +21,9 @@ csl: plos-computational-biology.csl
 
 3. Université Paris Cité, CNRS, Institut Jacques Monod, Paris, France.
 
-* Correspondance: m.ziemann@deakin.edu.au
+* Correspondence: m.ziemann@deakin.edu.au
 
-| Author | ORCID |
+| `Author      ` |  `ORCID             ` |
 | --- | --- |
 | Mark Ziemann | 0000-0002-7688-6974 |
 | Pierre Poulain | 0000-0003-4177-3619 |
@@ -65,7 +65,7 @@ Reproducibility should enhance the overall reliability of computational research
 including replicability and robustness.
 Replicability being defined as the ability to repeat the entire study and come up with similar overall
 results.
-Robustness refers to the ability for the findings to be generalisable to other situations
+Robustness refers to the ability for the findings to be generalizable to other situations
 @Nosek2022-zc.
 
 Much has been written on how irreproducibility has reached crisis levels in psychology and life
@@ -94,7 +94,7 @@ in the prediction of individual patient responses to different chemotherapies @P
 After observing some unusual features of the patient group, Baggerly and Coombes attempted
 reproduction of some of the key findings @Baggerly2010-nr.
 Without the help of scripted workflows to guide the re-analysis, the team used forensic bioinformatic
-techniques to piece together how the dataset was originally analysed.
+techniques to piece together how the dataset was originally analyzed.
 Their investigations found a litany of issues.
 Firstly, the labeling of patients in the test set as "responders" or "non-responders" had been reversed
 in the original analysis.
@@ -105,7 +105,7 @@ both sensitive and resistant.
 Additional errors include two cases where results (charts) were ascribed to the wrong drug.
 Baggerly and Coombes highlight that such mistakes can inadvertently occur when conducting unscripted
 data analysis such as using spreadsheets, and these problems can be obscured by a lack of documentation.
-The article underwent two corrigenda, but was untimately retracted in 2011, as the authors were not
+The article underwent two corrigenda, but was ultimately retracted in 2011, as the authors were not
 able to reproduce the findings themselves due to "corruption of several validation data sets"
 @Potti2011-ut.
 As the array findings were the basis for clinical trials where patients were allocated to treatments,
@@ -527,7 +527,7 @@ on the host.
 Containers are an attempt to resolve some of the downsides of VMs.
 Container images can be thought of as similar to VMs, but are more lightweight as they
 share parts of the host operating system [@Nust2020-cr].
-In the example shown in **Figure 4**, the five containerised applications share the same operating
+In the example shown in **Figure 4**, the five containerized applications share the same operating
 system, while the three VM applications each involve their own operating system which incurs a
 significant performance overhead @noauthor_2021-lt.
 Therefore, running workflows in containers incurs only a small reduction in performance as compared
@@ -535,11 +535,11 @@ to running directly on the host system @Di_Tommaso2015-pw.
 Container images are highly portable because containers include everything needed to run the
 application, including the system tools and libraries, ensuring that the environment is consistent
 across different systems.
-For example, the most popular containerisation system, Docker [@Merkel2014-ek], makes it
+For example, the most popular containerization system, Docker [@Merkel2014-ek], makes it
 possible to run Windows and Linux/Unix containers on any computer with Docker installed, with the
 promise of reproducibility.
 While there are several alternatives such as Podman [@Heon2018-lc] or Apptainer/Singularity
-[@Kurtzer2017-zq], Docker remains the most widely used containerisation system (according to GitHub
+[@Kurtzer2017-zq], Docker remains the most widely used containerization system (according to GitHub
 stars as of August 2023).
 Docker has a large community of users, extensive documentation and
 a vast collection of pre-built container images in the DockerHub registry.
@@ -878,7 +878,7 @@ testthat::expect_equal(numspecies, 3)
 Literate programming also provides an opportunity to record sanity checks in an output report.
 In R, commands like `dim()`, `length()`, `head()`, `str()` are a simple way to show the features of
 a dataset to validate that data transformation steps are working as expected.
-Histograms, boxplots, scatterplots and other simple charts are similarly effective.
+Histograms, box plots, scatter plots and other simple charts are similarly effective.
 
 Successful execution of all literate scripts in a project is an important validation step
 that proves that the scripts are free from code errors.
@@ -916,7 +916,7 @@ The studies that have been conducted point to reproducibility rates of ~20% in c
 life sciences [@Ioannidis2009-hv; @Zaringhalam2020-ms; @Samuel2022-ha], but further studies
 are required to bring attention to the issue.
 
-Journals are partly responsible, as their editorial policies influence author behaviours [@Han2017-pz].
+Journals are partly responsible, as their editorial policies influence author behaviors [@Han2017-pz].
 Except for a few outliers, verification of computational reproducibility is not in the scope of peer
 review, but automating this in the publication process should be considered.
 As others have noted, it is in the interests of funders to provide the infrastructure to facilitate this
@@ -938,22 +938,22 @@ disadvantage considering the data intensive nature of contemporary biology.
 This is compounded by the strong demand for data science experts in industry and government which
 leads to a deficit of academics fluent in data science
 [@Committee_on_Envisioning_the_Data_Science_Discipline_The_Undergraduate_Perspective2018-pe].
-This makes it challenging for organisations to recruit and retain capable data analysts and cultivate
+This makes it challenging for organizations to recruit and retain capable data analysts and cultivate
 a community of practice.
 Addressing this problem is not straightforward.
-It requires ehancement of reproducible data science skills in undergraduate life science courses,
-investment in upskilling the current workforce and offering working conditions that are competitive
+It requires enhancement of reproducible data science skills in undergraduate life science courses,
+investment in up-skilling the current workforce and offering working conditions that are competitive
 with other sectors.
 Specific workshop-based training for current researchers could help [@Williams2023-ic].
 The [Software Carpentry](https://software-carpentry.org/) initiative is focused on this mission
 [@Wilson2014-mh].
 
-A lack of documentated protocols and tutorial materials for highly reproducible analysis makes it
+A lack of documented protocols and tutorial materials for highly reproducible analysis makes it
 difficult for researchers to confidently update their code development practices.
 Expert bioinformaticians can help by publishing comprehensive beginner-friendly step-by-step
 guides for frequently used routines.
 This approach is highly scalable and the reach of open-access publishing ensures these materials are
-broadly accesible.
+broadly accessible.
 For example, our group has just released such a protocol that walks novice users through the process
 of implementing functional enrichment analysis of gene expression data with the five pillars principles
 @Ziemann2023-nm.
@@ -967,7 +967,7 @@ provided in the supplementary information.
 
 As the chemotherapeutics case study highlights, there are significant risks to poorly conducted
 bioinformatics research; and current standards are falling short.
-If adopted widely, the transparency and reproducibilty measures proposed here will reduce the chance of
+If adopted widely, the transparency and reproducibility measures proposed here will reduce the chance of
 such disasters from happening again.
 Researchers, their institutions, publishers and funders each have a major role to play in fighting the
 reproducibility crisis by encouraging highly reproducible research practices.
@@ -986,7 +986,7 @@ basic research to tangible benefits.
 
 <br>
 
-## Acknowledgements
+## Acknowledgments
 
 We are grateful to individuals who provided feedback on an earlier draft of the concept including
 Dr Aziz Khan (Stanford University),
