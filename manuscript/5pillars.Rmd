@@ -21,9 +21,9 @@ csl: plos-computational-biology.csl
 
 3. Université Paris Cité, CNRS, Institut Jacques Monod, Paris, France.
 
-* Correspondence: m.ziemann@deakin.edu.au
+(*) Correspondence: m.ziemann@deakin.edu.au
 
-| `Author      ` |  `ORCID             ` |
+| Author | ORCID |
 | --- | --- |
 | Mark Ziemann | 0000-0002-7688-6974 |
 | Pierre Poulain | 0000-0003-4177-3619 |
@@ -41,7 +41,7 @@ Building upon past efforts and proposals to maximize reproducibility and rigor i
 bioinformatics, we present a framework called the five pillars of reproducible computational
 research.
 These include (1) literate programming, (2) code version control and sharing,
-(3) compute environment control, (4) FAIR and persistent data sharing and (5) documentation.
+(3) compute environment control, (4) persistent data sharing and (5) documentation.
 These practices will ensure that computational research work can be
 reproduced quickly and easily, long into the future.
 This guide is designed for bioinformatic data analysts, but should be relevant for other
@@ -130,7 +130,7 @@ Inspired by these principles, we presents the *five pillars of reproducible comp
 (**Figure 1**).
 Here, the emphasis is on practical reproducibility with an increased focus on programming practices,
 transparent reporting and the role of computational environments.
-The intended audience is anyone who analyzes biological data (not tool developers), however the
+The intended audience is bioinformatics data analysts and bioinformaticians in training, however the
 principles described here could equally apply to other domains of study.
 There are clear parallels with the established three pillars of the open science framework,
 (open data, code and papers) [@Gorgolewski2016-hv].
@@ -157,7 +157,7 @@ text(4.8,9,lab="Five pillars of reproducible computational research", cex=1.5)
 labs <- c("Literate\nprogramming",
   "Code version\ncontrol &\npersistent\n sharing",
   "Compute \nenvironment \ncontrol",
-  "FAIR &\npersistent\ndata sharing",
+  "Persistent\ndata sharing",
   "Documentation")
 
 text( c(0.9,2.9,4.9,6.9,8.9) , c(4.5,2.5,4.5,2.5,4.5) , lab=labs)
@@ -330,10 +330,15 @@ form.
 Literate programming also works neatly with the concept of the "executable paper", the idea that
 the data analysis underlying an entire study can be reproduced with one or a few commands
 [@Strijkers2011-py ; @Editorial2017-yt; @Lasser2020-mm].
-A typical genomics/bioinformatics study could involve one large literate script, or be broken down into
-smaller scripts, where each one contains the code for generating a part of the article.
+A typical genomics/bioinformatics study could involve one large literate script, or be broken down intosmaller scripts, where each one contains the code for generating a part of the article.
 A multi-script approach would benefit from a master script that executes each component.
 This further makes the job of reproducibility easier.
+
+While it is common to run literate programs on a PC with graphical interfaces such as Rstudio,
+they can also be executed in "headless" mode on high performance computing clusters or cloud
+servers using command-line interfaces to take advantage of greater computational resources.
+Headless mode is important for integrating literate scripts into larger workflows and for
+automated testing.
 
 <br>
 
@@ -343,10 +348,10 @@ In bioinformatics, sharing code is becoming standard practice for reproducibilit
 and is a requirement for many specialized journals [@Cadwallader2022-dq].
 Code sharing appears to improve the rate of article citations [@Maitner2023-pv].
 One of the most popular ways to share research code is through online software repositories
-[@Cadwallader2022-od] with integrated version control.
+with integrated version control [@Cadwallader2022-od].
 A version control system (sometimes called "source control") is a type of program that "tracks changes"
 made to sets of files, typically other computer program source code, scripts and documentation.
-A set of files under version control is called a "repository" and represents a project or sub-project.
+A repository is simply a set of files under version control that represents a project or sub-project.
 Version control is used extensively by software developers and is considered one of the key best
 practices in software engineering.
 Distributed version control systems (DVCS) involve a central web-accessible server hosting a
@@ -547,6 +552,11 @@ Docker can fetch images from DockerHub and run them on the host system with just
 and typically within a few minutes.
 This accelerates the installation procedure dramatically which is a known bottleneck for bioinformatic
 reproducibility [@Mangul2019-ei; @Mangul2019-xp; @Krafczyk2021-xv].
+In bioinformatics, containers are already extensively used.
+For example, BioContainers is a registry for sharing bioinformatics software containers
+[@Da_Veiga_Leprevost2017-yw].
+Containers are equally useful to data analysts by encapsulating the environment in which analytical
+scripts are executed.
 
 ```{r,containers,fig.cap="Figure 4. Architecture of containers (left) compared to VMs (right). Adapted from @noauthor_2021-lt.",echo=FALSE,fig.height=5}
 
@@ -656,7 +666,7 @@ used in an article to a suitable persistent long-term archive (discussed below).
 
 <br>
 
-### FAIR and persistent data sharing
+### Persistent data sharing
 
 Without data sharing, computational research is not reproducible nor auditable.
 Lack of data sharing is one of the key reasons why research is irreproducible
@@ -683,11 +693,10 @@ The field of genomics has a long history of data sharing @Brazma2001-yk, which i
 policy leadership by funding bodies
 [@National_Health_and_Medical_Research_Council2019-yx;
 @Office_of_The_Director_National_Institutes_of_Health2023-ss] and data sharing policies of journals
-(eg [@Packer2018-ru; @Hanson2011-ub ; @Cheifet2020-wu]), although there are some challenges.
-Some researchers would rather keep data for their private use.
-Some may keep data private due to concerns over participant privacy.
-
-While deidentification of data has been widely used to safeguard participant privacy, this may not
+(eg [@Packer2018-ru; @Hanson2011-ub ; @Cheifet2020-wu]).
+Best practices for research data sharing have been proposed [@Wilkinson2016-qq], as have
+recommendations around sharing human genetic/genomic data [@Byrd2020-ri].
+While deidentification of data has long been used to safeguard participant privacy, this may not
 be suitable for genomics data due to the availability of existing public genetic data sets that heighten
 reidentification risks @Heeney2011-ri.
 For example, the surnames of some male participants can be inferred based on the Y chromosome variants
@@ -695,27 +704,21 @@ seen in deidentified genomic data together with public geneology web sites @Gymr
 To foster the responsible reuse of sensitive genomic and health data, the Global Alliance for
 Genomics and Health (GA4GH) initiative has proposed strategies, technical standards and policy
 frameworks designed to protect personal data in a way that preserves reproducibility
-[@Rehm2021-kt;@Thorogood2021-kt].
+[@Rehm2021-kt; @Thorogood2021-kt].
 
-In order to maximize the value of shared data for reuse and reproducibility, it needs to be Findable,
-Accessible, Interoperable and Reusable (FAIR) for people and for computers @Wilkinson2016-qq.
-These principles are summarized in **Figure 5**.
-
-![Figure 5. Overview of the FAIR data principles @Kalendralis2021-jb.](../img/gr2.jpg)
-
-High throughput biology has already built a number of data repositories for specific data types mostly
-conforming to FAIR principles.
-Repositories like GEO, SRA, ENA and PRIDE were developed in the aftermath of the draft human
-genome assembly and have become well known to omics researchers
-[@Edgar2002-hs; @Kodama2012-bn; @Martens2005-wo].
+In the wake of the Human Genome Project, a number of repositories for specific biological data types
+were established including GEO, SRA, ENA and PRIDE [@Edgar2002-hs; @Kodama2012-bn; @Martens2005-wo].
+Although these repositories suffer issues around interoperability and reusability, they do support
+data reuse through findability and accessibility [@Bonaretti2019-zs; @Hassenruck2021-mi].
 The [re3data.org](https://www.re3data.org/) registry of data repositories may be useful to find
-FAIR repositories that accepts data from other domains of study like ecology,
+repositories that accepts data from other domains of study like ecology,
 physiology, molecular simulation, social sciences and computing [@Pampel2013-ep].
 If no specialized repository exists, then a general-purpose repository such as
 [Dryad](https://datadryad.org/), [FigShare](https://figshare.com/), or [Zenodo](https://zenodo.org/)
-should be considered. Researchers should be aware, however, that these repositories are often not moderated, 
-and that it is their responsibility to make their data FAIR, in particular by providing sufficient metadata.
-To this aim, general recommendations have been proposed to enhance data FAIRness in ecology, but which
+should be considered.
+Researchers should be aware, however, that these repositories are often not moderated,
+and that it is their responsibility to provide sufficient metadata.
+To this aim, general recommendations have been proposed to enhance data reuse in ecology, but which
 can also be applied to other disciplines [@Roche2015-aq].
 
 Key recommendations include:
@@ -818,7 +821,7 @@ the project and how to report issues, such as code errors and discrepancies.
 The `README` should also list the contributors to the codebase and acknowledge any financial support.
 It may also include a link to the research article, citation instructions and a mention of the software
 license.
-A recently described set of recommendations for making software FAIR describes further measures
+A recently described set of recommendations for documenting software describes further measures
 that data analysts could use to enhance their code documentation @Patel2023-qr.
 
 The need for documentation extends to the other supporting information.

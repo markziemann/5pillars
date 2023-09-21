@@ -14,30 +14,10 @@ bibliography: practical_guides.bib
 csl: plos-computational-biology.csl
 ---
 
-Mark Ziemann<sup>1*</sup>, Pierre Poulain<sup>2</sup>,
-Anusuiya Bora<sup>1</sup>
-
-Author information
-
-1. Deakin University, School of Life and Environmental Sciences, Geelong, Australia.
-
-2. Université Paris Cité, CNRS, Institut Jacques Monod, Paris, France.
-
-Correspondance: m.ziemann@deakin.edu.au
-
-| Author | ORCID |
-| --- | --- |
-| Mark Ziemann | 0000-0002-7688-6974 |
-| Pierre Poulain | 0000-0003-4177-3619 |
-| Anusuiya Bora | 0009-0006-2908-1352 |
-
-</details>
-</p>
-
 Source: https://github.com/markziemann/5pillars/blob/main/guides/practical_guides.Rmd
 
-The five pillar approach is a synthesis of over a decade of learnings around computational
-reproducibility, and contains six key recommendaions and many best practices.
+The five pillar approach is a synthesis of over a decade of learning around computational
+reproducibility, and contains seven key recommendations and many best practices.
 These may be overwhelming for any data scientists, especially beginners and novices,
 so here we have tried to put together some recommended resources to enable practitioners to put these
 principles into practice.
@@ -67,7 +47,7 @@ with it. Learn by solving problems.
 
 <br>
 
-### Introduction to Unix and Shell programming
+### Introduction to Unix and shell programming
 
 * [Ebook: Bioinformatics Data Skills](https://vincebuffalo.com/book/)
 
@@ -90,6 +70,10 @@ with it. Learn by solving problems.
 * [Tutorial and video: Getting Started with Visual Studio Code](https://code.visualstudio.com/docs/introvideos/basics)
 
 <br>
+
+### Introduction to Galaxy: bioinformatics in the browser
+
+* [Galaxy: A very short introduction](https://www.youtube.com/watch?v=VZoz3k5EehI&ab_channel=GalaxyProject)
 
 ## Literate programming with R Markdown, Jupyter and Quarto
 
@@ -115,6 +99,8 @@ graphical interfaces to the programming languages.
 * [Tutorial: How to Use Jupyter Notebook](https://www.dataquest.io/blog/jupyter-notebook-tutorial/)
 
 * [Tutorial: The Ultimate Beginner’s Guide to Jupyter Notebooks](https://medium.com/velotio-perspectives/the-ultimate-beginners-guide-to-jupyter-notebooks-6b00846ed2af)
+
+* [Tutorial: Write your next paper in MyST Markdown with data, code & Jupyter notebooks](https://www.youtube.com/watch?v=1BWYLzQd8Ds&t=4s&ab_channel=curvenote)
 
 <br>
 
@@ -150,6 +136,25 @@ Learn how integrate version control into your development environment.
 
 <br>
 
+## Practical guides for Conda, Guix and Docker
+
+Control the environment.
+Record the version of programming languages and packages.
+Become familiar and experiment with Conda, Guix and Docker.
+Select the option that works best for your project.
+
+* [Tutorial: Getting started with conda](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html)
+
+* [Video tutorial: Anaconda Beginners Guide for Linux and Windows](https://www.youtube.com/watch?v=MUZtVEDKXsk)
+
+* [Tutorial: Running RStudio Server with Docker](https://davetang.org/muse/2021/04/24/running-rstudio-server-with-docker/)
+
+* [Tutorial: Creating a Docker Image for your Application](https://www.stereolabs.com/docs/docker/creating-your-image/)
+
+* [Documentation: Getting started with GNU Guix](https://guix.gnu.org/manual/en/html_node/Getting-Started.html)
+
+<br>
+
 ## Practical guides to data sharing
 
 Learn about the FAIR principles and make the research data available in a public repository.
@@ -163,6 +168,21 @@ Learn about the FAIR principles and make the research data available in a public
 * [Guide: FAIR Data (according to Australian Research Data Commons)](https://ardc.edu.au/resource/fair-data/)
 
 * [Documentation: FAIRsharing.org](https://fairsharing.org/)
+
+<br>
+
+## Practical guides for documenting computational research
+
+Document the process of reproduction as if you were an external researcher.
+Test the instructions.
+
+* [Guide: How to write an Awesome README](https://towardsdatascience.com/how-to-write-an-awesome-readme-68bf4be91f8b)
+
+* [Ebook: Bioinformatics Data Skills Chapter 2](https://vincebuffalo.com/book/)
+
+* [Example: README for "A Reproducible Data Analysis Workflow with R Markdown, Git, Make, and Docker"](https://github.com/aaronpeikert/reproducible-research/blob/master/README.md)
+
+* [Guide: A Quick Guide to Organizing Computational Biology Projects](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424)
 
 <br>
 
@@ -191,52 +211,21 @@ whole figures or research articles.
 
 <br>
 
-## Practical guides for Conda, Guix and Docker
-
-Control the environment.
-Record the version of programming languages and packages.
-Become familiar and experiment with Conda, Guix and Docker.
-Select the option that works best for your project.
-
-* [Tutorial: Getting started with conda](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html)
-
-* [Video tutorial: Anaconda Beginners Guide for Linux and Windows](https://www.youtube.com/watch?v=MUZtVEDKXsk)
-
-* [Tutorial: Running RStudio Server with Docker](https://davetang.org/muse/2021/04/24/running-rstudio-server-with-docker/)
-
-* [Tutorial: Creating a Docker Image for your Application](https://www.stereolabs.com/docs/docker/creating-your-image/)
-
-* [Documentation: Getting started with GNU Guix](https://guix.gnu.org/manual/en/html_node/Getting-Started.html)
-
-<br>
-
-## Practical guides for documenting computational research
-
-Document the process of reproduction as if you were an external researcher.
-Test the instructions.
-
-* [Guide: How to write an Awesome README](https://towardsdatascience.com/how-to-write-an-awesome-readme-68bf4be91f8b)
-
-* [Ebook: Bioinformatics Data Skills Chapter 2](https://vincebuffalo.com/book/)
-
-* [Example: README for "A Reproducible Data Analysis Workflow with R Markdown, Git, Make, and Docker"](https://github.com/aaronpeikert/reproducible-research/blob/master/README.md)
-
-* [Guide: A Quick Guide to Organizing Computational Biology Projects](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424)
-
-<br>
-
-## Moving from "dev" to "prod": testing and continuous analysis
+## Continuous analysis/continuous validation
 
 Continuous analysis involves automatic execution and testing of code, which is important when changes
 are made to code or data.
 Results generated in HTML are automatically updated.
 Badges on the repository indicate the status of the codebase in terms of completing with or without
 errors.
+Transparency and reproducibility help validation which can be continously maintained.
 
 * [Ebook: Building reproducible analytical pipelines with R](https://raps-with-r.dev/)
 
 * [Ebook: The Turing Way - Guide for Reproducible Research](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html#)
 
 * [Tutorial: Continuous Analysis](https://greenelab.github.io/continuous_analysis/)
+
+* [Tool: Drone: System for continuous delivery](https://www.drone.io/)
 
 * [Documentation: GitHub Actions](https://docs.github.com/en/actions)

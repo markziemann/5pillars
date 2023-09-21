@@ -56,7 +56,7 @@ et al (2006) @Potti2006-yk in the introduction:
 > After observing some unusual features of the patient group, Baggerly and Coombes attempted
 > reproduction of some of the key findings @Baggerly2010-nr.
 > Without the help of scripted workflows to guide the re-analysis, the team used forensic bioinformatic
-> techniques to piece together how the dataset was originally analysed.
+> techniques to piece together how the dataset was originally analyzed.
 > Their investigations found a litany of issues.
 > Firstly, the labeling of patients in the test set as "responders" or "non-responders" had been reversed
 > in the original analysis.
@@ -67,7 +67,7 @@ et al (2006) @Potti2006-yk in the introduction:
 > Additional errors include two cases where results (charts) were ascribed to the wrong drug.
 > Baggerly and Coombes highlight that such mistakes can inadvertently occur when conducting unscripted
 > data analysis such as using spreadsheets, and such problems can be obscured by a lack of documentation.
-> The article underwent two corrigenda, but was untimately retracted in 2011, as the authors were not
+> The article underwent two corrigenda, but was ultimately retracted in 2011, as the authors were not
 > able to reproduce the findings themselves due to "corruption of several validation data sets"
 > @Potti2011-ut.
 > As the array findings were the basis for clinical trials where patients were allocated to treatments,
@@ -133,7 +133,7 @@ RESPONSE: The subheading structure has been amended accordingly.
 
   * Documentation
 
-  * Process validation and testing
+  * Continuous validation
 
 * Challenges
 
@@ -153,7 +153,7 @@ Instead of reiterating the five pillars, we provide the following:
 
 > As the chemotherapeutics case study highlights, there are significant risks to poorly conducted
 > bioinformatics research, and current standards are falling short.
-> If adopted widely, the transparency and reproducibilty measures proposed here will reduce the chance of
+> If adopted widely, the transparency and reproducibility measures proposed here will reduce the chance of
 > such disasters from happening again.
 > Researchers, their institutions, publishers and funders each have a major role to play in fighting the
 > reproducibility crisis by encouraging highly reproducible research practices.
@@ -179,7 +179,7 @@ all.
 We note that each of those recommendation articles mentioned have different emphases.
 For example, some of them don't speak to the benefits of literate programming,
 while others do not mention the importance of documentation.
-Some are focused on specific concepts like infrastructure, containerisation or
+Some are focused on specific concepts like infrastructure, containerization or
 continuous analysis.
 Some are proof of principle workflows, which present a rigid combination of tools.
 Here, we describe the ways computational researchers can make their own work more reproducible.
@@ -288,7 +288,7 @@ It requires a few things:
 * A .bib file that contains the bibliography in bibtex format.
 
 * A .csl file that specifies the citation style.
-These are avaialble from [GitHub](https://github.com/citation-style-language/styles).
+These are available from [GitHub](https://github.com/citation-style-language/styles).
 
 * Modification to the Rmd header section that specifies the path of the bib and csl files.
 
@@ -385,7 +385,7 @@ Rkt was removed, as it appears that development of the project has ceased.
 > 16. Page 9, lines 7-8: I believe you, but I am not aware of evidence that supports this claim.
 
 RESPONSE: The claim made in the manuscript is that "Docker remains the most widely used
-containerisation system for web development and research".
+containerization system for web development and research".
 We do not have exact usage data on this, however we can look at other metrics like GitHub stars.
 
 Docker: 72.2k
@@ -399,7 +399,7 @@ Singularity: 3.1k
 Based on this we have altered the text:
 
 > While there are several alternatives such as Podman [@Heon2018-lc] or Apptainer/Singularity
-> [@Kurtzer2017-zq], Docker remains the most widely used containerisation system (according to GitHub
+> [@Kurtzer2017-zq], Docker remains the most widely used containerization system (according to GitHub
 > stars).
 
 ### R3 Point 17
@@ -525,7 +525,7 @@ It's a community-supported specification for accomplishing many of the objective
 There are some recent papers about this.
 
 RESPONSE: Thanks for raising this. We have added CWL to the section mentioning pipeline solutions, and
-refered readers to dedicated reviews on the topic.
+referred readers to dedicated reviews on the topic.
 
 > Projects involving computationally intensive tasks would benefit from a build/workflow automation
 > solution.
@@ -549,3 +549,4 @@ challenges that are holding back progress.
 Please refer to our response to Reviewer 2's Point #3.
 The Challenges section now includes brief mentions of incentives and automation.
 
+## Bibliography
