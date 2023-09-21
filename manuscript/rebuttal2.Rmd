@@ -13,7 +13,7 @@ csl: plos-computational-biology.csl
 Dear Editor,
 
 Again, many thanks for your consideration of our manuscript.
-Below is our point-by-point response to Reviewer 3's remining comments.
+Below is our point-by-point response to Reviewer 3's remaining comments.
 
 ### Point 2
 
@@ -33,8 +33,14 @@ accomplish.
 Secondly, where self-education reaches its limits, they can seek workshops and other training to
 strengthen these priority areas.
 
-Therefore, we have altered the phrase to recognise the journey of bioinformaticians in training.
+Therefore, we have altered the phrase in the abstract and body to recognize the journey of
+bioinformaticians in training.
 
+ABSTRACT:
+> This guide is designed for bioinformatics data analysts and bioinformaticians in training,
+> but should be relevant to other domain of study.
+
+RECOMMENDATIONS:
 > The intended audience is bioinformatics data analysts and bioinformaticians in training, however the
 > principles described here could equally apply to other domains of study.
 
@@ -48,10 +54,10 @@ the manuscript.
 RESPONSE: In accordance with this suggestion we have added the following passage to the literate
 programming section.
 
-> While it is common to run literate programs on a PC with graphical interfaces such as Rstudio,
+> While it is common to run literate programs on a PC with graphical interfaces such as RStudio,
 > they can also be executed in "headless" mode on high performance computing clusters or cloud
 > servers using command-line interfaces to take advantage of greater computational resources.
-> Headless mode is important for integrating literate scripts into larger workflows and for
+> Headless mode is also important for integrating literate scripts into larger workflows and for
 > automated testing.
 
 ### Point 17
@@ -87,7 +93,7 @@ There are lots of problems with FAIRness in these repositories.
 
 RESPONSE: Possibly the reviewer hasn't seen the rebuttal letter had it's own bibliography.
 Anyway, since "FAIR" is not described anymore, it simplifies the description of these databases,
-which satify most best practices. We cite the work of Bonaretti et al 2019.
+which satisfy most best practices. We cite the work of Bonaretti et al 2019.
 We also cite Hassenruck et al 2021, who report deficiencies in these databases, but spread the blame
 between database administrators, researchers and other stakeholders.
 The two important passages we have amended are provided below:
