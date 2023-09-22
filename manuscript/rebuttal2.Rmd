@@ -32,19 +32,20 @@ Firstly, papers such as this one set out a road map of self-education which may 
 accomplish.
 Secondly, where self-education reaches its limits, they can seek workshops and other training to
 strengthen these priority areas.
-
 Therefore, we have altered the phrase in the abstract and body to recognize the journey of
 bioinformaticians in training.
 
 ABSTRACT:
+
 > This guide is designed for bioinformatics data analysts and bioinformaticians in training,
 > but should be relevant to other domain of study.
 
 RECOMMENDATIONS:
+
 > The intended audience is bioinformatics data analysts and bioinformaticians in training, however the
 > principles described here could equally apply to other domains of study.
 
-If the reviewer has a specific suggestion, then it would be helpful to provide this.
+If the reviewer has a specific suggestion, then it would be helpful to provide it.
 
 ### Point 10
 
