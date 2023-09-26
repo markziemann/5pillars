@@ -14,6 +14,8 @@ Dear Editor,
 
 Again, many thanks for your consideration of our manuscript.
 Below is our point-by-point response to Reviewer 3's remaining comments.
+Please note that this rebuttal letter has its own bibliography and the numbering will differ to the
+main text.
 
 ### Point 2
 
@@ -38,7 +40,7 @@ bioinformaticians in training.
 ABSTRACT:
 
 > This guide is designed for bioinformatics data analysts and bioinformaticians in training,
-> but should be relevant to other domain of study.
+> but should be relevant to other domains of study.
 
 RECOMMENDATIONS:
 
@@ -84,7 +86,11 @@ is mentioned.
 > FAIRness is not the main thrust of this manuscript.
 
 RESPONSE: We appreciate the reviewer's point of view.
-We have removed mention of FAIR and we refer readers to the literature on this topic.
+We have reduced the discussion of FAIR principles to just one sentence.
+
+> "In order to maximize the value of shared data for reuse and reproducibility, it needs to be Findable,
+> Accessible, Interoperable and Reusable (FAIR) for people and for computers @Wilkinson2016-qq."
+
 FAIR has also been removed from the pillars infographic and Figure 5 is also gone.
 
 ### R3 Point 21
@@ -92,8 +98,8 @@ FAIR has also been removed from the pillars infographic and Figure 5 is also gon
 > 21. Page 11, line 13: I disagree that repositories like GEO and SRA are FAIR.
 There are lots of problems with FAIRness in these repositories.
 
-RESPONSE: Possibly the reviewer hasn't seen the rebuttal letter had it's own bibliography.
-Anyway, since "FAIR" is not described anymore, it simplifies the description of these databases,
+RESPONSE: Possibly the reviewer hasn't seen that the rebuttal letter had it's own bibliography.
+Anyway, since "FAIR" is not described in depth anymore, it simplifies the description of these databases,
 which satisfy most best practices. We cite the work of Bonaretti et al 2019.
 We also cite Hassenruck et al 2021, who report deficiencies in these databases, but spread the blame
 between database administrators, researchers and other stakeholders.

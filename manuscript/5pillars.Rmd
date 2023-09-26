@@ -707,6 +707,8 @@ Genomics and Health (GA4GH) initiative has proposed strategies, technical standa
 frameworks designed to protect personal data in a way that preserves reproducibility
 [@Rehm2021-kt; @Thorogood2021-kt].
 
+In order to maximize the value of shared data for reuse and reproducibility, it needs to be Findable,
+Accessible, Interoperable and Reusable (FAIR) for people and for computers @Wilkinson2016-qq.
 In the wake of the Human Genome Project, a number of repositories for specific biological data types
 were established including GEO, SRA, ENA and PRIDE [@Edgar2002-hs; @Kodama2012-bn; @Martens2005-wo].
 Although these repositories suffer issues around interoperability and reusability, they do support
