@@ -207,7 +207,7 @@ whole figures or research articles.
 
 * [Quick Guide: Using snakemake to do simple wildcard operations on many, many, many files](http://ivory.idyll.org/blog/2021-snakemake-simple-operations.html)
 
-* [Tutorial compendium: Learn Nextflow in 2023](https://snakemake.readthedocs.io/en/stable/tutorial/basics.html)
+* [Tutorial compendium: Learn Nextflow in 2023](https://www.nextflow.io/blog/2023/learn-nextflow-in-2023.html)
 
 <br>
 
